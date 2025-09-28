@@ -1,0 +1,940 @@
+2025-03-21 07:49:15,171 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-21 07:49:15,172 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-21 07:49:15,172 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 07:49:15,172 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 07:49:15,206 - INFO - Check output: stop
+2025-03-21 07:49:15,206 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-21 07:49:15,277 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-21 07:49:20,201 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-21 07:49:20,204 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-21 07:49:20,204 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 07:49:20,204 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-21 07:49:20,248 - INFO - Check output: stop
+2025-03-21 07:49:20,248 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-21 07:49:20,278 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 07:49:20,339 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-21 07:49:25,279 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-21 07:49:25,279 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 07:49:25,279 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 07:49:25,328 - INFO - Check output: running
+2025-03-21 07:49:25,328 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-21 07:49:25,340 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 07:49:30,342 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-21 07:49:30,342 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 07:49:30,342 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-21 07:49:30,388 - INFO - Check output: running
+2025-03-21 07:49:30,388 - INFO - LD Player instance happy is already running
+2025-03-21 07:49:35,095 - INFO - Executing task #1 on happy
+r0
+2025-03-21 08:57:36,943 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-21 08:57:36,944 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-21 08:57:36,944 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 08:57:36,944 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 08:57:36,979 - INFO - Check output: stop
+2025-03-21 08:57:36,979 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-21 08:57:37,053 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-21 08:57:42,054 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 08:57:43,387 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-21 08:57:43,387 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-21 08:57:43,387 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 08:57:43,388 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-21 08:57:43,429 - INFO - Check output: stop
+2025-03-21 08:57:43,429 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-21 08:57:43,524 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-21 08:57:47,055 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-21 08:57:47,055 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 08:57:47,055 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 08:57:47,103 - INFO - Check output: running
+2025-03-21 08:57:47,104 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-21 08:57:48,525 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 08:57:50,208 - INFO - Executing task #1 on LDPlayer0
+2025-03-21 08:57:53,526 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-21 08:57:53,526 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 08:57:53,526 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-21 08:57:53,570 - INFO - Check output: running
+2025-03-21 08:57:53,571 - INFO - LD Player instance happy is already running
+2025-03-21 08:57:59,739 - INFO - Executing task #1 on happy
+2025-03-21 09:00:53,343 - ERROR - Error executing task on happy: Element not found with the provided XPath after 3 attempts!
+2025-03-21 09:00:55,344 - INFO - All tasks (1) completed for happy
+2025-03-21 09:00:55,344 - INFO - Closing LD Player instance: happy
+2025-03-21 09:00:55,344 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "happy"
+2025-03-21 09:01:00,422 - INFO - Post-quit check output: stop
+2025-03-21 09:01:00,422 - INFO - LD Player instance happy successfully closed
+2025-03-21 09:01:18,734 - INFO - Processing task for device: raushan1, ID: Puja Ji, Serial: emulator-5560
+2025-03-21 09:01:18,734 - INFO - Attempt 1/3 to open LD Player instance raushan1
+2025-03-21 09:01:18,734 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 09:01:18,735 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan1"
+2025-03-21 09:01:18,770 - INFO - Check output: stop
+2025-03-21 09:01:18,770 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "raushan1"
+2025-03-21 09:01:18,841 - INFO - Waiting for raushan1 to initialize... (1/20)
+2025-03-21 09:01:23,842 - ERROR - Error opening LD Player instance raushan1: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 09:01:28,842 - INFO - Attempt 2/3 to open LD Player instance raushan1
+2025-03-21 09:01:28,842 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 09:01:28,842 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan1"
+2025-03-21 09:01:28,879 - INFO - Check output: running
+2025-03-21 09:01:28,879 - INFO - LD Player instance raushan1 is already running
+2025-03-21 09:01:28,902 - INFO - Executing task #1 on raushan1
+2025-03-21 09:15:26,313 - INFO - Task #1 completed on raushan1
+2025-03-21 09:15:28,314 - INFO - All tasks (1) completed for raushan1
+2025-03-21 09:15:28,314 - INFO - Closing LD Player instance: raushan1
+2025-03-21 09:15:28,314 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "raushan1"
+2025-03-21 09:15:33,391 - INFO - Post-quit check output: stop
+2025-03-21 09:15:33,391 - INFO - LD Player instance raushan1 successfully closed
+2025-03-21 09:17:15,300 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-21 09:17:15,301 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-21 09:17:15,301 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 09:17:15,301 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 09:17:15,335 - INFO - Check output: stop
+2025-03-21 09:17:15,335 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-21 09:17:15,409 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-21 09:17:20,410 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 09:17:21,638 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-21 09:17:21,638 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-21 09:17:21,639 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 09:17:21,639 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-21 09:17:21,675 - INFO - Check output: stop
+2025-03-21 09:17:21,676 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-21 09:17:21,757 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-21 09:17:25,411 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-21 09:17:25,411 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 09:17:25,411 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 09:17:25,453 - INFO - Check output: running
+2025-03-21 09:17:25,454 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-21 09:17:26,758 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 09:17:28,545 - INFO - Executing task #1 on LDPlayer0
+2025-03-21 09:17:31,759 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-21 09:17:31,759 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 09:17:31,759 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-21 09:17:31,808 - INFO - Check output: running
+2025-03-21 09:17:31,809 - INFO - LD Player instance happy is already running
+2025-03-21 09:17:33,877 - INFO - Executing task #1 on happy
+2025-03-21 10:04:35,407 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-21 10:04:35,407 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-21 10:04:35,407 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:04:35,407 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 10:04:35,441 - INFO - Check output: stop
+2025-03-21 10:04:35,441 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-21 10:04:35,514 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-21 10:04:40,515 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 10:04:41,848 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-21 10:04:41,849 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-21 10:04:41,849 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:04:41,849 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-21 10:04:41,889 - INFO - Check output: stop
+2025-03-21 10:04:41,889 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-21 10:04:41,977 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-21 10:04:45,516 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-21 10:04:45,516 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:04:45,516 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 10:04:45,554 - INFO - Check output: running
+2025-03-21 10:04:45,555 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-21 10:04:46,978 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 10:04:49,662 - INFO - Executing task #1 on LDPlayer0
+2025-03-21 10:04:51,979 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-21 10:04:51,979 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:04:51,980 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-21 10:04:52,013 - INFO - Check output: stop
+2025-03-21 10:04:52,013 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-21 10:04:52,105 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-21 10:04:57,106 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 10:05:02,107 - INFO - Attempt 3/3 to open LD Player instance happy
+2025-03-21 10:05:02,107 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:05:02,107 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-21 10:05:02,148 - INFO - Check output: running
+2025-03-21 10:05:02,148 - INFO - LD Player instance happy is already running
+2025-03-21 10:07:01,908 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-21 10:07:01,908 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-21 10:07:01,909 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:07:01,909 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 10:07:01,944 - INFO - Check output: stop
+2025-03-21 10:07:01,944 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-21 10:07:02,017 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-21 10:07:07,019 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 10:07:07,904 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-21 10:07:07,904 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-21 10:07:07,904 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:07:07,905 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-21 10:07:07,941 - INFO - Check output: stop
+2025-03-21 10:07:07,941 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-21 10:07:08,013 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-21 10:07:12,019 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-21 10:07:12,019 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:07:12,019 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 10:07:12,059 - INFO - Check output: running
+2025-03-21 10:07:12,061 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-21 10:07:13,014 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 10:07:13,108 - INFO - Executing task #1 on LDPlayer0
+2025-03-21 10:16:35,481 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-21 10:16:35,482 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-21 10:16:35,482 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:16:35,482 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 10:16:35,517 - INFO - Check output: stop
+2025-03-21 10:16:35,517 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-21 10:16:35,589 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-21 10:16:40,590 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 10:16:45,591 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-21 10:16:45,591 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:16:45,591 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 10:16:45,626 - INFO - Check output: running
+2025-03-21 10:16:45,627 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-21 10:16:46,669 - INFO - Executing task #1 on LDPlayer0
+2025-03-21 10:37:12,649 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-21 10:37:12,649 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-21 10:37:12,649 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:37:12,651 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 10:37:12,685 - INFO - Check output: stop
+2025-03-21 10:37:12,685 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-21 10:37:12,758 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-21 10:37:17,758 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 10:37:19,135 - INFO - Processing task for device: raushan2, ID: Akshita Kumari, Serial: emulator-5562
+2025-03-21 10:37:19,135 - INFO - Attempt 1/3 to open LD Player instance raushan2
+2025-03-21 10:37:19,135 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:37:19,135 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan2"
+2025-03-21 10:37:19,179 - INFO - Check output: stop
+2025-03-21 10:37:19,179 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "raushan2"
+2025-03-21 10:37:19,264 - INFO - Waiting for raushan2 to initialize... (1/20)
+2025-03-21 10:37:22,759 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-21 10:37:22,759 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:37:22,759 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 10:37:22,798 - INFO - Check output: running
+2025-03-21 10:37:22,798 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-21 10:37:23,848 - INFO - Executing task #1 on LDPlayer0
+2025-03-21 10:37:24,265 - ERROR - Error opening LD Player instance raushan2: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 10:37:29,266 - INFO - Attempt 2/3 to open LD Player instance raushan2
+2025-03-21 10:37:29,266 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:37:29,266 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan2"
+2025-03-21 10:37:29,310 - INFO - Check output: running
+2025-03-21 10:37:29,310 - INFO - LD Player instance raushan2 is already running
+2025-03-21 10:37:33,429 - INFO - Executing task #1 on raushan2
+2025-03-21 10:38:30,784 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-21 10:38:30,784 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-21 10:38:30,784 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:38:30,785 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 10:38:30,817 - INFO - Check output: stop
+2025-03-21 10:38:30,817 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-21 10:38:30,895 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-21 10:38:35,896 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 10:38:36,856 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-21 10:38:36,857 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-21 10:38:36,857 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:38:36,857 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-21 10:38:36,892 - INFO - Check output: stop
+2025-03-21 10:38:36,892 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-21 10:38:36,968 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-21 10:38:40,897 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-21 10:38:40,897 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:38:40,897 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 10:38:40,941 - INFO - Check output: running
+2025-03-21 10:38:40,941 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-21 10:38:41,969 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 10:38:41,986 - INFO - Executing task #1 on LDPlayer0
+2025-03-21 10:38:46,970 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-21 10:38:46,970 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:38:46,970 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-21 10:38:47,029 - INFO - Check output: running
+2025-03-21 10:38:47,029 - INFO - LD Player instance happy is already running
+2025-03-21 10:38:49,098 - INFO - Executing task #1 on happy
+2025-03-21 10:39:25,660 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-21 10:39:25,661 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-21 10:39:25,661 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:39:25,661 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 10:39:25,693 - INFO - Check output: stop
+2025-03-21 10:39:25,694 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-21 10:39:25,761 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-21 10:39:30,763 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 10:39:31,737 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-21 10:39:31,737 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-21 10:39:31,738 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:39:31,738 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-21 10:39:31,773 - INFO - Check output: stop
+2025-03-21 10:39:31,773 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-21 10:39:31,851 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-21 10:39:35,764 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-21 10:39:35,764 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:39:35,764 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 10:39:35,795 - INFO - Check output: running
+2025-03-21 10:39:35,796 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-21 10:39:35,878 - INFO - Executing task #1 on LDPlayer0
+2025-03-21 10:39:36,852 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 10:39:41,852 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-21 10:39:41,852 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:39:41,852 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-21 10:39:41,889 - INFO - Check output: running
+2025-03-21 10:39:41,889 - INFO - LD Player instance happy is already running
+2025-03-21 10:39:45,027 - INFO - Executing task #1 on happy
+2025-03-21 10:56:26,373 - INFO - Task #1 completed on LDPlayer0
+2025-03-21 10:56:28,375 - INFO - All tasks (1) completed for LDPlayer0
+2025-03-21 10:56:28,375 - INFO - Closing LD Player instance: LDPlayer0
+2025-03-21 10:56:28,375 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "LDPlayer0"
+2025-03-21 10:56:33,463 - INFO - Post-quit check output: stop
+2025-03-21 10:56:33,464 - INFO - LD Player instance LDPlayer0 successfully closed
+2025-03-21 10:56:47,769 - INFO - Processing task for device: raushan, ID: Rekha Kumari, Serial: emulator-5558
+2025-03-21 10:56:47,770 - INFO - Attempt 1/3 to open LD Player instance raushan
+2025-03-21 10:56:47,770 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:56:47,770 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan"
+2025-03-21 10:56:47,804 - INFO - Check output: stop
+2025-03-21 10:56:47,804 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "raushan"
+2025-03-21 10:56:47,872 - INFO - Waiting for raushan to initialize... (1/20)
+2025-03-21 10:56:52,873 - ERROR - Error opening LD Player instance raushan: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 10:56:57,874 - INFO - Attempt 2/3 to open LD Player instance raushan
+2025-03-21 10:56:57,874 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:56:57,874 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan"
+2025-03-21 10:56:57,908 - INFO - Check output: running
+2025-03-21 10:56:57,908 - INFO - LD Player instance raushan is already running
+2025-03-21 10:57:01,051 - INFO - Executing task #1 on raushan
+2025-03-21 10:58:03,073 - INFO - Task #1 completed on happy
+2025-03-21 10:58:05,074 - INFO - All tasks (1) completed for happy
+2025-03-21 10:58:05,074 - INFO - Closing LD Player instance: happy
+2025-03-21 10:58:05,074 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "happy"
+2025-03-21 10:58:10,148 - INFO - Post-quit check output: stop
+2025-03-21 10:58:10,148 - INFO - LD Player instance happy successfully closed
+2025-03-21 10:58:33,824 - INFO - Processing task for device: raushan1, ID: Puja Ji, Serial: emulator-5560
+2025-03-21 10:58:33,825 - INFO - Attempt 1/3 to open LD Player instance raushan1
+2025-03-21 10:58:33,825 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:58:33,825 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan1"
+2025-03-21 10:58:33,858 - INFO - Check output: stop
+2025-03-21 10:58:33,859 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "raushan1"
+2025-03-21 10:58:33,928 - INFO - Waiting for raushan1 to initialize... (1/20)
+2025-03-21 10:58:38,929 - ERROR - Error opening LD Player instance raushan1: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 10:58:43,929 - INFO - Attempt 2/3 to open LD Player instance raushan1
+2025-03-21 10:58:43,929 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 10:58:43,929 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan1"
+2025-03-21 10:58:43,962 - INFO - Check output: running
+2025-03-21 10:58:43,963 - INFO - LD Player instance raushan1 is already running
+2025-03-21 10:58:45,056 - INFO - Executing task #1 on raushan1
+2025-03-21 11:08:12,755 - INFO - Task #1 completed on raushan1
+2025-03-21 11:08:14,756 - INFO - All tasks (1) completed for raushan1
+2025-03-21 11:08:14,756 - INFO - Closing LD Player instance: raushan1
+2025-03-21 11:08:14,756 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "raushan1"
+2025-03-21 11:08:19,822 - INFO - Post-quit check output: stop
+2025-03-21 11:08:19,822 - INFO - LD Player instance raushan1 successfully closed
+2025-03-21 11:08:23,801 - INFO - Task #1 completed on raushan
+2025-03-21 11:08:25,802 - INFO - All tasks (1) completed for raushan
+2025-03-21 11:08:25,802 - INFO - Closing LD Player instance: raushan
+2025-03-21 11:08:25,802 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "raushan"
+2025-03-21 11:08:30,868 - INFO - Post-quit check output: stop
+2025-03-21 11:08:30,868 - INFO - LD Player instance raushan successfully closed
+2025-03-21 19:21:46,677 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-21 19:21:46,680 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-21 19:21:46,681 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 19:21:46,681 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 19:21:46,713 - INFO - Check output: stop
+2025-03-21 19:21:46,713 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-21 19:21:46,781 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-21 19:21:51,782 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 19:21:53,032 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-21 19:21:53,032 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-21 19:21:53,032 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 19:21:53,032 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-21 19:21:53,068 - INFO - Check output: stop
+2025-03-21 19:21:53,068 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-21 19:21:53,144 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-21 19:21:56,782 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-21 19:21:56,782 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 19:21:56,782 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 19:21:56,817 - INFO - Check output: running
+2025-03-21 19:21:56,818 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-21 19:21:56,889 - INFO - Executing task #1 on LDPlayer0
+2025-03-21 19:21:58,144 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 19:22:03,145 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-21 19:22:03,145 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 19:22:03,145 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-21 19:22:03,183 - INFO - Check output: running
+2025-03-21 19:22:03,183 - INFO - LD Player instance happy is already running
+2025-03-21 19:22:05,297 - INFO - Executing task #1 on happy
+2025-03-21 19:39:36,802 - INFO - Task #1 completed on LDPlayer0
+2025-03-21 19:39:38,803 - INFO - All tasks (1) completed for LDPlayer0
+2025-03-21 19:39:38,803 - INFO - Closing LD Player instance: LDPlayer0
+2025-03-21 19:39:38,803 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "LDPlayer0"
+2025-03-21 19:39:43,888 - INFO - Post-quit check output: stop
+2025-03-21 19:39:43,888 - INFO - LD Player instance LDPlayer0 successfully closed
+2025-03-21 19:39:58,627 - INFO - Processing task for device: raushan, ID: Rekha Kumari, Serial: emulator-5558
+2025-03-21 19:39:58,627 - INFO - Attempt 1/3 to open LD Player instance raushan
+2025-03-21 19:39:58,627 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 19:39:58,627 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan"
+2025-03-21 19:39:58,659 - INFO - Check output: stop
+2025-03-21 19:39:58,659 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "raushan"
+2025-03-21 19:39:58,728 - INFO - Waiting for raushan to initialize... (1/20)
+2025-03-21 19:40:03,728 - ERROR - Error opening LD Player instance raushan: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 19:40:08,729 - INFO - Attempt 2/3 to open LD Player instance raushan
+2025-03-21 19:40:08,729 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 19:40:08,729 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan"
+2025-03-21 19:40:08,761 - INFO - Check output: running
+2025-03-21 19:40:08,762 - INFO - LD Player instance raushan is already running
+2025-03-21 19:40:08,831 - INFO - Executing task #1 on raushan
+2025-03-21 19:40:13,157 - INFO - Task #1 completed on happy
+2025-03-21 19:40:15,158 - INFO - All tasks (1) completed for happy
+2025-03-21 19:40:15,158 - INFO - Closing LD Player instance: happy
+2025-03-21 19:40:15,158 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "happy"
+2025-03-21 19:40:20,227 - INFO - Post-quit check output: stop
+2025-03-21 19:40:20,227 - INFO - LD Player instance happy successfully closed
+2025-03-21 19:40:35,275 - INFO - Processing task for device: raushan1, ID: Puja Ji, Serial: emulator-5560
+2025-03-21 19:40:35,276 - INFO - Attempt 1/3 to open LD Player instance raushan1
+2025-03-21 19:40:35,276 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 19:40:35,276 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan1"
+2025-03-21 19:40:35,310 - INFO - Check output: stop
+2025-03-21 19:40:35,310 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "raushan1"
+2025-03-21 19:40:35,385 - INFO - Waiting for raushan1 to initialize... (1/20)
+2025-03-21 19:40:40,386 - ERROR - Error opening LD Player instance raushan1: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 19:40:45,387 - INFO - Attempt 2/3 to open LD Player instance raushan1
+2025-03-21 19:40:45,387 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 19:40:45,387 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan1"
+2025-03-21 19:40:45,420 - INFO - Check output: running
+2025-03-21 19:40:45,420 - INFO - LD Player instance raushan1 is already running
+2025-03-21 19:40:46,505 - INFO - Executing task #1 on raushan1
+2025-03-21 19:49:45,835 - INFO - Task #1 completed on raushan
+2025-03-21 19:49:47,836 - INFO - All tasks (1) completed for raushan
+2025-03-21 19:49:47,836 - INFO - Closing LD Player instance: raushan
+2025-03-21 19:49:47,836 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "raushan"
+2025-03-21 19:49:52,899 - INFO - Post-quit check output: stop
+2025-03-21 19:49:52,899 - INFO - LD Player instance raushan successfully closed
+2025-03-21 19:50:11,173 - INFO - Task #1 completed on raushan1
+2025-03-21 19:50:13,174 - INFO - All tasks (1) completed for raushan1
+2025-03-21 19:50:13,174 - INFO - Closing LD Player instance: raushan1
+2025-03-21 19:50:13,174 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "raushan1"
+2025-03-21 19:50:18,237 - INFO - Post-quit check output: stop
+2025-03-21 19:50:18,238 - INFO - LD Player instance raushan1 successfully closed
+2025-03-21 23:48:49,249 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-21 23:48:49,250 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-21 23:48:49,250 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 23:48:49,250 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 23:48:49,283 - INFO - Check output: stop
+2025-03-21 23:48:49,283 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-21 23:48:49,354 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-21 23:48:54,355 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 23:48:55,943 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-21 23:48:55,943 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-21 23:48:55,944 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 23:48:55,944 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-21 23:48:55,982 - INFO - Check output: stop
+2025-03-21 23:48:55,982 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-21 23:48:56,065 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-21 23:48:59,356 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-21 23:48:59,356 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 23:48:59,356 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-21 23:48:59,395 - INFO - Check output: running
+2025-03-21 23:48:59,395 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-21 23:49:01,066 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-21 23:49:04,624 - INFO - Executing task #1 on LDPlayer0
+2025-03-21 23:49:06,068 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-21 23:49:06,069 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-21 23:49:06,069 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-21 23:49:06,106 - INFO - Check output: running
+2025-03-21 23:49:06,106 - INFO - LD Player instance happy is already running
+2025-03-21 23:49:10,274 - INFO - Executing task #1 on happy
+2025-03-21 23:49:22,974 - WARNING - dump hierarchy is empty with no children, retrying in 1 seconds...
+2025-03-21 23:49:24,029 - WARNING - dump hierarchy is empty with no children, retrying in 1 seconds...
+2025-03-21 23:49:25,193 - WARNING - dump empty, return empty xml
+2025-03-22 00:06:29,705 - INFO - Task #1 completed on LDPlayer0
+2025-03-22 00:06:31,706 - INFO - All tasks (1) completed for LDPlayer0
+2025-03-22 00:06:31,706 - INFO - Closing LD Player instance: LDPlayer0
+2025-03-22 00:06:31,706 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "LDPlayer0"
+2025-03-22 00:06:36,770 - INFO - Post-quit check output: stop
+2025-03-22 00:06:36,770 - INFO - LD Player instance LDPlayer0 successfully closed
+2025-03-22 00:06:51,150 - INFO - Processing task for device: raushan, ID: Rekha Kumari, Serial: emulator-5558
+2025-03-22 00:06:51,151 - INFO - Attempt 1/3 to open LD Player instance raushan
+2025-03-22 00:06:51,151 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-22 00:06:51,151 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan"
+2025-03-22 00:06:51,184 - INFO - Check output: stop
+2025-03-22 00:06:51,185 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "raushan"
+2025-03-22 00:06:51,254 - INFO - Waiting for raushan to initialize... (1/20)
+2025-03-22 00:06:56,255 - ERROR - Error opening LD Player instance raushan: 'CompletedProcess' object has no attribute 'poll'
+2025-03-22 00:07:01,256 - INFO - Attempt 2/3 to open LD Player instance raushan
+2025-03-22 00:07:01,256 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-22 00:07:01,256 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan"
+2025-03-22 00:07:01,295 - INFO - Check output: running
+2025-03-22 00:07:01,295 - INFO - LD Player instance raushan is already running
+2025-03-22 00:07:01,471 - INFO - Task #1 completed on happy
+2025-03-22 00:07:02,415 - INFO - Executing task #1 on raushan
+2025-03-22 00:07:03,472 - INFO - All tasks (1) completed for happy
+2025-03-22 00:07:03,472 - INFO - Closing LD Player instance: happy
+2025-03-22 00:07:03,472 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "happy"
+2025-03-22 00:07:08,550 - INFO - Post-quit check output: stop
+2025-03-22 00:07:08,550 - INFO - LD Player instance happy successfully closed
+2025-03-22 00:07:27,363 - INFO - Processing task for device: raushan1, ID: Puja Ji, Serial: emulator-5560
+2025-03-22 00:07:27,363 - INFO - Attempt 1/3 to open LD Player instance raushan1
+2025-03-22 00:07:27,363 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-22 00:07:27,364 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan1"
+2025-03-22 00:07:27,398 - INFO - Check output: stop
+2025-03-22 00:07:27,398 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "raushan1"
+2025-03-22 00:07:27,473 - INFO - Waiting for raushan1 to initialize... (1/20)
+2025-03-22 00:07:32,474 - ERROR - Error opening LD Player instance raushan1: 'CompletedProcess' object has no attribute 'poll'
+2025-03-22 00:07:37,474 - INFO - Attempt 2/3 to open LD Player instance raushan1
+2025-03-22 00:07:37,474 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-22 00:07:37,474 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan1"
+2025-03-22 00:07:37,511 - INFO - Check output: running
+2025-03-22 00:07:37,511 - INFO - LD Player instance raushan1 is already running
+2025-03-22 00:07:42,702 - INFO - Executing task #1 on raushan1
+2025-03-22 00:07:57,321 - WARNING - dump hierarchy is empty with no children, retrying in 1 seconds...
+2025-03-22 00:13:37,902 - INFO - Task #1 completed on raushan1
+2025-03-22 00:13:39,903 - INFO - All tasks (1) completed for raushan1
+2025-03-22 00:13:39,903 - INFO - Closing LD Player instance: raushan1
+2025-03-22 00:13:39,903 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "raushan1"
+2025-03-22 00:13:44,980 - INFO - Post-quit check output: stop
+2025-03-22 00:13:44,980 - INFO - LD Player instance raushan1 successfully closed
+2025-03-22 00:16:31,832 - INFO - Task #1 completed on raushan
+2025-03-22 00:16:33,834 - INFO - All tasks (1) completed for raushan
+2025-03-22 00:16:33,834 - INFO - Closing LD Player instance: raushan
+2025-03-22 00:16:33,834 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "raushan"
+2025-03-22 00:16:38,908 - INFO - Post-quit check output: stop
+2025-03-22 00:16:38,910 - INFO - LD Player instance raushan successfully closed
+2025-03-22 19:18:45,985 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-22 19:18:45,985 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-22 19:18:45,985 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-22 19:18:45,986 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-22 19:18:46,026 - INFO - Check output: stop
+2025-03-22 19:18:46,026 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-22 19:18:46,282 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-22 19:18:51,283 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-22 19:18:52,387 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-22 19:18:52,388 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-22 19:18:52,388 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-22 19:18:52,388 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-22 19:18:52,430 - INFO - Check output: stop
+2025-03-22 19:18:52,430 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-22 19:18:52,509 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-22 19:18:56,283 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-22 19:18:56,283 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-22 19:18:56,283 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-22 19:18:56,334 - INFO - Check output: running
+2025-03-22 19:18:56,334 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-22 19:18:57,510 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-22 19:19:01,618 - INFO - Executing task #1 on LDPlayer0
+2025-03-22 19:19:02,511 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-22 19:19:02,511 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-22 19:19:02,511 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-22 19:19:02,557 - INFO - Check output: running
+2025-03-22 19:19:02,557 - INFO - LD Player instance happy is already running
+2025-03-22 19:19:08,787 - INFO - Executing task #1 on happy
+2025-03-23 01:20:34,834 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-23 01:20:34,837 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-23 01:20:34,837 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-23 01:20:34,837 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-23 01:20:34,875 - INFO - Check output: stop
+2025-03-23 01:20:34,875 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-23 01:20:34,964 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-23 01:20:36,263 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-23 01:20:36,264 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-23 01:20:36,264 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-23 01:20:36,264 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-23 01:20:36,303 - INFO - Check output: stop
+2025-03-23 01:20:36,303 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-23 01:20:36,387 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-23 01:20:39,965 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-23 01:20:41,388 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-23 01:20:44,966 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-23 01:20:44,966 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-23 01:20:44,966 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-23 01:20:45,006 - INFO - Check output: running
+2025-03-23 01:20:45,006 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-23 01:20:45,106 - INFO - Executing task #1 on LDPlayer0
+2025-03-23 01:20:46,389 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-23 01:20:46,389 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-23 01:20:46,389 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-23 01:20:46,425 - INFO - Check output: running
+2025-03-23 01:20:46,426 - INFO - LD Player instance happy is already running
+2025-03-23 01:20:47,522 - INFO - Executing task #1 on happy
+2025-03-23 01:38:42,780 - INFO - Task #1 completed on LDPlayer0
+2025-03-23 01:38:44,781 - INFO - All tasks (1) completed for LDPlayer0
+2025-03-23 01:38:44,781 - INFO - Closing LD Player instance: LDPlayer0
+2025-03-23 01:38:44,781 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "LDPlayer0"
+2025-03-23 01:38:48,155 - INFO - Task #1 completed on happy
+2025-03-23 01:38:49,848 - INFO - Post-quit check output: stop
+2025-03-23 01:38:49,849 - INFO - LD Player instance LDPlayer0 successfully closed
+2025-03-23 01:38:50,157 - INFO - All tasks (1) completed for happy
+2025-03-23 01:38:50,157 - INFO - Closing LD Player instance: happy
+2025-03-23 01:38:50,157 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "happy"
+2025-03-23 01:38:55,222 - INFO - Post-quit check output: stop
+2025-03-23 01:38:55,222 - INFO - LD Player instance happy successfully closed
+2025-03-23 01:39:11,844 - INFO - Processing task for device: raushan, ID: Rekha Kumari, Serial: emulator-5558
+2025-03-23 01:39:11,844 - INFO - Attempt 1/3 to open LD Player instance raushan
+2025-03-23 01:39:11,844 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-23 01:39:11,845 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan"
+2025-03-23 01:39:11,878 - INFO - Check output: stop
+2025-03-23 01:39:11,878 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "raushan"
+2025-03-23 01:39:11,949 - INFO - Waiting for raushan to initialize... (1/20)
+2025-03-23 01:39:16,950 - ERROR - Error opening LD Player instance raushan: 'CompletedProcess' object has no attribute 'poll'
+2025-03-23 01:39:18,142 - INFO - Processing task for device: raushan1, ID: Puja Ji, Serial: emulator-5560
+2025-03-23 01:39:18,142 - INFO - Attempt 1/3 to open LD Player instance raushan1
+2025-03-23 01:39:18,143 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-23 01:39:18,143 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan1"
+2025-03-23 01:39:18,179 - INFO - Check output: stop
+2025-03-23 01:39:18,179 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "raushan1"
+2025-03-23 01:39:18,258 - INFO - Waiting for raushan1 to initialize... (1/20)
+2025-03-23 01:39:21,951 - INFO - Attempt 2/3 to open LD Player instance raushan
+2025-03-23 01:39:21,951 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-23 01:39:21,951 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan"
+2025-03-23 01:39:21,988 - INFO - Check output: running
+2025-03-23 01:39:21,989 - INFO - LD Player instance raushan is already running
+2025-03-23 01:39:23,259 - ERROR - Error opening LD Player instance raushan1: 'CompletedProcess' object has no attribute 'poll'
+2025-03-23 01:39:25,144 - INFO - Executing task #1 on raushan
+2025-03-23 01:39:28,259 - INFO - Attempt 2/3 to open LD Player instance raushan1
+2025-03-23 01:39:28,259 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-23 01:39:28,259 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan1"
+2025-03-23 01:39:28,306 - INFO - Check output: running
+2025-03-23 01:39:28,307 - INFO - LD Player instance raushan1 is already running
+2025-03-23 01:39:30,439 - INFO - Executing task #1 on raushan1
+2025-03-26 02:43:41,329 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-26 02:43:41,331 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-26 02:43:41,331 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 02:43:41,331 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 02:43:41,364 - INFO - Check output: stop
+2025-03-26 02:43:41,364 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-26 02:43:41,670 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-26 02:43:46,343 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-26 02:43:46,344 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-26 02:43:46,344 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 02:43:46,344 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 02:43:46,380 - INFO - Check output: stop
+2025-03-26 02:43:46,380 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-26 02:43:46,455 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-26 02:43:46,671 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 02:43:51,456 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 02:43:51,672 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-26 02:43:51,672 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 02:43:51,672 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 02:43:51,710 - INFO - Check output: running
+2025-03-26 02:43:51,710 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-26 02:43:55,015 - INFO - Executing task #1 on LDPlayer0
+2025-03-26 02:43:56,456 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-26 02:43:56,456 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 02:43:56,456 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 02:43:56,493 - INFO - Check output: running
+2025-03-26 02:43:56,493 - INFO - LD Player instance happy is already running
+2025-03-26 02:44:08,399 - WARNING - dump hierarchy is empty with no children, retrying in 1 seconds...
+2025-03-26 02:44:09,425 - WARNING - dump hierarchy is empty with no children, retrying in 1 seconds...
+2025-03-26 02:44:10,463 - WARNING - dump empty, return empty xml
+2025-03-26 02:44:15,972 - WARNING - dump hierarchy is empty with no children, retrying in 1 seconds...
+2025-03-26 04:15:08,320 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-26 04:15:08,320 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-26 04:15:08,320 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:15:08,320 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 04:15:08,353 - INFO - Check output: stop
+2025-03-26 04:15:08,353 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-26 04:15:08,647 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-26 04:15:13,327 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-26 04:15:13,328 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-26 04:15:13,328 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:15:13,328 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 04:15:13,362 - INFO - Check output: stop
+2025-03-26 04:15:13,362 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-26 04:15:13,432 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-26 04:15:13,647 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 04:15:38,346 - INFO - Processing task for device: raushan, ID: Rekha Kumari, Serial: emulator-5558
+2025-03-26 04:15:38,346 - INFO - Attempt 1/3 to open LD Player instance raushan
+2025-03-26 04:15:38,346 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:15:38,347 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan"
+2025-03-26 04:15:38,393 - INFO - Check output: stop
+2025-03-26 04:15:38,393 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "raushan"
+2025-03-26 04:15:38,469 - INFO - Waiting for raushan to initialize... (1/20)
+2025-03-26 04:15:43,471 - ERROR - Error opening LD Player instance raushan: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 04:15:48,472 - INFO - Attempt 2/3 to open LD Player instance raushan
+2025-03-26 04:15:48,472 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:15:48,472 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan"
+2025-03-26 04:15:48,508 - INFO - Check output: running
+2025-03-26 04:15:48,508 - INFO - LD Player instance raushan is already running
+2025-03-26 04:15:50,694 - INFO - Executing task #1 on raushan
+2025-03-26 04:18:40,973 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-26 04:18:40,973 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-26 04:18:40,973 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:18:40,974 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 04:18:41,007 - INFO - Check output: stop
+2025-03-26 04:18:41,007 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-26 04:18:41,075 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-26 04:18:45,981 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-26 04:18:45,981 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-26 04:18:45,981 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:18:45,982 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 04:18:46,019 - INFO - Check output: stop
+2025-03-26 04:18:46,019 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-26 04:18:46,076 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 04:18:46,090 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-26 04:18:51,077 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-26 04:18:51,077 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:18:51,077 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 04:18:51,091 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 04:18:51,130 - INFO - Check output: running
+2025-03-26 04:18:51,131 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-26 04:18:52,177 - INFO - Executing task #1 on LDPlayer0
+2025-03-26 04:18:56,092 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-26 04:18:56,092 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:18:56,092 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 04:18:56,129 - INFO - Check output: running
+2025-03-26 04:18:56,129 - INFO - LD Player instance happy is already running
+2025-03-26 04:18:57,171 - INFO - Executing task #1 on happy
+2025-03-26 04:19:56,239 - ERROR - Error executing task on LDPlayer0: No Android device/emulator found. Please connect a device/emulator.
+2025-03-26 04:19:58,241 - INFO - All tasks (1) completed for LDPlayer0
+2025-03-26 04:19:58,241 - INFO - Closing LD Player instance: LDPlayer0
+2025-03-26 04:19:58,242 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "LDPlayer0"
+2025-03-26 04:19:59,500 - ERROR - Error executing task on happy: No Android device/emulator found. Please connect a device/emulator.
+2025-03-26 04:20:01,501 - INFO - All tasks (1) completed for happy
+2025-03-26 04:20:01,501 - INFO - Closing LD Player instance: happy
+2025-03-26 04:20:01,501 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "happy"
+2025-03-26 04:20:03,342 - INFO - Post-quit check output: stop
+2025-03-26 04:20:03,342 - INFO - LD Player instance LDPlayer0 successfully closed
+2025-03-26 04:20:06,587 - INFO - Post-quit check output: stop
+2025-03-26 04:20:06,587 - INFO - LD Player instance happy successfully closed
+2025-03-26 04:22:51,203 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-26 04:22:51,204 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-26 04:22:51,204 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:22:51,204 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 04:22:51,238 - INFO - Check output: stop
+2025-03-26 04:22:51,238 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-26 04:22:51,308 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-26 04:22:56,211 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-26 04:22:56,212 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-26 04:22:56,212 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:22:56,212 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 04:22:56,263 - INFO - Check output: stop
+2025-03-26 04:22:56,263 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-26 04:22:56,309 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 04:22:56,336 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-26 04:23:01,309 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-26 04:23:01,309 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:23:01,309 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 04:23:01,337 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 04:23:01,345 - INFO - Check output: running
+2025-03-26 04:23:01,345 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-26 04:23:01,367 - INFO - Executing task #1 on LDPlayer0
+2025-03-26 04:23:06,338 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-26 04:23:06,338 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:23:06,339 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 04:23:06,388 - INFO - Check output: running
+2025-03-26 04:23:06,388 - INFO - LD Player instance happy is already running
+2025-03-26 04:23:07,437 - INFO - Executing task #1 on happy
+2025-03-26 04:23:44,231 - ERROR - Error executing task on LDPlayer0: No Android device/emulator found. Please connect a device/emulator.
+2025-03-26 04:23:46,232 - INFO - All tasks (1) completed for LDPlayer0
+2025-03-26 04:23:46,232 - INFO - Closing LD Player instance: LDPlayer0
+2025-03-26 04:23:46,232 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "LDPlayer0"
+2025-03-26 04:23:51,036 - ERROR - Error executing task on happy: No Android device/emulator found. Please connect a device/emulator.
+2025-03-26 04:23:51,326 - INFO - Post-quit check output: stop
+2025-03-26 04:23:51,326 - INFO - LD Player instance LDPlayer0 successfully closed
+2025-03-26 04:23:53,037 - INFO - All tasks (1) completed for happy
+2025-03-26 04:23:53,037 - INFO - Closing LD Player instance: happy
+2025-03-26 04:23:53,038 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "happy"
+2025-03-26 04:23:58,103 - INFO - Post-quit check output: stop
+2025-03-26 04:23:58,104 - INFO - LD Player instance happy successfully closed
+2025-03-26 04:25:41,989 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-26 04:25:41,991 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-26 04:25:41,991 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:25:41,991 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 04:25:42,024 - INFO - Check output: stop
+2025-03-26 04:25:42,024 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-26 04:25:42,093 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-26 04:25:47,009 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-26 04:25:47,009 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-26 04:25:47,009 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:25:47,009 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 04:25:47,049 - INFO - Check output: stop
+2025-03-26 04:25:47,049 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-26 04:25:47,095 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 04:25:47,132 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-26 04:25:52,095 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-26 04:25:52,095 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:25:52,095 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 04:25:52,133 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 04:25:52,135 - INFO - Check output: running
+2025-03-26 04:25:52,135 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-26 04:25:54,194 - INFO - Executing task #1 on LDPlayer0
+2025-03-26 04:25:57,134 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-26 04:25:57,134 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:25:57,134 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 04:25:57,168 - INFO - Check output: running
+2025-03-26 04:25:57,168 - INFO - LD Player instance happy is already running
+2025-03-26 04:25:58,208 - INFO - Executing task #1 on happy
+2025-03-26 04:26:35,805 - ERROR - Error executing task on LDPlayer0: No Android device/emulator found. Please connect a device/emulator.
+2025-03-26 04:26:37,806 - INFO - All tasks (1) completed for LDPlayer0
+2025-03-26 04:26:37,806 - INFO - Closing LD Player instance: LDPlayer0
+2025-03-26 04:26:37,806 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "LDPlayer0"
+2025-03-26 04:26:42,867 - INFO - Post-quit check output: stop
+2025-03-26 04:26:42,867 - INFO - LD Player instance LDPlayer0 successfully closed
+2025-03-26 04:26:43,638 - ERROR - Error executing task on happy: No Android device/emulator found. Please connect a device/emulator.
+2025-03-26 04:26:45,639 - INFO - All tasks (1) completed for happy
+2025-03-26 04:26:45,639 - INFO - Closing LD Player instance: happy
+2025-03-26 04:26:45,639 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "happy"
+2025-03-26 04:26:50,701 - INFO - Post-quit check output: stop
+2025-03-26 04:26:50,701 - INFO - LD Player instance happy successfully closed
+2025-03-26 04:27:39,621 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-26 04:27:39,622 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-26 04:27:39,622 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:27:39,622 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 04:27:39,655 - INFO - Check output: stop
+2025-03-26 04:27:39,655 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-26 04:27:39,725 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-26 04:27:44,631 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-26 04:27:44,631 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-26 04:27:44,631 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:27:44,632 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 04:27:44,667 - INFO - Check output: stop
+2025-03-26 04:27:44,667 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-26 04:27:44,727 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 04:27:44,741 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-26 04:27:49,727 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-26 04:27:49,727 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:27:49,727 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 04:27:49,742 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 04:27:49,764 - INFO - Check output: running
+2025-03-26 04:27:49,764 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-26 04:27:54,550 - INFO - Executing task #1 on LDPlayer0
+2025-03-26 04:27:54,744 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-26 04:27:54,744 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:27:54,747 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 04:27:54,788 - INFO - Check output: running
+2025-03-26 04:27:54,788 - INFO - LD Player instance happy is already running
+2025-03-26 04:27:55,835 - INFO - Executing task #1 on happy
+2025-03-26 04:41:18,951 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-26 04:41:18,951 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-26 04:41:18,951 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:41:18,952 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 04:41:18,986 - INFO - Check output: stop
+2025-03-26 04:41:18,986 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-26 04:41:19,059 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-26 04:41:23,960 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-26 04:41:23,960 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-26 04:41:23,960 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:41:23,961 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 04:41:23,997 - INFO - Check output: stop
+2025-03-26 04:41:23,997 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-26 04:41:24,059 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 04:41:24,073 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-26 04:41:29,060 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-26 04:41:29,060 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:41:29,060 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 04:41:29,074 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 04:41:29,106 - INFO - Check output: running
+2025-03-26 04:41:29,106 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-26 04:41:33,879 - INFO - Executing task #1 on LDPlayer0
+2025-03-26 04:41:34,075 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-26 04:41:34,075 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 04:41:34,075 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 04:41:34,122 - INFO - Check output: running
+2025-03-26 04:41:34,123 - INFO - LD Player instance happy is already running
+2025-03-26 04:41:34,154 - INFO - Executing task #1 on happy
+2025-03-26 05:42:22,233 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-26 05:42:22,233 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-26 05:42:22,233 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 05:42:22,233 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 05:42:22,268 - INFO - Check output: stop
+2025-03-26 05:42:22,269 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-26 05:42:22,339 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-26 05:42:27,263 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-26 05:42:27,263 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-26 05:42:27,264 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 05:42:27,264 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 05:42:27,301 - INFO - Check output: stop
+2025-03-26 05:42:27,302 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-26 05:42:27,339 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 05:42:27,378 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-26 05:42:32,340 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-26 05:42:32,340 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 05:42:32,340 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 05:42:32,378 - INFO - Check output: running
+2025-03-26 05:42:32,379 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-26 05:42:32,379 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 05:42:37,380 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-26 05:42:37,380 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 05:42:37,380 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 05:42:37,443 - INFO - Check output: running
+2025-03-26 05:42:37,443 - INFO - LD Player instance happy is already running
+2025-03-26 05:43:22,161 - INFO - Executing task #1 on LDPlayer0
+2025-03-26 05:43:22,161 - INFO - Executing task #1 on happy
+2025-03-26 05:44:02,428 - ERROR - Error executing task on happy: No Android device/emulator found. Please connect a device/emulator.
+2025-03-26 05:44:04,429 - INFO - All tasks (1) completed for happy
+2025-03-26 05:44:04,430 - INFO - Closing LD Player instance: happy
+2025-03-26 05:44:04,431 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "happy"
+2025-03-26 05:44:05,934 - ERROR - Error executing task on LDPlayer0: No Android device/emulator found. Please connect a device/emulator.
+2025-03-26 05:44:07,935 - INFO - All tasks (1) completed for LDPlayer0
+2025-03-26 05:44:07,935 - INFO - Closing LD Player instance: LDPlayer0
+2025-03-26 05:44:07,935 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "LDPlayer0"
+2025-03-26 05:44:09,521 - INFO - Post-quit check output: stop
+2025-03-26 05:44:09,521 - INFO - LD Player instance happy successfully closed
+2025-03-26 05:44:12,999 - INFO - Post-quit check output: stop
+2025-03-26 05:44:12,999 - INFO - LD Player instance LDPlayer0 successfully closed
+2025-03-26 05:44:22,276 - INFO - Processing task for device: raushan, ID: Rekha Kumari, Serial: emulator-5558
+2025-03-26 05:44:22,277 - INFO - Attempt 1/3 to open LD Player instance raushan
+2025-03-26 05:44:22,277 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 05:44:22,277 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan"
+2025-03-26 05:44:22,311 - INFO - Check output: stop
+2025-03-26 05:44:22,311 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "raushan"
+2025-03-26 05:44:22,380 - INFO - Waiting for raushan to initialize... (1/20)
+2025-03-26 05:44:27,381 - ERROR - Error opening LD Player instance raushan: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 05:44:32,382 - INFO - Attempt 2/3 to open LD Player instance raushan
+2025-03-26 05:44:32,382 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 05:44:32,382 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "raushan"
+2025-03-26 05:44:32,417 - INFO - Check output: running
+2025-03-26 05:44:32,417 - INFO - LD Player instance raushan is already running
+2025-03-26 05:44:33,456 - INFO - Executing task #1 on raushan
+2025-03-26 05:46:12,444 - ERROR - Error executing task on raushan: No Android device/emulator found. Please connect a device/emulator.
+2025-03-26 05:46:14,445 - INFO - All tasks (1) completed for raushan
+2025-03-26 05:46:14,445 - INFO - Closing LD Player instance: raushan
+2025-03-26 05:46:14,445 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "raushan"
+2025-03-26 05:46:19,512 - INFO - Post-quit check output: stop
+2025-03-26 05:46:19,513 - INFO - LD Player instance raushan successfully closed
+2025-03-26 05:46:34,733 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-26 05:46:34,734 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-26 05:46:34,734 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 05:46:34,734 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 05:46:34,767 - INFO - Check output: stop
+2025-03-26 05:46:34,767 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-26 05:46:34,836 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-26 05:46:39,740 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-26 05:46:39,740 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-26 05:46:39,740 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 05:46:39,740 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 05:46:39,785 - INFO - Check output: stop
+2025-03-26 05:46:39,786 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-26 05:46:39,837 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 05:46:39,864 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-26 05:46:44,837 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-26 05:46:44,837 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 05:46:44,837 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 05:46:44,866 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 05:46:44,875 - INFO - Check output: running
+2025-03-26 05:46:44,876 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-26 05:46:46,951 - INFO - Executing task #1 on LDPlayer0
+2025-03-26 05:46:49,866 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-26 05:46:49,866 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 05:46:49,866 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 05:46:49,904 - INFO - Check output: running
+2025-03-26 05:46:49,904 - INFO - LD Player instance happy is already running
+2025-03-26 05:46:49,927 - INFO - Executing task #1 on happy
+2025-03-26 05:47:46,381 - ERROR - Error executing task on LDPlayer0: No Android device/emulator found. Please connect a device/emulator.
+2025-03-26 05:47:48,382 - INFO - All tasks (1) completed for LDPlayer0
+2025-03-26 05:47:48,383 - INFO - Closing LD Player instance: LDPlayer0
+2025-03-26 05:47:48,383 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "LDPlayer0"
+2025-03-26 05:47:52,130 - ERROR - Error executing task on happy: No Android device/emulator found. Please connect a device/emulator.
+2025-03-26 05:47:53,489 - INFO - Post-quit check output: stop
+2025-03-26 05:47:53,489 - INFO - LD Player instance LDPlayer0 successfully closed
+2025-03-26 05:47:54,131 - INFO - All tasks (1) completed for happy
+2025-03-26 05:47:54,131 - INFO - Closing LD Player instance: happy
+2025-03-26 05:47:54,132 - INFO - Executing quit command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" quit --name "happy"
+2025-03-26 05:47:59,207 - INFO - Post-quit check output: stop
+2025-03-26 05:47:59,207 - INFO - LD Player instance happy successfully closed
+2025-03-26 06:18:17,814 - INFO - Processing task for device: LDPlayer0, ID: Kajal Kumari, Serial: emulator-5554
+2025-03-26 06:18:17,814 - INFO - Attempt 1/3 to open LD Player instance LDPlayer0
+2025-03-26 06:18:17,814 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 06:18:17,814 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 06:18:17,848 - INFO - Check output: stop
+2025-03-26 06:18:17,848 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "LDPlayer0"
+2025-03-26 06:18:17,919 - INFO - Waiting for LDPlayer0 to initialize... (1/20)
+2025-03-26 06:18:22,821 - INFO - Processing task for device: happy, ID: Akshita Kumari, Serial: emulator-5556
+2025-03-26 06:18:22,822 - INFO - Attempt 1/3 to open LD Player instance happy
+2025-03-26 06:18:22,822 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 06:18:22,822 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 06:18:22,859 - INFO - Check output: stop
+2025-03-26 06:18:22,859 - INFO - Executing launch command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" launch --name "happy"
+2025-03-26 06:18:22,919 - ERROR - Error opening LD Player instance LDPlayer0: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 06:18:22,934 - INFO - Waiting for happy to initialize... (1/20)
+2025-03-26 06:18:27,920 - INFO - Attempt 2/3 to open LD Player instance LDPlayer0
+2025-03-26 06:18:27,920 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 06:18:27,920 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "LDPlayer0"
+2025-03-26 06:18:27,934 - ERROR - Error opening LD Player instance happy: 'CompletedProcess' object has no attribute 'poll'
+2025-03-26 06:18:27,958 - INFO - Check output: running
+2025-03-26 06:18:27,958 - INFO - LD Player instance LDPlayer0 is already running
+2025-03-26 06:18:27,981 - INFO - Executing task #1 on LDPlayer0
+2025-03-26 06:18:32,935 - INFO - Attempt 2/3 to open LD Player instance happy
+2025-03-26 06:18:32,935 - INFO - Using ldconsole.exe at: E:/LDPlayer/LDPlayer9\ldconsole.exe
+2025-03-26 06:18:32,935 - INFO - Executing check command: "E:/LDPlayer/LDPlayer9\ldconsole.exe" isrunning --name "happy"
+2025-03-26 06:18:32,978 - INFO - Check output: running
+2025-03-26 06:18:32,978 - INFO - LD Player instance happy is already running
+2025-03-26 06:18:34,031 - INFO - Executing task #1 on happy

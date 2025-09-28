@@ -1,0 +1,738 @@
+2025-07-31 00:27:08,255 - DownloaderTaskCollector - INFO - setup_logger:46 - Logging initialized. Log file: e:\geni_flow_ui_v1.0\facebook_tool_0.8\geni\geni_backend_src\logs\downloader_20250731_002708.log
+2025-07-31 00:27:08,255 - DownloaderTaskCollector - INFO - __init__:55 - Initializing DownloaderTaskCollector
+2025-07-31 00:27:08,256 - DownloaderTaskCollector - DEBUG - __init__:72 - Set geni_setting_json_path: User_Data\Devices_Setting.json
+2025-07-31 00:27:08,257 - DownloaderTaskCollector - DEBUG - __init__:73 - Set page_manager_path: User_Data\Page_manager.json
+2025-07-31 00:27:08,257 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:414 - Collecting download tasks from JSON configuration
+2025-07-31 00:27:08,260 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:416 - Reading configuration from: User_Data\Page_manager.json
+2025-07-31 00:27:08,261 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:420 - Processing 7 ID entries
+2025-07-31 00:27:08,261 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:431 - Processing ID: Id_information.1
+2025-07-31 00:27:08,261 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:454 - ID Id_information.1 auto download: True
+2025-07-31 00:27:08,262 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:470 - ID Id_information.1 upload types - Reels: True, Video: False, Image: True, Story: False
+2025-07-31 00:27:08,262 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.1 reel configuration
+2025-07-31 00:27:08,262 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-07-31 00:27:08,262 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 00:27:08,262 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,262 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Youtube, Channel link: theartofwarrr
+2025-07-31 00:27:08,262 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 5
+2025-07-31 00:27:08,262 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 5
+2025-07-31 00:27:08,263 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 5
+2025-07-31 00:27:08,263 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 5 videos in folder: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel
+2025-07-31 00:27:08,263 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel
+2025-07-31 00:27:08,263 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 5
+2025-07-31 00:27:08,263 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel\Can a Stack of Bodies Stop a Bullet 👥_PRE03-wiSP8Vmk_POST.mp4
+2025-07-31 00:27:08,263 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel\Secret Agent Car Used in a Real Chase 🚙_PREG3VHQjdt3tw_POST.mp4
+2025-07-31 00:27:08,263 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel\Secret War Plans Hidden Inside a Soldier's Body ✉️_PRE2qeY8mZaFms_POST.mp4
+2025-07-31 00:27:08,264 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel\Why Soldier Blew Himself Up During WWII 😱_PREEb7uyaN-_g8_POST.mp4
+2025-07-31 00:27:08,264 - DownloaderTaskCollector - WARNING - check_files_in_folder:249 - Found only 4 files, but 5 were required
+2025-07-31 00:27:08,264 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 5 reel(s) to E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel
+2025-07-31 00:27:08,264 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('theartofwarrr', 'Youtube', 5, 'E:\\facebook_ld\\raushan\\Rekha Kumari\\Rekha Kumari_download_reel', 'reel', 'Jack Levi')
+2025-07-31 00:27:08,266 - DownloaderTaskCollector - INFO - is_valid_download_config:318 - Valid download config for reel: 5 items from Youtube
+2025-07-31 00:27:08,266 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:514 - Added valid reel download task for ID Id_information.1
+2025-07-31 00:27:08,266 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.1 video configuration
+2025-07-31 00:27:08,266 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-07-31 00:27:08,266 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 00:27:08,266 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,266 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-07-31 00:27:08,267 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.1 image configuration
+2025-07-31 00:27:08,267 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-07-31 00:27:08,267 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 00:27:08,267 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,267 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Pinterest, Channel link: Super Cars
+2025-07-31 00:27:08,267 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 9
+2025-07-31 00:27:08,267 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 9
+2025-07-31 00:27:08,267 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 9
+2025-07-31 00:27:08,267 - DownloaderTaskCollector - INFO - check_image_available_in_folder:266 - Checking for 9 images in folder: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img
+2025-07-31 00:27:08,267 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img
+2025-07-31 00:27:08,268 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.png', '*.jpeg', '*.jpg'], required count: 9
+2025-07-31 00:27:08,268 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_2_1753818426.jpg
+2025-07-31 00:27:08,268 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_3_1753818432.jpg
+2025-07-31 00:27:08,269 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_4_1753818437.jpg
+2025-07-31 00:27:08,269 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_5_1753818444.jpg
+2025-07-31 00:27:08,269 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_6_1753818450.jpg
+2025-07-31 00:27:08,269 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_7_1753818455.jpg
+2025-07-31 00:27:08,269 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_8_1753818460.jpg
+2025-07-31 00:27:08,269 - DownloaderTaskCollector - WARNING - check_files_in_folder:249 - Found only 7 files, but 9 were required
+2025-07-31 00:27:08,269 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 9 image(s) to E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img
+2025-07-31 00:27:08,269 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('Super Cars', 'Pinterest', 9, 'E:\\facebook_ld\\raushan\\Rekha Kumari\\Rekha Kumari_download_img', 'image', 'Jack Levi')
+2025-07-31 00:27:08,269 - DownloaderTaskCollector - INFO - is_valid_download_config:318 - Valid download config for image: 9 items from Pinterest
+2025-07-31 00:27:08,270 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:514 - Added valid image download task for ID Id_information.1
+2025-07-31 00:27:08,270 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.1 story configuration
+2025-07-31 00:27:08,270 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-07-31 00:27:08,270 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 00:27:08,270 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,270 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-07-31 00:27:08,270 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:520 - Processing 2 pages for ID Id_information.1
+2025-07-31 00:27:08,270 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:523 - Processing page: Page.1
+2025-07-31 00:27:08,270 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:533 - Page Page.1 upload types - Reels: True, Video: False, Image: True, Story: False
+2025-07-31 00:27:08,270 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:539 - Page Page.1 auto download: True
+2025-07-31 00:27:08,271 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 reel configuration
+2025-07-31 00:27:08,271 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-07-31 00:27:08,271 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 00:27:08,271 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,271 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Youtube, Channel link: rimreap3r
+2025-07-31 00:27:08,271 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 5
+2025-07-31 00:27:08,271 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 5
+2025-07-31 00:27:08,271 - DownloaderTaskCollector - DEBUG - process_content_type_config:370 - Schedule enabled with 2 entries
+2025-07-31 00:27:08,271 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 5
+2025-07-31 00:27:08,271 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 5 videos in folder: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_reel
+2025-07-31 00:27:08,271 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_reel
+2025-07-31 00:27:08,271 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 5
+2025-07-31 00:27:08,271 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_reel\Bro takes no time off 😭💀 #basketball_PREJhx76Ul14d0_POST.mp4
+2025-07-31 00:27:08,272 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_reel\I smiled at this 😂 (via @joybaby7380 on TikTok) #basketball_PREh3gshYqlJoo_POST.mp4
+2025-07-31 00:27:08,272 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_reel\This was so embarrassing ngl 😭 #basketball_PREsP4xjXUzldk_POST.mp4
+2025-07-31 00:27:08,272 - DownloaderTaskCollector - WARNING - check_files_in_folder:249 - Found only 3 files, but 5 were required
+2025-07-31 00:27:08,272 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 5 reel(s) to E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_reel
+2025-07-31 00:27:08,272 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('rimreap3r', 'Youtube', 5, 'E:\\facebook_ld\\raushan\\Anderhalveman\\Anderhalveman_download_reel', 'reel', 'Anderhalveman')
+2025-07-31 00:27:08,272 - DownloaderTaskCollector - INFO - is_valid_download_config:318 - Valid download config for reel: 5 items from Youtube
+2025-07-31 00:27:08,272 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:582 - Added valid reel download task for page Page.1
+2025-07-31 00:27:08,273 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 video configuration
+2025-07-31 00:27:08,273 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-07-31 00:27:08,273 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 00:27:08,273 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,273 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-07-31 00:27:08,273 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 image configuration
+2025-07-31 00:27:08,273 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-07-31 00:27:08,273 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 00:27:08,273 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,273 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Pinterest, Channel link: super Bikes
+2025-07-31 00:27:08,273 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 5
+2025-07-31 00:27:08,273 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 5
+2025-07-31 00:27:08,274 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 5
+2025-07-31 00:27:08,274 - DownloaderTaskCollector - INFO - check_image_available_in_folder:266 - Checking for 5 images in folder: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_img
+2025-07-31 00:27:08,274 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_img
+2025-07-31 00:27:08,274 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.png', '*.jpeg', '*.jpg'], required count: 5
+2025-07-31 00:27:08,274 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_img\pinterest_image_2_1753802356.jpg
+2025-07-31 00:27:08,274 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_img\pinterest_image_3_1753802361.jpg
+2025-07-31 00:27:08,274 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_img\pinterest_image_4_1753802367.jpg
+2025-07-31 00:27:08,274 - DownloaderTaskCollector - WARNING - check_files_in_folder:249 - Found only 3 files, but 5 were required
+2025-07-31 00:27:08,274 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 5 image(s) to E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_img
+2025-07-31 00:27:08,275 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('super Bikes', 'Pinterest', 5, 'E:\\facebook_ld\\raushan\\Anderhalveman\\Anderhalveman_download_img', 'image', 'Anderhalveman')
+2025-07-31 00:27:08,275 - DownloaderTaskCollector - INFO - is_valid_download_config:318 - Valid download config for image: 5 items from Pinterest
+2025-07-31 00:27:08,275 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:582 - Added valid image download task for page Page.1
+2025-07-31 00:27:08,275 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 story configuration
+2025-07-31 00:27:08,275 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-07-31 00:27:08,275 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 00:27:08,275 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,275 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-07-31 00:27:08,275 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:523 - Processing page: Page.2
+2025-07-31 00:27:08,275 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:533 - Page Page.2 upload types - Reels: True, Video: False, Image: False, Story: False
+2025-07-31 00:27:08,275 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:539 - Page Page.2 auto download: True
+2025-07-31 00:27:08,275 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 reel configuration
+2025-07-31 00:27:08,275 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-07-31 00:27:08,275 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 00:27:08,275 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,277 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Youtube, Channel link: LetsRomantic
+2025-07-31 00:27:08,277 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 1
+2025-07-31 00:27:08,277 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 1
+2025-07-31 00:27:08,277 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 1
+2025-07-31 00:27:08,277 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 1 videos in folder: E:\facebook_ld\raushan\Ahmad Agha\Ahmad Agha_download_reel
+2025-07-31 00:27:08,277 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\raushan\Ahmad Agha\Ahmad Agha_download_reel
+2025-07-31 00:27:08,277 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 1
+2025-07-31 00:27:08,278 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Ahmad Agha\Ahmad Agha_download_reel\girl its a sign 🤣😭😭 #music #funny #funnyvideo #familyhumor #memes #comedy #couple #love_PREjUb8DbUGwBQ_POST.mp4
+2025-07-31 00:27:08,278 - DownloaderTaskCollector - INFO - check_files_in_folder:252 - Found 1 files, which meets or exceeds the requirement of 1
+2025-07-31 00:27:08,278 - DownloaderTaskCollector - INFO - process_content_type_config:383 - Sufficient reel content already available in E:\facebook_ld\raushan\Ahmad Agha\Ahmad Agha_download_reel
+2025-07-31 00:27:08,278 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 video configuration
+2025-07-31 00:27:08,278 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-07-31 00:27:08,278 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 00:27:08,278 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,278 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-07-31 00:27:08,278 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 image configuration
+2025-07-31 00:27:08,279 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-07-31 00:27:08,279 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 00:27:08,279 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: False
+2025-07-31 00:27:08,279 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping image download: upload or auto-download not enabled
+2025-07-31 00:27:08,279 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 story configuration
+2025-07-31 00:27:08,279 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-07-31 00:27:08,279 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 00:27:08,279 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,279 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-07-31 00:27:08,279 - DownloaderTaskCollector - DEBUG - is_valid_instance_info:389 - Validating instance info: ('E:\\facebook_ld\\raushan\\chrome', 'Profile 1', 'E:\\facebook_ld\\raushan\\chrome\\reels_history.xlsx', 'Geni3')
+2025-07-31 00:27:08,279 - DownloaderTaskCollector - INFO - is_valid_instance_info:409 - Valid instance info: E:\facebook_ld\raushan\chrome, Profile 1
+2025-07-31 00:27:08,280 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:590 - Adding 4 tasks to queue for ID Id_information.1
+2025-07-31 00:27:08,280 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:431 - Processing ID: Id_information.2
+2025-07-31 00:27:08,280 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:454 - ID Id_information.2 auto download: True
+2025-07-31 00:27:08,280 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:470 - ID Id_information.2 upload types - Reels: True, Video: False, Image: True, Story: False
+2025-07-31 00:27:08,280 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.2 reel configuration
+2025-07-31 00:27:08,280 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-07-31 00:27:08,280 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 00:27:08,281 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,281 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Youtube, Channel link: theartofwarrr
+2025-07-31 00:27:08,281 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 6
+2025-07-31 00:27:08,281 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 6
+2025-07-31 00:27:08,281 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 6
+2025-07-31 00:27:08,281 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 6 videos in folder: E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_reel
+2025-07-31 00:27:08,281 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_reel
+2025-07-31 00:27:08,282 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 6
+2025-07-31 00:27:08,282 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_reel\Movie Scene Turns Into a Real Life Tragedy 🎥_PRE8fJ-dAALZl4_POST.mp4
+2025-07-31 00:27:08,282 - DownloaderTaskCollector - WARNING - check_files_in_folder:249 - Found only 1 files, but 6 were required
+2025-07-31 00:27:08,283 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 6 reel(s) to E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_reel
+2025-07-31 00:27:08,283 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('theartofwarrr', 'Youtube', 6, 'E:\\facebook_ld\\raushan1\\Puja Ji\\Puja Ji_download_reel', 'reel', 'Jayden Jayden')
+2025-07-31 00:27:08,283 - DownloaderTaskCollector - INFO - is_valid_download_config:318 - Valid download config for reel: 6 items from Youtube
+2025-07-31 00:27:08,284 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:514 - Added valid reel download task for ID Id_information.2
+2025-07-31 00:27:08,284 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.2 video configuration
+2025-07-31 00:27:08,284 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-07-31 00:27:08,284 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 00:27:08,284 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,284 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-07-31 00:27:08,284 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.2 image configuration
+2025-07-31 00:27:08,284 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-07-31 00:27:08,285 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 00:27:08,285 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,285 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Pinterest, Channel link: Super bikes
+2025-07-31 00:27:08,285 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 4
+2025-07-31 00:27:08,285 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 4
+2025-07-31 00:27:08,285 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 4
+2025-07-31 00:27:08,285 - DownloaderTaskCollector - INFO - check_image_available_in_folder:266 - Checking for 4 images in folder: E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_img
+2025-07-31 00:27:08,285 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_img
+2025-07-31 00:27:08,286 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.png', '*.jpeg', '*.jpg'], required count: 4
+2025-07-31 00:27:08,286 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_img\pinterest_image_3_1753898151.jpg
+2025-07-31 00:27:08,286 - DownloaderTaskCollector - WARNING - check_files_in_folder:249 - Found only 1 files, but 4 were required
+2025-07-31 00:27:08,286 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 4 image(s) to E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_img
+2025-07-31 00:27:08,286 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('Super bikes', 'Pinterest', 4, 'E:\\facebook_ld\\raushan1\\Puja Ji\\Puja Ji_download_img', 'image', 'Jayden Jayden')
+2025-07-31 00:27:08,287 - DownloaderTaskCollector - INFO - is_valid_download_config:318 - Valid download config for image: 4 items from Pinterest
+2025-07-31 00:27:08,287 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:514 - Added valid image download task for ID Id_information.2
+2025-07-31 00:27:08,287 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.2 story configuration
+2025-07-31 00:27:08,287 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-07-31 00:27:08,287 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 00:27:08,287 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,287 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-07-31 00:27:08,287 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:520 - Processing 1 pages for ID Id_information.2
+2025-07-31 00:27:08,287 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:523 - Processing page: Page.1
+2025-07-31 00:27:08,287 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:533 - Page Page.1 upload types - Reels: True, Video: False, Image: False, Story: False
+2025-07-31 00:27:08,287 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:539 - Page Page.1 auto download: True
+2025-07-31 00:27:08,288 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 reel configuration
+2025-07-31 00:27:08,288 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-07-31 00:27:08,288 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 00:27:08,288 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,288 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Youtube, Channel link: Knowledge3dart-p7m
+
+2025-07-31 00:27:08,288 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 1
+2025-07-31 00:27:08,288 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 1
+2025-07-31 00:27:08,288 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 1
+2025-07-31 00:27:08,288 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 1 videos in folder: E:\facebook_ld\raushan1\Confessionclubdepodcast\Confessionclubdepodcast_download_reel
+2025-07-31 00:27:08,289 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\raushan1\Confessionclubdepodcast\Confessionclubdepodcast_download_reel
+2025-07-31 00:27:08,289 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 1
+2025-07-31 00:27:08,289 - DownloaderTaskCollector - WARNING - check_files_in_folder:246 - No matching files found
+2025-07-31 00:27:08,289 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 1 reel(s) to E:\facebook_ld\raushan1\Confessionclubdepodcast\Confessionclubdepodcast_download_reel
+2025-07-31 00:27:08,289 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('Knowledge3dart-p7m\n', 'Youtube', 1, 'E:\\facebook_ld\\raushan1\\Confessionclubdepodcast\\Confessionclubdepodcast_download_reel', 'reel', 'Confessionclubdepodcast')
+2025-07-31 00:27:08,289 - DownloaderTaskCollector - INFO - is_valid_download_config:318 - Valid download config for reel: 1 items from Youtube
+2025-07-31 00:27:08,289 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:582 - Added valid reel download task for page Page.1
+2025-07-31 00:27:08,289 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 video configuration
+2025-07-31 00:27:08,289 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-07-31 00:27:08,290 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 00:27:08,290 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,290 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-07-31 00:27:08,290 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 image configuration
+2025-07-31 00:27:08,290 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-07-31 00:27:08,290 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 00:27:08,290 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: False
+2025-07-31 00:27:08,290 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping image download: upload or auto-download not enabled
+2025-07-31 00:27:08,290 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 story configuration
+2025-07-31 00:27:08,290 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-07-31 00:27:08,290 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 00:27:08,290 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,290 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-07-31 00:27:08,290 - DownloaderTaskCollector - DEBUG - is_valid_instance_info:389 - Validating instance info: ('E:/facebook_ld\\raushan1\\chrome', 'Profile 1', 'E:\\facebook_ld\\raushan1\\chrome\\reels_history.xlsx', 'Geni4')
+2025-07-31 00:27:08,292 - DownloaderTaskCollector - INFO - is_valid_instance_info:409 - Valid instance info: E:/facebook_ld\raushan1\chrome, Profile 1
+2025-07-31 00:27:08,292 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:590 - Adding 3 tasks to queue for ID Id_information.2
+2025-07-31 00:27:08,292 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:431 - Processing ID: Id_information.3
+2025-07-31 00:27:08,292 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:454 - ID Id_information.3 auto download: True
+2025-07-31 00:27:08,292 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:470 - ID Id_information.3 upload types - Reels: True, Video: False, Image: False, Story: False
+2025-07-31 00:27:08,292 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.3 reel configuration
+2025-07-31 00:27:08,292 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-07-31 00:27:08,293 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 00:27:08,293 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,293 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Youtube, Channel link: theartofwarrr
+2025-07-31 00:27:08,293 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 5
+2025-07-31 00:27:08,293 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 5
+2025-07-31 00:27:08,293 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 5
+2025-07-31 00:27:08,293 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 5 videos in folder: E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel
+2025-07-31 00:27:08,293 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel
+2025-07-31 00:27:08,293 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 5
+2025-07-31 00:27:08,294 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel\How Did Dan Cooper Escape With $200,000 ✈️ 💣_PREbgyx2QWeEuc_POST.mp4
+2025-07-31 00:27:08,294 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel\How Sharp Pins Helped Soldiers 🪖_PREUjD-tAN50i4_POST.mp4
+2025-07-31 00:27:08,294 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel\How ＂Soldiers＂ Stole $24M 🤑_PREXYnsozwaLUY_POST.mp4
+2025-07-31 00:27:08,294 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel\Movie Scene Turns Into a Real Life Tragedy 🎥_PRE8fJ-dAALZl4_POST.mp4
+2025-07-31 00:27:08,294 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel\Why Soldier Blew Himself Up During WWII 😱_PREEb7uyaN-_g8_POST.mp4
+2025-07-31 00:27:08,294 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel\Why the Soviets Fired at Their Own Planes ✈️_PRECjZf6lO9mh8_POST.mp4
+2025-07-31 00:27:08,294 - DownloaderTaskCollector - INFO - check_files_in_folder:252 - Found 6 files, which meets or exceeds the requirement of 5
+2025-07-31 00:27:08,294 - DownloaderTaskCollector - INFO - process_content_type_config:383 - Sufficient reel content already available in E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel
+2025-07-31 00:27:08,294 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.3 video configuration
+2025-07-31 00:27:08,294 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-07-31 00:27:08,294 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 00:27:08,294 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,294 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-07-31 00:27:08,294 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.3 image configuration
+2025-07-31 00:27:08,296 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-07-31 00:27:08,296 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 00:27:08,296 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,296 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping image download: upload or auto-download not enabled
+2025-07-31 00:27:08,296 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.3 story configuration
+2025-07-31 00:27:08,296 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-07-31 00:27:08,296 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 00:27:08,297 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,297 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-07-31 00:27:08,297 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:520 - Processing 3 pages for ID Id_information.3
+2025-07-31 00:27:08,297 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:523 - Processing page: Page.1
+2025-07-31 00:27:08,297 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:533 - Page Page.1 upload types - Reels: True, Video: False, Image: False, Story: False
+2025-07-31 00:27:08,297 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:539 - Page Page.1 auto download: True
+2025-07-31 00:27:08,297 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 reel configuration
+2025-07-31 00:27:08,297 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-07-31 00:27:08,297 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 00:27:08,298 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,298 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Youtube, Channel link: chefItalianochannel
+2025-07-31 00:27:08,298 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 1
+2025-07-31 00:27:08,298 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 1
+2025-07-31 00:27:08,298 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 2
+2025-07-31 00:27:08,298 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 2 videos in folder: E:\facebook_ld\genni2\Milan-David\Milan-David_download_reel
+2025-07-31 00:27:08,298 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\genni2\Milan-David\Milan-David_download_reel
+2025-07-31 00:27:08,298 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 2
+2025-07-31 00:27:08,299 - DownloaderTaskCollector - WARNING - check_files_in_folder:246 - No matching files found
+2025-07-31 00:27:08,299 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 2 reel(s) to E:\facebook_ld\genni2\Milan-David\Milan-David_download_reel
+2025-07-31 00:27:08,299 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('chefItalianochannel', 'Youtube', 2, 'E:\\facebook_ld\\genni2\\Milan-David\\Milan-David_download_reel', 'reel', 'Milan-David')
+2025-07-31 00:27:08,299 - DownloaderTaskCollector - INFO - is_valid_download_config:318 - Valid download config for reel: 2 items from Youtube
+2025-07-31 00:27:08,299 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:582 - Added valid reel download task for page Page.1
+2025-07-31 00:27:08,299 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 video configuration
+2025-07-31 00:27:08,299 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-07-31 00:27:08,299 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 00:27:08,299 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,299 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-07-31 00:27:08,300 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 image configuration
+2025-07-31 00:27:08,300 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-07-31 00:27:08,300 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 00:27:08,300 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,300 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping image download: upload or auto-download not enabled
+2025-07-31 00:27:08,300 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 story configuration
+2025-07-31 00:27:08,300 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-07-31 00:27:08,300 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 00:27:08,300 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,300 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-07-31 00:27:08,300 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:523 - Processing page: Page.2
+2025-07-31 00:27:08,301 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:533 - Page Page.2 upload types - Reels: False, Video: False, Image: False, Story: False
+2025-07-31 00:27:08,301 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:539 - Page Page.2 auto download: False
+2025-07-31 00:27:08,301 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 reel configuration
+2025-07-31 00:27:08,301 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-07-31 00:27:08,301 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: False
+2025-07-31 00:27:08,301 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,301 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping reel download: upload or auto-download not enabled
+2025-07-31 00:27:08,301 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 video configuration
+2025-07-31 00:27:08,301 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-07-31 00:27:08,301 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: False
+2025-07-31 00:27:08,301 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,301 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-07-31 00:27:08,301 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 image configuration
+2025-07-31 00:27:08,301 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-07-31 00:27:08,301 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: False
+2025-07-31 00:27:08,301 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,301 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping image download: upload or auto-download not enabled
+2025-07-31 00:27:08,302 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 story configuration
+2025-07-31 00:27:08,302 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-07-31 00:27:08,302 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: False
+2025-07-31 00:27:08,302 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,302 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-07-31 00:27:08,302 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:523 - Processing page: Page.3
+2025-07-31 00:27:08,302 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:533 - Page Page.3 upload types - Reels: False, Video: False, Image: False, Story: False
+2025-07-31 00:27:08,302 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:539 - Page Page.3 auto download: False
+2025-07-31 00:27:08,303 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.3 reel configuration
+2025-07-31 00:27:08,303 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-07-31 00:27:08,303 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: False
+2025-07-31 00:27:08,303 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,303 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping reel download: upload or auto-download not enabled
+2025-07-31 00:27:08,303 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.3 video configuration
+2025-07-31 00:27:08,303 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-07-31 00:27:08,303 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: False
+2025-07-31 00:27:08,303 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,303 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-07-31 00:27:08,303 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.3 image configuration
+2025-07-31 00:27:08,303 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-07-31 00:27:08,304 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: False
+2025-07-31 00:27:08,304 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,304 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping image download: upload or auto-download not enabled
+2025-07-31 00:27:08,304 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.3 story configuration
+2025-07-31 00:27:08,304 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-07-31 00:27:08,304 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: False
+2025-07-31 00:27:08,304 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 00:27:08,304 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-07-31 00:27:08,304 - DownloaderTaskCollector - DEBUG - is_valid_instance_info:389 - Validating instance info: ('E:/facebook_ld/genni2/chrome', 'Profile 1', '', 'Geni2')
+2025-07-31 00:27:08,304 - DownloaderTaskCollector - WARNING - is_valid_instance_info:407 - Warning: Global history Excel path is missing
+2025-07-31 00:27:08,305 - DownloaderTaskCollector - INFO - is_valid_instance_info:409 - Valid instance info: E:/facebook_ld/genni2/chrome, Profile 1
+2025-07-31 00:27:08,305 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:590 - Adding 1 tasks to queue for ID Id_information.3
+2025-07-31 00:27:08,305 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:431 - Processing ID: Id_information.4
+2025-07-31 00:27:08,305 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:435 - Skipping ID Id_information.4: Upload not enabled
+2025-07-31 00:27:08,305 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:431 - Processing ID: Id_information.5
+2025-07-31 00:27:08,305 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:435 - Skipping ID Id_information.5: Upload not enabled
+2025-07-31 00:27:08,305 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:431 - Processing ID: Id_information.6
+2025-07-31 00:27:08,305 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:435 - Skipping ID Id_information.6: Upload not enabled
+2025-07-31 00:27:08,305 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:431 - Processing ID: Id_information.7
+2025-07-31 00:27:08,305 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:435 - Skipping ID Id_information.7: Upload not enabled
+2025-07-31 00:27:08,305 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:595 - Task collection summary: 7 IDs processed, 3 IDs with tasks, 8 total tasks
+2025-07-31 01:02:05,125 - DownloaderTaskCollector - INFO - setup_logger:46 - Logging initialized. Log file: e:\geni_flow_ui_v1.0\facebook_tool_0.8\geni\geni_backend_src\logs\downloader_20250731_010205.log
+2025-07-31 01:02:05,125 - DownloaderTaskCollector - INFO - __init__:55 - Initializing DownloaderTaskCollector
+2025-07-31 01:02:05,126 - DownloaderTaskCollector - DEBUG - __init__:72 - Set geni_setting_json_path: User_Data\Devices_Setting.json
+2025-07-31 01:02:05,126 - DownloaderTaskCollector - DEBUG - __init__:73 - Set page_manager_path: User_Data\Page_manager.json
+2025-07-31 01:02:05,126 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:414 - Collecting download tasks from JSON configuration
+2025-07-31 01:02:05,129 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:416 - Reading configuration from: User_Data\Page_manager.json
+2025-07-31 01:02:05,131 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:420 - Processing 7 ID entries
+2025-07-31 01:02:05,131 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:431 - Processing ID: Id_information.1
+2025-07-31 01:02:05,131 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:454 - ID Id_information.1 auto download: True
+2025-07-31 01:02:05,131 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:470 - ID Id_information.1 upload types - Reels: True, Video: False, Image: True, Story: False
+2025-07-31 01:02:05,131 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.1 reel configuration
+2025-07-31 01:02:05,132 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-07-31 01:02:05,132 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 01:02:05,132 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,132 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Youtube, Channel link: theartofwarrr
+2025-07-31 01:02:05,132 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 5
+2025-07-31 01:02:05,132 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 5
+2025-07-31 01:02:05,133 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 5
+2025-07-31 01:02:05,133 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 5 videos in folder: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel
+2025-07-31 01:02:05,133 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel
+2025-07-31 01:02:05,133 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 5
+2025-07-31 01:02:05,134 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel\A Doll Stuffed With TNT 🧨_PREtbBtSt4ZubQ_POST.mp4
+2025-07-31 01:02:05,134 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel\Can a Stack of Bodies Stop a Bullet 👥_PRE03-wiSP8Vmk_POST.mp4
+2025-07-31 01:02:05,134 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel\How Did Dan Cooper Escape With $200,000 ✈️ 💣_PREbgyx2QWeEuc_POST.mp4
+2025-07-31 01:02:05,134 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel\How One Sniper Fooled the Nazis in Stalingrad 🩸_PRETkHQiHKVGTk_POST.mp4
+2025-07-31 01:02:05,134 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel\Movie Scene Turns Into a Real Life Tragedy 🎥_PRE8fJ-dAALZl4_POST.mp4
+2025-07-31 01:02:05,136 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel\Secret Agent Car Used in a Real Chase 🚙_PREG3VHQjdt3tw_POST.mp4
+2025-07-31 01:02:05,136 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel\Secret War Plans Hidden Inside a Soldier's Body ✉️_PRE2qeY8mZaFms_POST.mp4
+2025-07-31 01:02:05,136 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel\Why Did Pirates Hang Bodies On Their Ships 🧟‍♂️🏴‍☠️_PREW9dkc9-b40k_POST.mp4
+2025-07-31 01:02:05,136 - DownloaderTaskCollector - INFO - check_files_in_folder:252 - Found 8 files, which meets or exceeds the requirement of 5
+2025-07-31 01:02:05,136 - DownloaderTaskCollector - INFO - process_content_type_config:383 - Sufficient reel content already available in E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel
+2025-07-31 01:02:05,137 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.1 video configuration
+2025-07-31 01:02:05,137 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-07-31 01:02:05,137 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 01:02:05,137 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,137 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-07-31 01:02:05,138 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.1 image configuration
+2025-07-31 01:02:05,138 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-07-31 01:02:05,138 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 01:02:05,138 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,138 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Pinterest, Channel link: Super Cars
+2025-07-31 01:02:05,138 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 9
+2025-07-31 01:02:05,138 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 9
+2025-07-31 01:02:05,138 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 9
+2025-07-31 01:02:05,138 - DownloaderTaskCollector - INFO - check_image_available_in_folder:266 - Checking for 9 images in folder: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img
+2025-07-31 01:02:05,138 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img
+2025-07-31 01:02:05,138 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.png', '*.jpeg', '*.jpg'], required count: 9
+2025-07-31 01:02:05,140 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_0_1753901914.jpg
+2025-07-31 01:02:05,140 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_1_1753901921.jpg
+2025-07-31 01:02:05,140 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_2_1753901927.jpg
+2025-07-31 01:02:05,140 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_3_1753818432.jpg
+2025-07-31 01:02:05,141 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_3_1753901934.jpg
+2025-07-31 01:02:05,141 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_4_1753818437.jpg
+2025-07-31 01:02:05,141 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_4_1753901941.jpg
+2025-07-31 01:02:05,141 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_5_1753818444.jpg
+2025-07-31 01:02:05,141 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_5_1753901947.jpg
+2025-07-31 01:02:05,141 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_6_1753818450.jpg
+2025-07-31 01:02:05,141 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_6_1753901953.jpg
+2025-07-31 01:02:05,142 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_7_1753818455.jpg
+2025-07-31 01:02:05,142 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_7_1753901959.jpg
+2025-07-31 01:02:05,142 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_8_1753818460.jpg
+2025-07-31 01:02:05,142 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img\pinterest_image_8_1753901965.jpg
+2025-07-31 01:02:05,142 - DownloaderTaskCollector - INFO - check_files_in_folder:252 - Found 15 files, which meets or exceeds the requirement of 9
+2025-07-31 01:02:05,142 - DownloaderTaskCollector - INFO - process_content_type_config:383 - Sufficient image content already available in E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img
+2025-07-31 01:02:05,142 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.1 story configuration
+2025-07-31 01:02:05,142 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-07-31 01:02:05,142 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 01:02:05,142 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,142 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-07-31 01:02:05,142 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:520 - Processing 2 pages for ID Id_information.1
+2025-07-31 01:02:05,143 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:523 - Processing page: Page.1
+2025-07-31 01:02:05,143 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:533 - Page Page.1 upload types - Reels: True, Video: False, Image: True, Story: False
+2025-07-31 01:02:05,143 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:539 - Page Page.1 auto download: True
+2025-07-31 01:02:05,143 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 reel configuration
+2025-07-31 01:02:05,143 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-07-31 01:02:05,143 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 01:02:05,144 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,144 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Youtube, Channel link: rimreap3r
+2025-07-31 01:02:05,144 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 5
+2025-07-31 01:02:05,144 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 5
+2025-07-31 01:02:05,144 - DownloaderTaskCollector - DEBUG - process_content_type_config:370 - Schedule enabled with 2 entries
+2025-07-31 01:02:05,144 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 5
+2025-07-31 01:02:05,144 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 5 videos in folder: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_reel
+2025-07-31 01:02:05,144 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_reel
+2025-07-31 01:02:05,145 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 5
+2025-07-31 01:02:05,145 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_reel\Anyone know what happened before this!？ 😭 #basketball_PREek4XTwRNX4E_POST.mp4
+2025-07-31 01:02:05,145 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_reel\Bro sold the clip so hard 😭 #basketball_PREIQFtNMHnOXM_POST.mp4
+2025-07-31 01:02:05,145 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_reel\He was right tho 😔 #basketball_PREepwRvKGgicg_POST.mp4
+2025-07-31 01:02:05,146 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_reel\I'd just retire if this happened to me fr 😭🤣 #basketball_PRE9lwnTwFumG0_POST.mp4
+2025-07-31 01:02:05,146 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_reel\This was a fun watch 😂 #basketball_PREQqeVdI_RY5c_POST.mp4
+2025-07-31 01:02:05,146 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_reel\This was so embarrassing ngl 😭 #basketball_PREsP4xjXUzldk_POST.mp4
+2025-07-31 01:02:05,146 - DownloaderTaskCollector - INFO - check_files_in_folder:252 - Found 6 files, which meets or exceeds the requirement of 5
+2025-07-31 01:02:05,146 - DownloaderTaskCollector - INFO - process_content_type_config:383 - Sufficient reel content already available in E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_reel
+2025-07-31 01:02:05,146 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 video configuration
+2025-07-31 01:02:05,146 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-07-31 01:02:05,146 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 01:02:05,146 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,146 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-07-31 01:02:05,148 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 image configuration
+2025-07-31 01:02:05,148 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-07-31 01:02:05,148 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 01:02:05,148 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,148 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Pinterest, Channel link: super Bikes
+2025-07-31 01:02:05,148 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 5
+2025-07-31 01:02:05,148 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 5
+2025-07-31 01:02:05,148 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 5
+2025-07-31 01:02:05,149 - DownloaderTaskCollector - INFO - check_image_available_in_folder:266 - Checking for 5 images in folder: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_img
+2025-07-31 01:02:05,149 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_img
+2025-07-31 01:02:05,149 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.png', '*.jpeg', '*.jpg'], required count: 5
+2025-07-31 01:02:05,149 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_img\pinterest_image_0_1753902088.jpg
+2025-07-31 01:02:05,150 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_img\pinterest_image_1_1753902099.jpg
+2025-07-31 01:02:05,150 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_img\pinterest_image_2_1753902108.jpg
+2025-07-31 01:02:05,150 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_img\pinterest_image_3_1753902117.jpg
+2025-07-31 01:02:05,151 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_img\pinterest_image_4_1753802367.jpg
+2025-07-31 01:02:05,151 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_img\pinterest_image_4_1753902127.jpg
+2025-07-31 01:02:05,151 - DownloaderTaskCollector - INFO - check_files_in_folder:252 - Found 6 files, which meets or exceeds the requirement of 5
+2025-07-31 01:02:05,151 - DownloaderTaskCollector - INFO - process_content_type_config:383 - Sufficient image content already available in E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_img
+2025-07-31 01:02:05,152 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 story configuration
+2025-07-31 01:02:05,152 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-07-31 01:02:05,152 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 01:02:05,152 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,152 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-07-31 01:02:05,153 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:523 - Processing page: Page.2
+2025-07-31 01:02:05,153 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:533 - Page Page.2 upload types - Reels: True, Video: False, Image: False, Story: False
+2025-07-31 01:02:05,153 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:539 - Page Page.2 auto download: True
+2025-07-31 01:02:05,153 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 reel configuration
+2025-07-31 01:02:05,153 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-07-31 01:02:05,153 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 01:02:05,154 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,154 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Youtube, Channel link: LetsRomantic
+2025-07-31 01:02:05,154 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 1
+2025-07-31 01:02:05,154 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 1
+2025-07-31 01:02:05,154 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 1
+2025-07-31 01:02:05,154 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 1 videos in folder: E:\facebook_ld\raushan\Ahmad Agha\Ahmad Agha_download_reel
+2025-07-31 01:02:05,154 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\raushan\Ahmad Agha\Ahmad Agha_download_reel
+2025-07-31 01:02:05,154 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 1
+2025-07-31 01:02:05,155 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan\Ahmad Agha\Ahmad Agha_download_reel\girl its a sign 🤣😭😭 #music #funny #funnyvideo #familyhumor #memes #comedy #couple #love_PREjUb8DbUGwBQ_POST.mp4
+2025-07-31 01:02:05,155 - DownloaderTaskCollector - INFO - check_files_in_folder:252 - Found 1 files, which meets or exceeds the requirement of 1
+2025-07-31 01:02:05,155 - DownloaderTaskCollector - INFO - process_content_type_config:383 - Sufficient reel content already available in E:\facebook_ld\raushan\Ahmad Agha\Ahmad Agha_download_reel
+2025-07-31 01:02:05,155 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 video configuration
+2025-07-31 01:02:05,155 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-07-31 01:02:05,155 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 01:02:05,155 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,155 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-07-31 01:02:05,157 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 image configuration
+2025-07-31 01:02:05,157 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-07-31 01:02:05,157 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 01:02:05,157 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: False
+2025-07-31 01:02:05,158 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping image download: upload or auto-download not enabled
+2025-07-31 01:02:05,158 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 story configuration
+2025-07-31 01:02:05,158 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-07-31 01:02:05,158 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 01:02:05,158 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,158 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-07-31 01:02:05,158 - DownloaderTaskCollector - WARNING - collect_tasks_from_json_for_download:593 - Skipping task for ID Id_information.1: No valid download tasks or instance info
+2025-07-31 01:02:05,158 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:431 - Processing ID: Id_information.2
+2025-07-31 01:02:05,158 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:454 - ID Id_information.2 auto download: True
+2025-07-31 01:02:05,158 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:470 - ID Id_information.2 upload types - Reels: True, Video: False, Image: True, Story: False
+2025-07-31 01:02:05,158 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.2 reel configuration
+2025-07-31 01:02:05,158 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-07-31 01:02:05,159 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 01:02:05,159 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,159 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Youtube, Channel link: theartofwarrr
+2025-07-31 01:02:05,159 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 6
+2025-07-31 01:02:05,159 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 6
+2025-07-31 01:02:05,159 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 6
+2025-07-31 01:02:05,159 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 6 videos in folder: E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_reel
+2025-07-31 01:02:05,159 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_reel
+2025-07-31 01:02:05,159 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 6
+2025-07-31 01:02:05,160 - DownloaderTaskCollector - WARNING - check_files_in_folder:246 - No matching files found
+2025-07-31 01:02:05,160 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 6 reel(s) to E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_reel
+2025-07-31 01:02:05,160 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('theartofwarrr', 'Youtube', 6, 'E:\\facebook_ld\\raushan1\\Puja Ji\\Puja Ji_download_reel', 'reel', 'Jayden Jayden')
+2025-07-31 01:02:05,160 - DownloaderTaskCollector - INFO - is_valid_download_config:318 - Valid download config for reel: 6 items from Youtube
+2025-07-31 01:02:05,160 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:514 - Added valid reel download task for ID Id_information.2
+2025-07-31 01:02:05,160 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.2 video configuration
+2025-07-31 01:02:05,161 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-07-31 01:02:05,161 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 01:02:05,161 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,161 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-07-31 01:02:05,161 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.2 image configuration
+2025-07-31 01:02:05,161 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-07-31 01:02:05,161 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 01:02:05,161 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,162 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Pinterest, Channel link: Super bikes
+2025-07-31 01:02:05,162 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 4
+2025-07-31 01:02:05,162 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 4
+2025-07-31 01:02:05,162 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 4
+2025-07-31 01:02:05,162 - DownloaderTaskCollector - INFO - check_image_available_in_folder:266 - Checking for 4 images in folder: E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_img
+2025-07-31 01:02:05,162 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_img
+2025-07-31 01:02:05,162 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.png', '*.jpeg', '*.jpg'], required count: 4
+2025-07-31 01:02:05,163 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_img\pinterest_image_3_1753901940.jpg
+2025-07-31 01:02:05,163 - DownloaderTaskCollector - WARNING - check_files_in_folder:249 - Found only 1 files, but 4 were required
+2025-07-31 01:02:05,163 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 4 image(s) to E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_img
+2025-07-31 01:02:05,163 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('Super bikes', 'Pinterest', 4, 'E:\\facebook_ld\\raushan1\\Puja Ji\\Puja Ji_download_img', 'image', 'Jayden Jayden')
+2025-07-31 01:02:05,163 - DownloaderTaskCollector - INFO - is_valid_download_config:318 - Valid download config for image: 4 items from Pinterest
+2025-07-31 01:02:05,163 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:514 - Added valid image download task for ID Id_information.2
+2025-07-31 01:02:05,163 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.2 story configuration
+2025-07-31 01:02:05,164 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-07-31 01:02:05,164 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 01:02:05,164 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,164 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-07-31 01:02:05,164 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:520 - Processing 1 pages for ID Id_information.2
+2025-07-31 01:02:05,164 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:523 - Processing page: Page.1
+2025-07-31 01:02:05,164 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:533 - Page Page.1 upload types - Reels: True, Video: False, Image: False, Story: False
+2025-07-31 01:02:05,164 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:539 - Page Page.1 auto download: True
+2025-07-31 01:02:05,166 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 reel configuration
+2025-07-31 01:02:05,166 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-07-31 01:02:05,166 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 01:02:05,166 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,166 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Youtube, Channel link: Knowledge3dart-p7m
+
+2025-07-31 01:02:05,166 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 1
+2025-07-31 01:02:05,166 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 1
+2025-07-31 01:02:05,166 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 1
+2025-07-31 01:02:05,167 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 1 videos in folder: E:\facebook_ld\raushan1\Confessionclubdepodcast\Confessionclubdepodcast_download_reel
+2025-07-31 01:02:05,167 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\raushan1\Confessionclubdepodcast\Confessionclubdepodcast_download_reel
+2025-07-31 01:02:05,167 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 1
+2025-07-31 01:02:05,167 - DownloaderTaskCollector - WARNING - check_files_in_folder:246 - No matching files found
+2025-07-31 01:02:05,167 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 1 reel(s) to E:\facebook_ld\raushan1\Confessionclubdepodcast\Confessionclubdepodcast_download_reel
+2025-07-31 01:02:05,168 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('Knowledge3dart-p7m\n', 'Youtube', 1, 'E:\\facebook_ld\\raushan1\\Confessionclubdepodcast\\Confessionclubdepodcast_download_reel', 'reel', 'Confessionclubdepodcast')
+2025-07-31 01:02:05,168 - DownloaderTaskCollector - INFO - is_valid_download_config:318 - Valid download config for reel: 1 items from Youtube
+2025-07-31 01:02:05,168 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:582 - Added valid reel download task for page Page.1
+2025-07-31 01:02:05,168 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 video configuration
+2025-07-31 01:02:05,168 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-07-31 01:02:05,168 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 01:02:05,168 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,168 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-07-31 01:02:05,168 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 image configuration
+2025-07-31 01:02:05,168 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-07-31 01:02:05,168 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 01:02:05,168 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: False
+2025-07-31 01:02:05,170 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping image download: upload or auto-download not enabled
+2025-07-31 01:02:05,170 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 story configuration
+2025-07-31 01:02:05,170 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-07-31 01:02:05,170 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 01:02:05,170 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,170 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-07-31 01:02:05,170 - DownloaderTaskCollector - DEBUG - is_valid_instance_info:389 - Validating instance info: ('E:/facebook_ld\\raushan1\\chrome', 'Profile 1', 'E:\\facebook_ld\\raushan1\\chrome\\reels_history.xlsx', 'Geni4')
+2025-07-31 01:02:05,171 - DownloaderTaskCollector - INFO - is_valid_instance_info:409 - Valid instance info: E:/facebook_ld\raushan1\chrome, Profile 1
+2025-07-31 01:02:05,171 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:590 - Adding 3 tasks to queue for ID Id_information.2
+2025-07-31 01:02:05,171 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:431 - Processing ID: Id_information.3
+2025-07-31 01:02:05,171 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:454 - ID Id_information.3 auto download: True
+2025-07-31 01:02:05,171 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:470 - ID Id_information.3 upload types - Reels: True, Video: False, Image: False, Story: False
+2025-07-31 01:02:05,171 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.3 reel configuration
+2025-07-31 01:02:05,171 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-07-31 01:02:05,172 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 01:02:05,172 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,172 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Youtube, Channel link: theartofwarrr
+2025-07-31 01:02:05,172 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 5
+2025-07-31 01:02:05,172 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 5
+2025-07-31 01:02:05,172 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 5
+2025-07-31 01:02:05,172 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 5 videos in folder: E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel
+2025-07-31 01:02:05,172 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel
+2025-07-31 01:02:05,172 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 5
+2025-07-31 01:02:05,173 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel\How Did Dan Cooper Escape With $200,000 ✈️ 💣_PREbgyx2QWeEuc_POST.mp4
+2025-07-31 01:02:05,173 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel\How Sharp Pins Helped Soldiers 🪖_PREUjD-tAN50i4_POST.mp4
+2025-07-31 01:02:05,173 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel\How ＂Soldiers＂ Stole $24M 🤑_PREXYnsozwaLUY_POST.mp4
+2025-07-31 01:02:05,173 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel\Movie Scene Turns Into a Real Life Tragedy 🎥_PRE8fJ-dAALZl4_POST.mp4
+2025-07-31 01:02:05,174 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel\Why Soldier Blew Himself Up During WWII 😱_PREEb7uyaN-_g8_POST.mp4
+2025-07-31 01:02:05,174 - DownloaderTaskCollector - INFO - check_files_in_folder:252 - Found 5 files, which meets or exceeds the requirement of 5
+2025-07-31 01:02:05,174 - DownloaderTaskCollector - INFO - process_content_type_config:383 - Sufficient reel content already available in E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel
+2025-07-31 01:02:05,174 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.3 video configuration
+2025-07-31 01:02:05,174 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-07-31 01:02:05,174 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 01:02:05,174 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,174 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-07-31 01:02:05,174 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.3 image configuration
+2025-07-31 01:02:05,175 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-07-31 01:02:05,175 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 01:02:05,175 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,175 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping image download: upload or auto-download not enabled
+2025-07-31 01:02:05,175 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.3 story configuration
+2025-07-31 01:02:05,175 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-07-31 01:02:05,175 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 01:02:05,175 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,176 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-07-31 01:02:05,176 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:520 - Processing 3 pages for ID Id_information.3
+2025-07-31 01:02:05,176 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:523 - Processing page: Page.1
+2025-07-31 01:02:05,176 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:533 - Page Page.1 upload types - Reels: True, Video: False, Image: False, Story: False
+2025-07-31 01:02:05,176 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:539 - Page Page.1 auto download: True
+2025-07-31 01:02:05,176 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 reel configuration
+2025-07-31 01:02:05,176 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-07-31 01:02:05,176 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-07-31 01:02:05,176 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,176 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Youtube, Channel link: chefItalianochannel
+2025-07-31 01:02:05,176 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 1
+2025-07-31 01:02:05,177 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 1
+2025-07-31 01:02:05,177 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 2
+2025-07-31 01:02:05,177 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 2 videos in folder: E:\facebook_ld\genni2\Milan-David\Milan-David_download_reel
+2025-07-31 01:02:05,177 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: E:\facebook_ld\genni2\Milan-David\Milan-David_download_reel
+2025-07-31 01:02:05,177 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 2
+2025-07-31 01:02:05,177 - DownloaderTaskCollector - WARNING - check_files_in_folder:246 - No matching files found
+2025-07-31 01:02:05,177 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 2 reel(s) to E:\facebook_ld\genni2\Milan-David\Milan-David_download_reel
+2025-07-31 01:02:05,177 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('chefItalianochannel', 'Youtube', 2, 'E:\\facebook_ld\\genni2\\Milan-David\\Milan-David_download_reel', 'reel', 'Milan-David')
+2025-07-31 01:02:05,178 - DownloaderTaskCollector - INFO - is_valid_download_config:318 - Valid download config for reel: 2 items from Youtube
+2025-07-31 01:02:05,178 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:582 - Added valid reel download task for page Page.1
+2025-07-31 01:02:05,178 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 video configuration
+2025-07-31 01:02:05,178 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-07-31 01:02:05,178 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 01:02:05,178 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,178 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-07-31 01:02:05,178 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 image configuration
+2025-07-31 01:02:05,178 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-07-31 01:02:05,179 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 01:02:05,179 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,179 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping image download: upload or auto-download not enabled
+2025-07-31 01:02:05,179 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 story configuration
+2025-07-31 01:02:05,179 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-07-31 01:02:05,179 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-07-31 01:02:05,179 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,179 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-07-31 01:02:05,179 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:523 - Processing page: Page.2
+2025-07-31 01:02:05,180 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:533 - Page Page.2 upload types - Reels: False, Video: False, Image: False, Story: False
+2025-07-31 01:02:05,180 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:539 - Page Page.2 auto download: False
+2025-07-31 01:02:05,180 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 reel configuration
+2025-07-31 01:02:05,180 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-07-31 01:02:05,180 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: False
+2025-07-31 01:02:05,180 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,180 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping reel download: upload or auto-download not enabled
+2025-07-31 01:02:05,180 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 video configuration
+2025-07-31 01:02:05,181 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-07-31 01:02:05,181 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: False
+2025-07-31 01:02:05,181 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,181 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-07-31 01:02:05,181 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 image configuration
+2025-07-31 01:02:05,181 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-07-31 01:02:05,181 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: False
+2025-07-31 01:02:05,181 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,181 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping image download: upload or auto-download not enabled
+2025-07-31 01:02:05,181 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 story configuration
+2025-07-31 01:02:05,181 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-07-31 01:02:05,181 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: False
+2025-07-31 01:02:05,182 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,182 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-07-31 01:02:05,182 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:523 - Processing page: Page.3
+2025-07-31 01:02:05,182 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:533 - Page Page.3 upload types - Reels: False, Video: False, Image: False, Story: False
+2025-07-31 01:02:05,182 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:539 - Page Page.3 auto download: False
+2025-07-31 01:02:05,183 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.3 reel configuration
+2025-07-31 01:02:05,183 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-07-31 01:02:05,183 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: False
+2025-07-31 01:02:05,183 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,183 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping reel download: upload or auto-download not enabled
+2025-07-31 01:02:05,183 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.3 video configuration
+2025-07-31 01:02:05,183 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-07-31 01:02:05,183 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: False
+2025-07-31 01:02:05,183 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,183 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-07-31 01:02:05,183 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.3 image configuration
+2025-07-31 01:02:05,183 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-07-31 01:02:05,183 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: False
+2025-07-31 01:02:05,185 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,185 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping image download: upload or auto-download not enabled
+2025-07-31 01:02:05,185 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.3 story configuration
+2025-07-31 01:02:05,185 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-07-31 01:02:05,185 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: False
+2025-07-31 01:02:05,185 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-07-31 01:02:05,185 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-07-31 01:02:05,185 - DownloaderTaskCollector - DEBUG - is_valid_instance_info:389 - Validating instance info: ('E:/facebook_ld/genni2/chrome', 'Profile 1', '', 'Geni2')
+2025-07-31 01:02:05,185 - DownloaderTaskCollector - WARNING - is_valid_instance_info:407 - Warning: Global history Excel path is missing
+2025-07-31 01:02:05,186 - DownloaderTaskCollector - INFO - is_valid_instance_info:409 - Valid instance info: E:/facebook_ld/genni2/chrome, Profile 1
+2025-07-31 01:02:05,186 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:590 - Adding 1 tasks to queue for ID Id_information.3
+2025-07-31 01:02:05,186 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:431 - Processing ID: Id_information.4
+2025-07-31 01:02:05,186 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:435 - Skipping ID Id_information.4: Upload not enabled
+2025-07-31 01:02:05,186 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:431 - Processing ID: Id_information.5
+2025-07-31 01:02:05,186 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:435 - Skipping ID Id_information.5: Upload not enabled
+2025-07-31 01:02:05,186 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:431 - Processing ID: Id_information.6
+2025-07-31 01:02:05,186 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:435 - Skipping ID Id_information.6: Upload not enabled
+2025-07-31 01:02:05,186 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:431 - Processing ID: Id_information.7
+2025-07-31 01:02:05,186 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:435 - Skipping ID Id_information.7: Upload not enabled
+2025-07-31 01:02:05,187 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:595 - Task collection summary: 7 IDs processed, 2 IDs with tasks, 4 total tasks

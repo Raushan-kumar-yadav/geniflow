@@ -1,0 +1,7 @@
+Main.dist/
+Main.build/
+ollama_me/
+__pycache__/
+temp_build/
+to_be_delet/
+User_Data/

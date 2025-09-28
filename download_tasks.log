@@ -1,0 +1,154 @@
+2025-03-24 18:28:59,567 - task_processor - INFO - Using external task queue
+2025-03-24 18:28:59,571 - task_processor - INFO - Initialized task manager with 1 tasks, running 6 concurrent tasks
+2025-03-24 18:28:59,572 - task_processor - INFO - Starting worker_0
+2025-03-24 18:28:59,576 - task_processor - INFO - Started process worker_0 (PID: 23192)
+2025-03-24 18:30:10,690 - task_processor - WARNING - Process worker_0 not responding, terminating
+2025-03-24 18:30:10,690 - task_processor - INFO - Task completed: worker_0, 1/1 done
+2025-03-24 18:30:15,691 - task_processor - INFO - Task manager complete. Processed 1/1 tasks
+2025-03-24 18:32:03,639 - task_processor - INFO - Using external task queue
+2025-03-24 18:32:03,646 - task_processor - INFO - Initialized task manager with 2 tasks, running 6 concurrent tasks
+2025-03-24 18:32:03,649 - task_processor - INFO - Starting worker_0
+2025-03-24 18:32:03,653 - task_processor - INFO - Started process worker_0 (PID: 2864)
+2025-03-24 18:32:03,653 - task_processor - INFO - Starting worker_1
+2025-03-24 18:32:03,658 - task_processor - INFO - Started process worker_1 (PID: 20316)
+2025-03-24 18:32:09,674 - task_processor - ERROR - Task failed: worker_1, error: [WinError 183] Cannot create a file when that file already exists: 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+2025-03-24 18:34:14,330 - task_processor - WARNING - Process worker_0 not responding, terminating
+2025-03-24 18:34:14,331 - task_processor - INFO - Task completed: worker_0, 2/2 done
+2025-03-24 18:34:19,333 - task_processor - INFO - Task manager complete. Processed 2/2 tasks
+2025-03-24 18:39:43,136 - task_processor - INFO - Using external task queue
+2025-03-24 18:39:43,140 - task_processor - INFO - Initialized task manager with 2 tasks, running 6 concurrent tasks
+2025-03-24 18:39:43,141 - task_processor - INFO - Starting worker_0
+2025-03-24 18:39:43,144 - task_processor - INFO - Started process worker_0 (PID: 9644)
+2025-03-24 18:39:43,144 - task_processor - INFO - Starting worker_1
+2025-03-24 18:39:43,148 - task_processor - INFO - Started process worker_1 (PID: 13140)
+2025-03-24 18:39:49,160 - task_processor - ERROR - Task failed: worker_1, error: [WinError 183] Cannot create a file when that file already exists: 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+2025-03-24 18:39:54,161 - task_processor - INFO - Task completed: worker_0, 2/2 done
+2025-03-24 18:39:59,162 - task_processor - INFO - Task manager complete. Processed 2/2 tasks
+2025-03-24 18:46:29,134 - task_processor - INFO - Using external task queue
+2025-03-24 18:46:29,138 - task_processor - INFO - Initialized task manager with 2 tasks, running 6 concurrent tasks
+2025-03-24 18:46:29,139 - task_processor - INFO - Starting worker_0
+2025-03-24 18:46:29,143 - task_processor - INFO - Started process worker_0 (PID: 3756)
+2025-03-24 18:46:29,143 - task_processor - INFO - Starting worker_1
+2025-03-24 18:46:29,148 - task_processor - INFO - Started process worker_1 (PID: 18532)
+2025-03-24 18:46:35,155 - task_processor - ERROR - Task failed: worker_1, error: [WinError 183] Cannot create a file when that file already exists: 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+2025-03-24 18:46:40,157 - task_processor - INFO - Task completed: worker_0, 2/2 done
+2025-03-24 18:46:45,158 - task_processor - INFO - Task manager complete. Processed 2/2 tasks
+2025-03-24 18:48:35,571 - task_processor - INFO - Using external task queue
+2025-03-24 18:48:35,575 - task_processor - INFO - Initialized task manager with 2 tasks, running 6 concurrent tasks
+2025-03-24 18:48:35,576 - task_processor - INFO - Starting worker_0
+2025-03-24 18:48:35,579 - task_processor - INFO - Started process worker_0 (PID: 12472)
+2025-03-24 18:48:35,579 - task_processor - INFO - Starting worker_1
+2025-03-24 18:48:35,584 - task_processor - INFO - Started process worker_1 (PID: 5764)
+2025-03-24 18:48:41,593 - task_processor - ERROR - Task failed: worker_0, error: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+2025-03-24 18:49:32,286 - task_processor - INFO - Using external task queue
+2025-03-24 18:49:32,291 - task_processor - INFO - Initialized task manager with 2 tasks, running 6 concurrent tasks
+2025-03-24 18:49:32,291 - task_processor - INFO - Starting worker_0
+2025-03-24 18:49:32,295 - task_processor - INFO - Started process worker_0 (PID: 18372)
+2025-03-24 18:49:32,295 - task_processor - INFO - Starting worker_1
+2025-03-24 18:49:32,300 - task_processor - INFO - Started process worker_1 (PID: 22220)
+2025-03-24 18:49:38,311 - task_processor - ERROR - Task failed: worker_0, error: [WinError 183] Cannot create a file when that file already exists: 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+2025-03-24 18:50:42,402 - task_processor - WARNING - Process worker_1 not responding, terminating
+2025-03-24 18:50:42,402 - task_processor - INFO - Task completed: worker_1, 2/2 done
+2025-03-24 18:54:14,782 - task_processor - INFO - Using external task queue
+2025-03-24 18:54:14,786 - task_processor - INFO - Initialized task manager with 2 tasks, running 6 concurrent tasks
+2025-03-24 18:54:14,786 - task_processor - INFO - Starting worker_0
+2025-03-24 18:54:14,791 - task_processor - INFO - Started process worker_0 (PID: 4528)
+2025-03-24 18:54:14,791 - task_processor - INFO - Starting worker_1
+2025-03-24 18:54:14,794 - task_processor - INFO - Started process worker_1 (PID: 10468)
+2025-03-24 18:54:17,916 - task_processor - ERROR - Task failed: worker_0, error: [WinError 183] Cannot create a file when that file already exists: 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+2025-03-24 18:54:59,135 - task_processor - INFO - Using external task queue
+2025-03-24 18:54:59,139 - task_processor - INFO - Initialized task manager with 1 tasks, running 6 concurrent tasks
+2025-03-24 18:54:59,139 - task_processor - INFO - Starting worker_0
+2025-03-24 18:54:59,142 - task_processor - INFO - Started process worker_0 (PID: 2904)
+2025-03-24 18:56:40,109 - task_processor - INFO - Using external task queue
+2025-03-24 18:56:40,113 - task_processor - INFO - Initialized task manager with 2 tasks, running 6 concurrent tasks
+2025-03-24 18:56:40,114 - task_processor - INFO - Starting worker_0
+2025-03-24 18:56:40,118 - task_processor - INFO - Started process worker_0 (PID: 18532)
+2025-03-24 18:56:40,118 - task_processor - INFO - Starting worker_1
+2025-03-24 18:56:40,122 - task_processor - INFO - Started process worker_1 (PID: 22716)
+2025-03-24 18:56:43,138 - task_processor - ERROR - Task failed: worker_1, error: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+2025-03-24 18:59:02,610 - task_processor - INFO - Using external task queue
+2025-03-24 18:59:02,615 - task_processor - INFO - Initialized task manager with 2 tasks, running 6 concurrent tasks
+2025-03-24 18:59:02,615 - task_processor - INFO - Starting worker_0
+2025-03-24 18:59:02,619 - task_processor - INFO - Started process worker_0 (PID: 18012)
+2025-03-24 18:59:02,619 - task_processor - INFO - Starting worker_1
+2025-03-24 18:59:02,624 - task_processor - INFO - Started process worker_1 (PID: 22884)
+2025-03-24 18:59:06,645 - task_processor - ERROR - Task failed: worker_1, error: [WinError 183] Cannot create a file when that file already exists: 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+2025-03-24 19:00:35,998 - task_processor - INFO - Using external task queue
+2025-03-24 19:00:36,003 - task_processor - INFO - Initialized task manager with 2 tasks, running 6 concurrent tasks
+2025-03-24 19:00:36,003 - task_processor - INFO - Starting worker_0
+2025-03-24 19:00:36,007 - task_processor - INFO - Started process worker_0 (PID: 23676)
+2025-03-24 19:00:36,007 - task_processor - INFO - Starting worker_1
+2025-03-24 19:00:36,012 - task_processor - INFO - Started process worker_1 (PID: 10268)
+2025-03-24 19:00:40,038 - task_processor - ERROR - Task failed: worker_0, error: [WinError 183] Cannot create a file when that file already exists: 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+2025-03-24 19:04:00,248 - task_processor - INFO - Using external task queue
+2025-03-24 19:04:00,253 - task_processor - INFO - Initialized task manager with 2 tasks, running 6 concurrent tasks
+2025-03-24 19:04:00,253 - task_processor - INFO - Starting worker_0
+2025-03-24 19:04:01,258 - task_processor - INFO - Started process worker_0 (PID: 11880)
+2025-03-24 19:04:01,259 - task_processor - INFO - Starting worker_1
+2025-03-24 19:04:02,273 - task_processor - INFO - Started process worker_1 (PID: 24276)
+2025-03-24 19:04:04,287 - task_processor - ERROR - Task failed: worker_1, error: [WinError 183] Cannot create a file when that file already exists: 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+2025-03-24 19:06:27,486 - task_processor - INFO - Using external task queue with 2 tasks
+2025-03-24 19:06:27,491 - task_processor - INFO - Initialized task manager with 2 tasks, running 6 concurrent tasks
+2025-03-24 19:06:27,491 - task_processor - INFO - Starting worker_0
+2025-03-24 19:06:28,495 - task_processor - INFO - Started process worker_0 (PID: 6776)
+2025-03-24 19:06:28,496 - task_processor - INFO - Starting worker_1
+2025-03-24 19:06:29,504 - task_processor - INFO - Started process worker_1 (PID: 13248)
+2025-03-24 19:06:30,514 - task_processor - INFO - Active processes: 2, Completed: 0/2
+2025-03-24 19:06:31,529 - task_processor - ERROR - Task failed: worker_1, error: [WinError 183] Cannot create a file when that file already exists: 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected\\chromedriver-win32\\chromedriver.exe' -> 'C:\\Users\\raush\\appdata\\roaming\\undetected_chromedriver\\undetected_chromedriver.exe'
+2025-03-24 19:06:31,529 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:06:33,057 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:06:34,580 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:06:36,103 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:06:37,620 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:06:39,150 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:06:40,665 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:06:42,192 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:06:43,715 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:06:45,244 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:06:46,760 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:06:48,288 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:06:49,791 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:06:51,293 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:06:52,794 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:06:54,302 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:06:55,817 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:06:57,333 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:06:58,849 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:00,373 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:01,888 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:03,415 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:04,929 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:06,445 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:07,973 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:09,505 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:11,031 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:12,559 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:14,073 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:15,600 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:17,127 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:18,657 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:20,179 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:21,692 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:23,220 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:24,746 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:26,250 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:27,761 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:29,286 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:30,801 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:32,332 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:33,855 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:35,378 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:36,904 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:38,415 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:39,933 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:41,455 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:42,958 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:44,485 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:46,014 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:47,543 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:49,056 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:50,567 - task_processor - INFO - Active processes: 1, Completed: 1/2
+2025-03-24 19:07:56,905 - task_processor - WARNING - Process worker_0 not responding, terminating
+2025-03-24 19:07:56,906 - task_processor - INFO - Task completed: worker_0, 2/2 done
+2025-03-24 19:07:57,407 - task_processor - INFO - Task manager complete. Processed 2/2 tasks

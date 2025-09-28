@@ -1,0 +1,339 @@
+2025-07-31 20:48:26,385 - TaskCollector - INFO - setup_logger:47 - Logging initialized. Log file: e:\geni_flow_ui_v1.0\facebook_tool_0.8\geni\geni_backend_src\logs\task_collector_20250731_204826.log
+2025-07-31 20:48:26,385 - TaskCollector - INFO - __init__:53 - Initializing TaskCollector
+2025-07-31 20:48:26,385 - TaskCollector - INFO - open_data_paths:74 - Reading data paths from settings
+2025-07-31 20:48:26,386 - TaskCollector - DEBUG - open_data_paths:84 - Using default page manager path
+2025-07-31 20:48:26,386 - TaskCollector - DEBUG - __init__:69 - LD Player Path: E:/LDPlayer/LDPlayer9
+2025-07-31 20:48:26,386 - TaskCollector - DEBUG - __init__:70 - Geni Data Path: User_Data\Page_manager.json
+2025-07-31 20:48:26,388 - TaskCollector - INFO - collect_tasks_from_json:1027 - Collecting tasks from JSON configuration
+2025-07-31 20:48:26,390 - TaskCollector - INFO - collect_tasks_from_json:1032 - Processing 7 ID and Pages entries
+2025-07-31 20:48:26,390 - TaskCollector - DEBUG - collect_tasks_from_json:1041 - Processing ID: Id_information.1
+2025-07-31 20:48:26,390 - TaskCollector - DEBUG - collect_tasks_from_json:1052 - ID Id_information.1 - Upload: True, ID Active: True
+2025-07-31 20:48:26,391 - TaskCollector - DEBUG - collect_tasks_from_json:1063 - ID Id_information.1 details - Name: Jack Levi, Package: com.facebook.katana, LDPlayer: Geni3
+2025-07-31 20:48:26,391 - TaskCollector - INFO - collect_tasks_from_json:1081 - Processing upload tasks for ID Id_information.1
+2025-07-31 20:48:26,391 - TaskCollector - DEBUG - collect_tasks_from_json:1090 - ID Id_information.1 upload types - Reels: True, Video: False, Image: True, Story: False
+2025-07-31 20:48:26,392 - TaskCollector - INFO - process_content_config:475 - Processing reels configuration for Jack Levi
+2025-07-31 20:48:26,392 - TaskCollector - DEBUG - process_content_config:521 - reels folder path: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel
+2025-07-31 20:48:26,392 - TaskCollector - INFO - check_media_available_in_folder:334 - Checking for 1 video(s) in folder: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel for profile: Jack Levi
+2025-07-31 20:48:26,392 - TaskCollector - INFO - check_media_available_in_folder:363 - Found sufficient video files (1) for Jack Levi
+2025-07-31 20:48:26,392 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Original Video
+2025-07-31 20:48:26,393 - TaskCollector - DEBUG - get_video_captions:114 - Looking for video files in: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_reel
+2025-07-31 20:48:26,393 - TaskCollector - DEBUG - get_video_captions:123 - Added caption from video: A Doll Stuffed With TNT 🧨_PREtbBtSt4ZubQ_POST
+2025-07-31 20:48:26,393 - TaskCollector - INFO - get_video_captions:203 - Returning 1 captions
+2025-07-31 20:48:26,393 - TaskCollector - INFO - process_content_config:594 - Added reels configuration for Jack Levi
+2025-07-31 20:48:26,394 - TaskCollector - INFO - process_content_config:475 - Processing images configuration for Jack Levi
+2025-07-31 20:48:26,394 - TaskCollector - DEBUG - process_content_config:521 - images folder path: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img
+2025-07-31 20:48:26,394 - TaskCollector - INFO - check_image_available_in_folder:1311 - Checking for 1 image(s) in folder: E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img for profile: Jack Levi
+2025-07-31 20:48:26,394 - TaskCollector - INFO - check_image_available_in_folder:1333 - Found sufficient image files (1) for Jack Levi
+2025-07-31 20:48:26,394 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Text Box
+2025-07-31 20:48:26,394 - TaskCollector - DEBUG - get_video_captions:151 - Using text box content: Hi dosto 😍❤️❤️...
+2025-07-31 20:48:26,395 - TaskCollector - INFO - get_video_captions:203 - Returning 1 captions
+2025-07-31 20:48:26,395 - TaskCollector - INFO - process_content_config:594 - Added images configuration for Jack Levi
+2025-07-31 20:48:26,395 - TaskCollector - DEBUG - collect_tasks_from_json:1139 - Processing 2 pages for ID Id_information.1
+2025-07-31 20:48:26,396 - TaskCollector - DEBUG - collect_tasks_from_json:1143 - Processing page: Anderhalveman
+2025-07-31 20:48:26,396 - TaskCollector - DEBUG - collect_tasks_from_json:1162 - Page Anderhalveman upload types - Reels: True, Video: False, Image: True, Story: False
+2025-07-31 20:48:26,396 - TaskCollector - INFO - process_content_config:475 - Processing reels configuration for Anderhalveman
+2025-07-31 20:48:26,396 - TaskCollector - DEBUG - process_content_config:521 - reels folder path: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_reel
+2025-07-31 20:48:26,396 - TaskCollector - DEBUG - count_schedule_entries:273 - Counting schedule entries
+2025-07-31 20:48:26,396 - TaskCollector - DEBUG - count_schedule_entries:275 - No schedule_time data found
+2025-07-31 20:48:26,397 - TaskCollector - DEBUG - give_video_count_compare_schudle_and_normal:286 - Content count calculation: max(0, 1) = 1
+2025-07-31 20:48:26,397 - TaskCollector - DEBUG - convert_schedule_time:303 - Converting schedule time dictionary to tuples
+2025-07-31 20:48:26,397 - TaskCollector - DEBUG - convert_schedule_time:314 - Added schedule time: (None, '8', '06', 'PM')
+2025-07-31 20:48:26,397 - TaskCollector - DEBUG - convert_schedule_time:314 - Added schedule time: (None, '7', '05', 'PM')
+2025-07-31 20:48:26,397 - TaskCollector - DEBUG - convert_schedule_time:318 - Converted 2 schedule times
+2025-07-31 20:48:26,397 - TaskCollector - DEBUG - process_content_config:556 - Schedule enabled with 0 entries, total content needed: 1
+2025-07-31 20:48:26,397 - TaskCollector - INFO - check_media_available_in_folder:334 - Checking for 1 video(s) in folder: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_reel for profile: Anderhalveman
+2025-07-31 20:48:26,398 - TaskCollector - INFO - check_media_available_in_folder:363 - Found sufficient video files (1) for Anderhalveman
+2025-07-31 20:48:26,399 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Original Video
+2025-07-31 20:48:26,399 - TaskCollector - DEBUG - get_video_captions:114 - Looking for video files in: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_reel
+2025-07-31 20:48:26,399 - TaskCollector - DEBUG - get_video_captions:123 - Added caption from video: Anyone know what happened before this!？ 😭 #basketball_PREek4XTwRNX4E_POST
+2025-07-31 20:48:26,399 - TaskCollector - INFO - get_video_captions:203 - Returning 1 captions
+2025-07-31 20:48:26,399 - TaskCollector - INFO - process_content_config:594 - Added reels configuration for Anderhalveman
+2025-07-31 20:48:26,399 - TaskCollector - INFO - process_content_config:475 - Processing images configuration for Anderhalveman
+2025-07-31 20:48:26,399 - TaskCollector - DEBUG - process_content_config:521 - images folder path: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_img
+2025-07-31 20:48:26,401 - TaskCollector - INFO - check_image_available_in_folder:1311 - Checking for 2 image(s) in folder: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_img for profile: Anderhalveman
+2025-07-31 20:48:26,401 - TaskCollector - INFO - check_image_available_in_folder:1333 - Found sufficient image files (2) for Anderhalveman
+2025-07-31 20:48:26,401 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Original Video
+2025-07-31 20:48:26,401 - TaskCollector - DEBUG - get_video_captions:114 - Looking for video files in: E:\facebook_ld\raushan\Anderhalveman\Anderhalveman_download_img
+2025-07-31 20:48:26,401 - TaskCollector - WARNING - get_video_captions:197 - No captions found, using empty strings
+2025-07-31 20:48:26,401 - TaskCollector - INFO - get_video_captions:203 - Returning 2 captions
+2025-07-31 20:48:26,402 - TaskCollector - INFO - process_content_config:594 - Added images configuration for Anderhalveman
+2025-07-31 20:48:26,402 - TaskCollector - DEBUG - collect_tasks_from_json:1143 - Processing page: Ahmad Agha
+
+
+2025-07-31 20:48:26,402 - TaskCollector - DEBUG - collect_tasks_from_json:1162 - Page Ahmad Agha
+
+ upload types - Reels: True, Video: False, Image: False, Story: False
+2025-07-31 20:48:26,402 - TaskCollector - INFO - process_content_config:475 - Processing reels configuration for Ahmad Agha
+
+
+2025-07-31 20:48:26,402 - TaskCollector - DEBUG - process_content_config:521 - reels folder path: E:\facebook_ld\raushan\Ahmad Agha\Ahmad Agha_download_reel
+2025-07-31 20:48:26,402 - TaskCollector - INFO - check_media_available_in_folder:334 - Checking for 1 video(s) in folder: E:\facebook_ld\raushan\Ahmad Agha\Ahmad Agha_download_reel for profile: Ahmad Agha
+
+
+2025-07-31 20:48:26,402 - TaskCollector - INFO - check_media_available_in_folder:363 - Found sufficient video files (1) for Ahmad Agha
+
+
+2025-07-31 20:48:26,403 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Original Video
+2025-07-31 20:48:26,403 - TaskCollector - DEBUG - get_video_captions:114 - Looking for video files in: E:\facebook_ld\raushan\Ahmad Agha\Ahmad Agha_download_reel
+2025-07-31 20:48:26,403 - TaskCollector - DEBUG - get_video_captions:123 - Added caption from video: girl its a sign 🤣😭😭 #music #funny #funnyvideo #familyhumor #memes #comedy #couple #love_PREjUb8DbUGwBQ_POST
+2025-07-31 20:48:26,403 - TaskCollector - INFO - get_video_captions:203 - Returning 1 captions
+2025-07-31 20:48:26,403 - TaskCollector - INFO - process_content_config:594 - Added reels configuration for Ahmad Agha
+
+
+2025-07-31 20:48:26,403 - TaskCollector - INFO - collect_tasks_from_json:1204 - Processing ID active tasks for ID Id_information.1
+2025-07-31 20:48:26,403 - TaskCollector - INFO - process_id_active_data:614 - Processing ID active data for profile: Jack Levi
+2025-07-31 20:48:26,404 - TaskCollector - DEBUG - process_id_active_data:663 - Processing scroll_reels_and_vid configuration
+2025-07-31 20:48:26,404 - TaskCollector - DEBUG - _process_activity_config:950 - Processing activity configuration
+2025-07-31 20:48:26,404 - TaskCollector - DEBUG - _process_activity_config:1018 - Activity configuration processed successfully
+2025-07-31 20:48:26,404 - TaskCollector - DEBUG - process_id_active_data:679 - Reels scrolling enabled with duration: 1 minutes
+2025-07-31 20:48:26,404 - TaskCollector - DEBUG - _process_activity_config:950 - Processing activity configuration
+2025-07-31 20:48:26,404 - TaskCollector - DEBUG - _process_activity_config:1018 - Activity configuration processed successfully
+2025-07-31 20:48:26,404 - TaskCollector - DEBUG - process_id_active_data:695 - Videos scrolling enabled with duration: 2 minutes
+2025-07-31 20:48:26,405 - TaskCollector - DEBUG - process_id_active_data:700 - Processing scroll_feed configuration
+2025-07-31 20:48:26,405 - TaskCollector - DEBUG - _process_activity_config:950 - Processing activity configuration
+2025-07-31 20:48:26,405 - TaskCollector - DEBUG - _process_activity_config:1018 - Activity configuration processed successfully
+2025-07-31 20:48:26,405 - TaskCollector - DEBUG - process_id_active_data:715 - Feed scrolling enabled with duration: 1 minutes
+2025-07-31 20:48:26,405 - TaskCollector - DEBUG - process_id_active_data:720 - Processing check_msg configuration
+2025-07-31 20:48:26,405 - TaskCollector - DEBUG - process_id_active_data:742 - Message checking enabled with duration: 1 minutes
+2025-07-31 20:48:26,405 - TaskCollector - DEBUG - process_id_active_data:747 - Processing add_and_confirm_friends configuration
+2025-07-31 20:48:26,405 - TaskCollector - DEBUG - process_id_active_data:776 - Processing post_photo configuration
+2025-07-31 20:48:26,406 - TaskCollector - INFO - check_media_available_in_folder:334 - Checking for 2 image(s) in folder: E:/facebook_ld/raushan/Rekha Kumari/Rekha Kumari_download_img for profile: Jack Levi
+2025-07-31 20:48:26,406 - TaskCollector - INFO - check_media_available_in_folder:363 - Found sufficient image files (2) for Jack Levi
+2025-07-31 20:48:26,406 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Original Photo
+2025-07-31 20:48:26,406 - TaskCollector - DEBUG - get_video_captions:132 - Looking for Photos files in: E:/facebook_ld/raushan/Rekha Kumari/Rekha Kumari_download_img
+2025-07-31 20:48:26,406 - TaskCollector - DEBUG - get_video_captions:141 - Added caption from video: pinterest_image_0_1753901914
+2025-07-31 20:48:26,406 - TaskCollector - DEBUG - get_video_captions:141 - Added caption from video: pinterest_image_1_1753901921
+2025-07-31 20:48:26,407 - TaskCollector - INFO - get_video_captions:203 - Returning 2 captions
+2025-07-31 20:48:26,407 - TaskCollector - DEBUG - process_id_active_data:816 - Photo upload enabled
+2025-07-31 20:48:26,407 - TaskCollector - DEBUG - process_id_active_data:821 - Processing post_checkin configuration
+2025-07-31 20:48:26,407 - TaskCollector - INFO - check_media_available_in_folder:334 - Checking for 1 image(s) in folder: E:/facebook_ld/raushan/Rekha Kumari/Rekha Kumari_download_img for profile: Jack Levi
+2025-07-31 20:48:26,407 - TaskCollector - INFO - check_media_available_in_folder:363 - Found sufficient image files (1) for Jack Levi
+2025-07-31 20:48:26,407 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Original Photo
+2025-07-31 20:48:26,407 - TaskCollector - DEBUG - get_video_captions:132 - Looking for Photos files in: E:/facebook_ld/raushan/Rekha Kumari/Rekha Kumari_download_img
+2025-07-31 20:48:26,408 - TaskCollector - DEBUG - get_video_captions:141 - Added caption from video: pinterest_image_0_1753901914
+2025-07-31 20:48:26,408 - TaskCollector - INFO - get_video_captions:203 - Returning 1 captions
+2025-07-31 20:48:26,408 - TaskCollector - DEBUG - process_id_active_data:873 - Post checkin enabled: 1 posts
+2025-07-31 20:48:26,408 - TaskCollector - DEBUG - process_id_active_data:879 - Processing create_story configuration
+2025-07-31 20:48:26,408 - TaskCollector - DEBUG - process_id_active_data:886 - Story creation enabled (handled separately)
+2025-07-31 20:48:26,408 - TaskCollector - INFO - check_media_available_in_folder:334 - Checking for 2 video(s) in folder: E:/facebook_ld/raushan/Rekha Kumari/Rekha Kumari_download_reel for profile: Jack Levi
+2025-07-31 20:48:26,408 - TaskCollector - INFO - check_media_available_in_folder:363 - Found sufficient video files (2) for Jack Levi
+2025-07-31 20:48:26,408 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Original Photo
+2025-07-31 20:48:26,409 - TaskCollector - DEBUG - get_video_captions:132 - Looking for Photos files in: E:/facebook_ld/raushan/Rekha Kumari/Rekha Kumari_download_reel
+2025-07-31 20:48:26,409 - TaskCollector - WARNING - get_video_captions:197 - No captions found, using empty strings
+2025-07-31 20:48:26,409 - TaskCollector - INFO - get_video_captions:203 - Returning 2 captions
+2025-07-31 20:48:26,409 - TaskCollector - DEBUG - process_id_active_data:922 - Processing check_notification configuration
+2025-07-31 20:48:26,409 - TaskCollector - INFO - process_id_active_data:935 - Successfully processed ID active data for Jack Levi
+2025-07-31 20:48:26,409 - TaskCollector - INFO - collect_tasks_from_json:1234 - Adding combined tasks for 3 profiles
+2025-07-31 20:48:26,409 - TaskCollector - DEBUG - should_update_insight:391 - Checking if insights should be updated
+2025-07-31 20:48:26,410 - TaskCollector - DEBUG - should_update_insight:399 - Update delay: 2 days, Last update: 2025-07-30 01:18:26
+2025-07-31 20:48:26,412 - TaskCollector - INFO - should_update_insight:415 - Days since last update: 1, Should update: False
+2025-07-31 20:48:26,412 - TaskCollector - INFO - ld_inst_adb_serial_by_name:240 - Getting ADB serial for LDPlayer: Geni3
+2025-07-31 20:48:26,414 - TaskCollector - INFO - get_ld_list:208 - Getting LDPlayer list from: E:/LDPlayer/LDPlayer9
+2025-07-31 20:48:26,414 - TaskCollector - DEBUG - get_ld_list:217 - Executing command: E:/LDPlayer/LDPlayer9\ldconsole.exe list2
+2025-07-31 20:48:26,466 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 0, Geni1
+2025-07-31 20:48:26,466 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 1, Geni2
+2025-07-31 20:48:26,466 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 2, Geni3
+2025-07-31 20:48:26,466 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 3, Geni4
+2025-07-31 20:48:26,466 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 4, Geni5
+2025-07-31 20:48:26,468 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 5, Geni6
+2025-07-31 20:48:26,468 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 6, Geni7
+2025-07-31 20:48:26,468 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 7, Geni8
+2025-07-31 20:48:26,468 - TaskCollector - INFO - get_ld_list:228 - Found 8 LDPlayer instances
+2025-07-31 20:48:26,468 - TaskCollector - DEBUG - ld_inst_adb_serial_by_name:259 - Found LDPlayer instance index: 2
+2025-07-31 20:48:26,468 - TaskCollector - INFO - ld_inst_adb_serial_by_name:268 - ADB serial for 'Geni3': emulator-5558
+2025-07-31 20:48:26,469 - TaskCollector - INFO - collect_tasks_from_json:1283 - Added task for ID Id_information.1 to main queue (Upload: True, ID Active: True)
+2025-07-31 20:48:26,469 - TaskCollector - DEBUG - collect_tasks_from_json:1041 - Processing ID: Id_information.2
+2025-07-31 20:48:26,469 - TaskCollector - DEBUG - collect_tasks_from_json:1052 - ID Id_information.2 - Upload: True, ID Active: True
+2025-07-31 20:48:26,469 - TaskCollector - DEBUG - collect_tasks_from_json:1063 - ID Id_information.2 details - Name: Jayden Jayden, Package: com.facebook.katana, LDPlayer: Geni4
+2025-07-31 20:48:26,469 - TaskCollector - INFO - collect_tasks_from_json:1081 - Processing upload tasks for ID Id_information.2
+2025-07-31 20:48:26,469 - TaskCollector - DEBUG - collect_tasks_from_json:1090 - ID Id_information.2 upload types - Reels: True, Video: False, Image: True, Story: False
+2025-07-31 20:48:26,469 - TaskCollector - INFO - process_content_config:475 - Processing reels configuration for Jayden Jayden
+2025-07-31 20:48:26,469 - TaskCollector - DEBUG - process_content_config:521 - reels folder path: E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_reel
+2025-07-31 20:48:26,469 - TaskCollector - INFO - check_media_available_in_folder:334 - Checking for 1 video(s) in folder: E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_reel for profile: Jayden Jayden
+2025-07-31 20:48:26,469 - TaskCollector - INFO - check_media_available_in_folder:363 - Found sufficient video files (1) for Jayden Jayden
+2025-07-31 20:48:26,469 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Original Video
+2025-07-31 20:48:26,470 - TaskCollector - DEBUG - get_video_captions:114 - Looking for video files in: E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_reel
+2025-07-31 20:48:26,470 - TaskCollector - DEBUG - get_video_captions:123 - Added caption from video: How a Backpack Saved a Policeman From Two Bullets 🎒_PREe9yqfObvgQI_POST
+2025-07-31 20:48:26,470 - TaskCollector - INFO - get_video_captions:203 - Returning 1 captions
+2025-07-31 20:48:26,470 - TaskCollector - INFO - process_content_config:594 - Added reels configuration for Jayden Jayden
+2025-07-31 20:48:26,470 - TaskCollector - INFO - process_content_config:475 - Processing images configuration for Jayden Jayden
+2025-07-31 20:48:26,471 - TaskCollector - DEBUG - process_content_config:521 - images folder path: E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_img
+2025-07-31 20:48:26,471 - TaskCollector - INFO - check_image_available_in_folder:1311 - Checking for 1 image(s) in folder: E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_img for profile: Jayden Jayden
+2025-07-31 20:48:26,471 - TaskCollector - INFO - check_image_available_in_folder:1333 - Found sufficient image files (1) for Jayden Jayden
+2025-07-31 20:48:26,471 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Original Video
+2025-07-31 20:48:26,471 - TaskCollector - DEBUG - get_video_captions:114 - Looking for video files in: E:\facebook_ld\raushan1\Puja Ji\Puja Ji_download_img
+2025-07-31 20:48:26,471 - TaskCollector - WARNING - get_video_captions:197 - No captions found, using empty strings
+2025-07-31 20:48:26,471 - TaskCollector - INFO - get_video_captions:203 - Returning 1 captions
+2025-07-31 20:48:26,471 - TaskCollector - INFO - process_content_config:594 - Added images configuration for Jayden Jayden
+2025-07-31 20:48:26,473 - TaskCollector - DEBUG - collect_tasks_from_json:1139 - Processing 1 pages for ID Id_information.2
+2025-07-31 20:48:26,473 - TaskCollector - DEBUG - collect_tasks_from_json:1143 - Processing page: Confessionclubdepodcast
+2025-07-31 20:48:26,473 - TaskCollector - DEBUG - collect_tasks_from_json:1162 - Page Confessionclubdepodcast upload types - Reels: True, Video: False, Image: False, Story: False
+2025-07-31 20:48:26,473 - TaskCollector - INFO - process_content_config:475 - Processing reels configuration for Confessionclubdepodcast
+2025-07-31 20:48:26,473 - TaskCollector - DEBUG - process_content_config:521 - reels folder path: E:\facebook_ld\raushan1\Confessionclubdepodcast\Confessionclubdepodcast_download_reel
+2025-07-31 20:48:26,473 - TaskCollector - INFO - check_media_available_in_folder:334 - Checking for 1 video(s) in folder: E:\facebook_ld\raushan1\Confessionclubdepodcast\Confessionclubdepodcast_download_reel for profile: Confessionclubdepodcast
+2025-07-31 20:48:26,473 - TaskCollector - INFO - check_media_available_in_folder:363 - Found sufficient video files (1) for Confessionclubdepodcast
+2025-07-31 20:48:26,473 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Original Video
+2025-07-31 20:48:26,473 - TaskCollector - DEBUG - get_video_captions:114 - Looking for video files in: E:\facebook_ld\raushan1\Confessionclubdepodcast\Confessionclubdepodcast_download_reel
+2025-07-31 20:48:26,474 - TaskCollector - DEBUG - get_video_captions:123 - Added caption from video: The Giant Magnet Is Used To Lift Bottle Caps For Recycling 😲_PRE6PYhgKd0VN4_POST
+2025-07-31 20:48:26,474 - TaskCollector - INFO - get_video_captions:203 - Returning 1 captions
+2025-07-31 20:48:26,474 - TaskCollector - INFO - process_content_config:594 - Added reels configuration for Confessionclubdepodcast
+2025-07-31 20:48:26,474 - TaskCollector - INFO - collect_tasks_from_json:1204 - Processing ID active tasks for ID Id_information.2
+2025-07-31 20:48:26,474 - TaskCollector - INFO - process_id_active_data:614 - Processing ID active data for profile: Jayden Jayden
+2025-07-31 20:48:26,475 - TaskCollector - DEBUG - process_id_active_data:663 - Processing scroll_reels_and_vid configuration
+2025-07-31 20:48:26,475 - TaskCollector - DEBUG - _process_activity_config:950 - Processing activity configuration
+2025-07-31 20:48:26,475 - TaskCollector - DEBUG - _process_activity_config:1018 - Activity configuration processed successfully
+2025-07-31 20:48:26,475 - TaskCollector - DEBUG - process_id_active_data:679 - Reels scrolling enabled with duration: 4 minutes
+2025-07-31 20:48:26,475 - TaskCollector - DEBUG - process_id_active_data:700 - Processing scroll_feed configuration
+2025-07-31 20:48:26,475 - TaskCollector - DEBUG - _process_activity_config:950 - Processing activity configuration
+2025-07-31 20:48:26,476 - TaskCollector - DEBUG - _process_activity_config:1018 - Activity configuration processed successfully
+2025-07-31 20:48:26,476 - TaskCollector - DEBUG - process_id_active_data:715 - Feed scrolling enabled with duration: 4 minutes
+2025-07-31 20:48:26,476 - TaskCollector - DEBUG - process_id_active_data:720 - Processing check_msg configuration
+2025-07-31 20:48:26,476 - TaskCollector - DEBUG - process_id_active_data:747 - Processing add_and_confirm_friends configuration
+2025-07-31 20:48:26,476 - TaskCollector - DEBUG - process_id_active_data:776 - Processing post_photo configuration
+2025-07-31 20:48:26,476 - TaskCollector - INFO - check_media_available_in_folder:334 - Checking for 2 image(s) in folder: E:/facebook_ld/raushan1/Puja Ji/Puja Ji_download_img for profile: Jayden Jayden
+2025-07-31 20:48:26,477 - TaskCollector - INFO - check_media_available_in_folder:363 - Found sufficient image files (2) for Jayden Jayden
+2025-07-31 20:48:26,477 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Original Photo
+2025-07-31 20:48:26,477 - TaskCollector - DEBUG - get_video_captions:132 - Looking for Photos files in: E:/facebook_ld/raushan1/Puja Ji/Puja Ji_download_img
+2025-07-31 20:48:26,477 - TaskCollector - DEBUG - get_video_captions:141 - Added caption from video: pinterest_image_0_1753904021
+2025-07-31 20:48:26,477 - TaskCollector - DEBUG - get_video_captions:141 - Added caption from video: pinterest_image_1_1753904027
+2025-07-31 20:48:26,477 - TaskCollector - INFO - get_video_captions:203 - Returning 2 captions
+2025-07-31 20:48:26,477 - TaskCollector - DEBUG - process_id_active_data:816 - Photo upload enabled
+2025-07-31 20:48:26,477 - TaskCollector - DEBUG - process_id_active_data:821 - Processing post_checkin configuration
+2025-07-31 20:48:26,477 - TaskCollector - INFO - check_media_available_in_folder:334 - Checking for 1 image(s) in folder: E:/facebook_ld/raushan1/Puja Ji/Puja Ji_download_img for profile: Jayden Jayden
+2025-07-31 20:48:26,479 - TaskCollector - INFO - check_media_available_in_folder:363 - Found sufficient image files (1) for Jayden Jayden
+2025-07-31 20:48:26,479 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Text Box
+2025-07-31 20:48:26,479 - TaskCollector - DEBUG - get_video_captions:151 - Using text box content: Hi Guys what is up ?...
+2025-07-31 20:48:26,479 - TaskCollector - INFO - get_video_captions:203 - Returning 1 captions
+2025-07-31 20:48:26,479 - TaskCollector - DEBUG - process_id_active_data:873 - Post checkin enabled: 1 posts
+2025-07-31 20:48:26,479 - TaskCollector - DEBUG - process_id_active_data:879 - Processing create_story configuration
+2025-07-31 20:48:26,479 - TaskCollector - DEBUG - process_id_active_data:886 - Story creation enabled (handled separately)
+2025-07-31 20:48:26,479 - TaskCollector - INFO - check_media_available_in_folder:334 - Checking for 2 video(s) in folder: E:/facebook_ld/raushan1/Puja Ji/Puja Ji_download_story for profile: Jayden Jayden
+2025-07-31 20:48:26,480 - TaskCollector - WARNING - check_media_available_in_folder:367 - Only 1 video(s) available for Jayden Jayden, but 2 required.
+2025-07-31 20:48:26,480 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Original Photo
+2025-07-31 20:48:26,480 - TaskCollector - DEBUG - get_video_captions:132 - Looking for Photos files in: E:/facebook_ld/raushan1/Puja Ji/Puja Ji_download_story
+2025-07-31 20:48:26,480 - TaskCollector - WARNING - get_video_captions:197 - No captions found, using empty strings
+2025-07-31 20:48:26,480 - TaskCollector - INFO - get_video_captions:203 - Returning 2 captions
+2025-07-31 20:48:26,480 - TaskCollector - DEBUG - process_id_active_data:922 - Processing check_notification configuration
+2025-07-31 20:48:26,480 - TaskCollector - INFO - process_id_active_data:935 - Successfully processed ID active data for Jayden Jayden
+2025-07-31 20:48:26,481 - TaskCollector - INFO - collect_tasks_from_json:1234 - Adding combined tasks for 2 profiles
+2025-07-31 20:48:26,481 - TaskCollector - DEBUG - should_update_insight:391 - Checking if insights should be updated
+2025-07-31 20:48:26,481 - TaskCollector - DEBUG - should_update_insight:399 - Update delay: 2 days, Last update: 2025-07-30 01:18:26
+2025-07-31 20:48:26,481 - TaskCollector - INFO - should_update_insight:415 - Days since last update: 1, Should update: False
+2025-07-31 20:48:26,481 - TaskCollector - INFO - ld_inst_adb_serial_by_name:240 - Getting ADB serial for LDPlayer: Geni4
+2025-07-31 20:48:26,481 - TaskCollector - INFO - get_ld_list:208 - Getting LDPlayer list from: E:/LDPlayer/LDPlayer9
+2025-07-31 20:48:26,482 - TaskCollector - DEBUG - get_ld_list:217 - Executing command: E:/LDPlayer/LDPlayer9\ldconsole.exe list2
+2025-07-31 20:48:26,531 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 0, Geni1
+2025-07-31 20:48:26,531 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 1, Geni2
+2025-07-31 20:48:26,531 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 2, Geni3
+2025-07-31 20:48:26,531 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 3, Geni4
+2025-07-31 20:48:26,531 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 4, Geni5
+2025-07-31 20:48:26,531 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 5, Geni6
+2025-07-31 20:48:26,531 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 6, Geni7
+2025-07-31 20:48:26,531 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 7, Geni8
+2025-07-31 20:48:26,531 - TaskCollector - INFO - get_ld_list:228 - Found 8 LDPlayer instances
+2025-07-31 20:48:26,531 - TaskCollector - DEBUG - ld_inst_adb_serial_by_name:259 - Found LDPlayer instance index: 3
+2025-07-31 20:48:26,531 - TaskCollector - INFO - ld_inst_adb_serial_by_name:268 - ADB serial for 'Geni4': emulator-5560
+2025-07-31 20:48:26,531 - TaskCollector - INFO - collect_tasks_from_json:1283 - Added task for ID Id_information.2 to main queue (Upload: True, ID Active: True)
+2025-07-31 20:48:26,531 - TaskCollector - DEBUG - collect_tasks_from_json:1041 - Processing ID: Id_information.3
+2025-07-31 20:48:26,533 - TaskCollector - DEBUG - collect_tasks_from_json:1052 - ID Id_information.3 - Upload: True, ID Active: True
+2025-07-31 20:48:26,533 - TaskCollector - DEBUG - collect_tasks_from_json:1063 - ID Id_information.3 details - Name: Robert Robert, Package: com.facebook.katana, LDPlayer: Geni2
+2025-07-31 20:48:26,533 - TaskCollector - INFO - collect_tasks_from_json:1081 - Processing upload tasks for ID Id_information.3
+2025-07-31 20:48:26,533 - TaskCollector - DEBUG - collect_tasks_from_json:1090 - ID Id_information.3 upload types - Reels: True, Video: False, Image: False, Story: False
+2025-07-31 20:48:26,533 - TaskCollector - INFO - process_content_config:475 - Processing reels configuration for Robert Robert
+2025-07-31 20:48:26,533 - TaskCollector - DEBUG - process_content_config:521 - reels folder path: E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel
+2025-07-31 20:48:26,533 - TaskCollector - INFO - check_media_available_in_folder:334 - Checking for 1 video(s) in folder: E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel for profile: Robert Robert
+2025-07-31 20:48:26,534 - TaskCollector - INFO - check_media_available_in_folder:363 - Found sufficient video files (1) for Robert Robert
+2025-07-31 20:48:26,534 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Original Video
+2025-07-31 20:48:26,534 - TaskCollector - DEBUG - get_video_captions:114 - Looking for video files in: E:\facebook_ld\genni2\Akshita Kumari\Akshita Kumari_download_reel
+2025-07-31 20:48:26,534 - TaskCollector - DEBUG - get_video_captions:123 - Added caption from video: How Did Dan Cooper Escape With $200,000 ✈️ 💣_PREbgyx2QWeEuc_POST
+2025-07-31 20:48:26,534 - TaskCollector - INFO - get_video_captions:203 - Returning 1 captions
+2025-07-31 20:48:26,534 - TaskCollector - INFO - process_content_config:594 - Added reels configuration for Robert Robert
+2025-07-31 20:48:26,535 - TaskCollector - DEBUG - collect_tasks_from_json:1139 - Processing 3 pages for ID Id_information.3
+2025-07-31 20:48:26,535 - TaskCollector - DEBUG - collect_tasks_from_json:1143 - Processing page: Milan-David
+2025-07-31 20:48:26,535 - TaskCollector - DEBUG - collect_tasks_from_json:1162 - Page Milan-David upload types - Reels: True, Video: False, Image: False, Story: False
+2025-07-31 20:48:26,535 - TaskCollector - INFO - process_content_config:475 - Processing reels configuration for Milan-David
+2025-07-31 20:48:26,535 - TaskCollector - DEBUG - process_content_config:521 - reels folder path: E:\facebook_ld\genni2\Milan-David\Milan-David_download_reel
+2025-07-31 20:48:26,535 - TaskCollector - INFO - check_media_available_in_folder:334 - Checking for 2 video(s) in folder: E:\facebook_ld\genni2\Milan-David\Milan-David_download_reel for profile: Milan-David
+2025-07-31 20:48:26,535 - TaskCollector - INFO - check_media_available_in_folder:363 - Found sufficient video files (2) for Milan-David
+2025-07-31 20:48:26,536 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Original Video
+2025-07-31 20:48:26,536 - TaskCollector - DEBUG - get_video_captions:114 - Looking for video files in: E:\facebook_ld\genni2\Milan-David\Milan-David_download_reel
+2025-07-31 20:48:26,536 - TaskCollector - DEBUG - get_video_captions:123 - Added caption from video: Blue spaghetti Chitarra #pasta #spaghetti_PREEy4xPjrIxdM_POST
+2025-07-31 20:48:26,536 - TaskCollector - DEBUG - get_video_captions:123 - Added caption from video: Donut raviolone #pasta #ravioli_PRESmuS2p6IYag_POST
+2025-07-31 20:48:26,536 - TaskCollector - INFO - get_video_captions:203 - Returning 2 captions
+2025-07-31 20:48:26,536 - TaskCollector - INFO - process_content_config:594 - Added reels configuration for Milan-David
+2025-07-31 20:48:26,536 - TaskCollector - DEBUG - collect_tasks_from_json:1143 - Processing page: Letstrythisagain
+2025-07-31 20:48:26,537 - TaskCollector - DEBUG - collect_tasks_from_json:1162 - Page Letstrythisagain upload types - Reels: False, Video: False, Image: False, Story: False
+2025-07-31 20:48:26,537 - TaskCollector - DEBUG - collect_tasks_from_json:1143 - Processing page: Javad aka Utlending.memes
+2025-07-31 20:48:26,537 - TaskCollector - DEBUG - collect_tasks_from_json:1162 - Page Javad aka Utlending.memes upload types - Reels: False, Video: False, Image: False, Story: False
+2025-07-31 20:48:26,537 - TaskCollector - INFO - collect_tasks_from_json:1204 - Processing ID active tasks for ID Id_information.3
+2025-07-31 20:48:26,537 - TaskCollector - INFO - process_id_active_data:614 - Processing ID active data for profile: Robert Robert
+2025-07-31 20:48:26,538 - TaskCollector - DEBUG - process_id_active_data:663 - Processing scroll_reels_and_vid configuration
+2025-07-31 20:48:26,538 - TaskCollector - DEBUG - _process_activity_config:950 - Processing activity configuration
+2025-07-31 20:48:26,538 - TaskCollector - DEBUG - _process_activity_config:1018 - Activity configuration processed successfully
+2025-07-31 20:48:26,538 - TaskCollector - DEBUG - process_id_active_data:679 - Reels scrolling enabled with duration: 4 minutes
+2025-07-31 20:48:26,538 - TaskCollector - DEBUG - _process_activity_config:950 - Processing activity configuration
+2025-07-31 20:48:26,538 - TaskCollector - DEBUG - _process_activity_config:1018 - Activity configuration processed successfully
+2025-07-31 20:48:26,538 - TaskCollector - DEBUG - process_id_active_data:695 - Videos scrolling enabled with duration: 4 minutes
+2025-07-31 20:48:26,538 - TaskCollector - DEBUG - process_id_active_data:700 - Processing scroll_feed configuration
+2025-07-31 20:48:26,538 - TaskCollector - DEBUG - _process_activity_config:950 - Processing activity configuration
+2025-07-31 20:48:26,539 - TaskCollector - DEBUG - _process_activity_config:1018 - Activity configuration processed successfully
+2025-07-31 20:48:26,539 - TaskCollector - DEBUG - process_id_active_data:715 - Feed scrolling enabled with duration: 2 minutes
+2025-07-31 20:48:26,539 - TaskCollector - DEBUG - process_id_active_data:720 - Processing check_msg configuration
+2025-07-31 20:48:26,539 - TaskCollector - DEBUG - process_id_active_data:747 - Processing add_and_confirm_friends configuration
+2025-07-31 20:48:26,539 - TaskCollector - DEBUG - process_id_active_data:776 - Processing post_photo configuration
+2025-07-31 20:48:26,539 - TaskCollector - INFO - check_media_available_in_folder:334 - Checking for 1 image(s) in folder: E:/facebook_ld/genni2/Akshita Kumari/Akshita Kumari_download_img for profile: Robert Robert
+2025-07-31 20:48:26,540 - TaskCollector - WARNING - check_media_available_in_folder:369 - No images available for Robert Robert in folder: E:/facebook_ld/genni2/Akshita Kumari/Akshita Kumari_download_img
+2025-07-31 20:48:26,540 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Original Photo
+2025-07-31 20:48:26,542 - TaskCollector - DEBUG - get_video_captions:132 - Looking for Photos files in: E:/facebook_ld/genni2/Akshita Kumari/Akshita Kumari_download_img
+2025-07-31 20:48:26,542 - TaskCollector - WARNING - get_video_captions:197 - No captions found, using empty strings
+2025-07-31 20:48:26,542 - TaskCollector - INFO - get_video_captions:203 - Returning 1 captions
+2025-07-31 20:48:26,542 - TaskCollector - DEBUG - process_id_active_data:816 - Photo upload enabled
+2025-07-31 20:48:26,542 - TaskCollector - DEBUG - process_id_active_data:821 - Processing post_checkin configuration
+2025-07-31 20:48:26,542 - TaskCollector - INFO - check_media_available_in_folder:334 - Checking for 1 image(s) in folder: E:/facebook_ld/genni2/Akshita Kumari/Akshita Kumari_download_img for profile: Robert Robert
+2025-07-31 20:48:26,543 - TaskCollector - WARNING - check_media_available_in_folder:369 - No images available for Robert Robert in folder: E:/facebook_ld/genni2/Akshita Kumari/Akshita Kumari_download_img
+2025-07-31 20:48:26,543 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Original Photo
+2025-07-31 20:48:26,543 - TaskCollector - DEBUG - get_video_captions:132 - Looking for Photos files in: E:/facebook_ld/genni2/Akshita Kumari/Akshita Kumari_download_img
+2025-07-31 20:48:26,543 - TaskCollector - WARNING - get_video_captions:197 - No captions found, using empty strings
+2025-07-31 20:48:26,543 - TaskCollector - INFO - get_video_captions:203 - Returning 1 captions
+2025-07-31 20:48:26,543 - TaskCollector - DEBUG - process_id_active_data:873 - Post checkin enabled: 1 posts
+2025-07-31 20:48:26,544 - TaskCollector - DEBUG - process_id_active_data:879 - Processing create_story configuration
+2025-07-31 20:48:26,544 - TaskCollector - DEBUG - process_id_active_data:886 - Story creation enabled (handled separately)
+2025-07-31 20:48:26,544 - TaskCollector - INFO - check_media_available_in_folder:334 - Checking for 1 video(s) in folder: E:/facebook_ld/genni2/Akshita Kumari/Akshita Kumari_download_img for profile: Robert Robert
+2025-07-31 20:48:26,544 - TaskCollector - WARNING - check_media_available_in_folder:369 - No videos available for Robert Robert in folder: E:/facebook_ld/genni2/Akshita Kumari/Akshita Kumari_download_img
+2025-07-31 20:48:26,544 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From Original Photo
+2025-07-31 20:48:26,544 - TaskCollector - DEBUG - get_video_captions:132 - Looking for Photos files in: E:/facebook_ld/genni2/Akshita Kumari/Akshita Kumari_download_img
+2025-07-31 20:48:26,544 - TaskCollector - WARNING - get_video_captions:197 - No captions found, using empty strings
+2025-07-31 20:48:26,545 - TaskCollector - INFO - get_video_captions:203 - Returning 1 captions
+2025-07-31 20:48:26,545 - TaskCollector - DEBUG - process_id_active_data:922 - Processing check_notification configuration
+2025-07-31 20:48:26,545 - TaskCollector - DEBUG - process_id_active_data:933 - Check notifications enabled with duration: 1 minutes
+2025-07-31 20:48:26,545 - TaskCollector - INFO - process_id_active_data:935 - Successfully processed ID active data for Robert Robert
+2025-07-31 20:48:26,545 - TaskCollector - INFO - collect_tasks_from_json:1234 - Adding combined tasks for 2 profiles
+2025-07-31 20:48:26,545 - TaskCollector - DEBUG - should_update_insight:391 - Checking if insights should be updated
+2025-07-31 20:48:26,545 - TaskCollector - DEBUG - should_update_insight:399 - Update delay: 2 days, Last update: 2025-07-30 01:18:26
+2025-07-31 20:48:26,546 - TaskCollector - INFO - should_update_insight:415 - Days since last update: 1, Should update: False
+2025-07-31 20:48:26,546 - TaskCollector - INFO - ld_inst_adb_serial_by_name:240 - Getting ADB serial for LDPlayer: Geni2
+2025-07-31 20:48:26,546 - TaskCollector - INFO - get_ld_list:208 - Getting LDPlayer list from: E:/LDPlayer/LDPlayer9
+2025-07-31 20:48:26,546 - TaskCollector - DEBUG - get_ld_list:217 - Executing command: E:/LDPlayer/LDPlayer9\ldconsole.exe list2
+2025-07-31 20:48:26,593 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 0, Geni1
+2025-07-31 20:48:26,593 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 1, Geni2
+2025-07-31 20:48:26,593 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 2, Geni3
+2025-07-31 20:48:26,593 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 3, Geni4
+2025-07-31 20:48:26,594 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 4, Geni5
+2025-07-31 20:48:26,594 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 5, Geni6
+2025-07-31 20:48:26,594 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 6, Geni7
+2025-07-31 20:48:26,594 - TaskCollector - DEBUG - get_ld_list:226 - Found LDPlayer instance: 7, Geni8
+2025-07-31 20:48:26,594 - TaskCollector - INFO - get_ld_list:228 - Found 8 LDPlayer instances
+2025-07-31 20:48:26,594 - TaskCollector - DEBUG - ld_inst_adb_serial_by_name:259 - Found LDPlayer instance index: 1
+2025-07-31 20:48:26,594 - TaskCollector - INFO - ld_inst_adb_serial_by_name:268 - ADB serial for 'Geni2': emulator-5556
+2025-07-31 20:48:26,594 - TaskCollector - INFO - collect_tasks_from_json:1283 - Added task for ID Id_information.3 to main queue (Upload: True, ID Active: True)
+2025-07-31 20:48:26,595 - TaskCollector - DEBUG - collect_tasks_from_json:1041 - Processing ID: Id_information.4
+2025-07-31 20:48:26,595 - TaskCollector - DEBUG - collect_tasks_from_json:1049 - Skipping ID Id_information.4: Neither Upload nor ID Active is enabled
+2025-07-31 20:48:26,595 - TaskCollector - DEBUG - collect_tasks_from_json:1041 - Processing ID: Id_information.5
+2025-07-31 20:48:26,595 - TaskCollector - DEBUG - collect_tasks_from_json:1049 - Skipping ID Id_information.5: Neither Upload nor ID Active is enabled
+2025-07-31 20:48:26,595 - TaskCollector - DEBUG - collect_tasks_from_json:1041 - Processing ID: Id_information.6
+2025-07-31 20:48:26,595 - TaskCollector - DEBUG - collect_tasks_from_json:1049 - Skipping ID Id_information.6: Neither Upload nor ID Active is enabled
+2025-07-31 20:48:26,596 - TaskCollector - DEBUG - collect_tasks_from_json:1041 - Processing ID: Id_information.7
+2025-07-31 20:48:26,596 - TaskCollector - DEBUG - collect_tasks_from_json:1049 - Skipping ID Id_information.7: Neither Upload nor ID Active is enabled
+2025-07-31 20:48:26,596 - TaskCollector - INFO - collect_tasks_from_json:1285 - Processed 7 IDs, 3 with tasks
+2025-07-31 20:48:26,596 - TaskCollector - DEBUG - check_and_update_insight:430 - Checking and potentially updating insight timestamp
+2025-07-31 20:48:26,596 - TaskCollector - INFO - check_and_update_insight:467 - Update delay not met (1/2 days)

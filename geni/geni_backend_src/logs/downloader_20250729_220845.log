@@ -1,0 +1,8 @@
+2025-07-29 22:08:45,528 - DownloaderTaskCollector - INFO - setup_logger:46 - Logging initialized. Log file: e:\geni_flow_ui_v1.0\facebook_tool_0.8\geni\geni_backend_src\logs\downloader_20250729_220845.log
+2025-07-29 22:08:45,528 - DownloaderTaskCollector - INFO - __init__:55 - Initializing DownloaderTaskCollector
+2025-07-29 22:08:45,529 - DownloaderTaskCollector - DEBUG - __init__:72 - Set geni_setting_json_path: User_Data\Devices_Setting.json
+2025-07-29 22:08:45,529 - DownloaderTaskCollector - DEBUG - __init__:73 - Set page_manager_path: User_Data\Page_manager.json
+2025-07-29 22:08:45,529 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:414 - Collecting download tasks from JSON configuration
+2025-07-29 22:08:45,532 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:416 - Reading configuration from: User_Data\Page_manager.json
+2025-07-29 22:08:45,536 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:420 - Processing 6 ID entries
+2025-07-29 22:08:45,536 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:595 - Task collection summary: 0 IDs processed, 0 IDs with tasks, 0 total tasks

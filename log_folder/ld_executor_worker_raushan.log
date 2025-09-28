@@ -1,0 +1,4 @@
+2025-07-18 19:26:53,446 - INFO - Processing task for device: raushan, ID: Rekha Kumari, Serial: emulator-5558, Method: Without Apps Switch
+2025-07-18 19:26:53,446 - INFO - Attempt 1/3 to open LD Player instance raushan
+2025-07-18 19:26:53,472 - INFO - Launching LD Player instance: raushan
+2025-07-18 19:26:53,813 - INFO - Waiting for raushan to initialize... (1/24)

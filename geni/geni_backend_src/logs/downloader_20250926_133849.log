@@ -1,0 +1,268 @@
+2025-09-26 13:38:49,536 - DownloaderTaskCollector - INFO - setup_logger:46 - Logging initialized. Log file: D:\geni_flow_ui_v1.0\facebook_tool_0.8\geni\geni_backend_src\logs\downloader_20250926_133849.log
+2025-09-26 13:38:49,537 - DownloaderTaskCollector - INFO - __init__:55 - Initializing DownloaderTaskCollector
+2025-09-26 13:38:49,538 - DownloaderTaskCollector - DEBUG - __init__:72 - Set geni_setting_json_path: User_Data\Devices_Setting.json
+2025-09-26 13:38:49,538 - DownloaderTaskCollector - DEBUG - __init__:73 - Set page_manager_path: User_Data\Page_manager.json
+2025-09-26 13:38:49,553 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:414 - Collecting download tasks from JSON configuration
+2025-09-26 13:38:49,553 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:416 - Reading configuration from: User_Data\Page_manager.json
+2025-09-26 13:38:49,572 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:420 - Processing 4 ID entries
+2025-09-26 13:38:49,572 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:431 - Processing ID: Id_information.1
+2025-09-26 13:38:49,572 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:454 - ID Id_information.1 auto download: True
+2025-09-26 13:38:49,573 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:470 - ID Id_information.1 upload types - Reels: True, Video: False, Image: False, Story: False
+2025-09-26 13:38:49,573 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.1 reel configuration
+2025-09-26 13:38:49,573 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-09-26 13:38:49,573 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-09-26 13:38:49,573 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,575 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Instagram, Channel link: hetal_sharmaa
+2025-09-26 13:38:49,575 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 3
+2025-09-26 13:38:49,575 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 3
+2025-09-26 13:38:49,576 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 3
+2025-09-26 13:38:49,578 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 3 videos in folder: C:\Users\raush\Desktop\GeniData\Geni1\Neha Tiwari\Neha Tiwari_download_reel
+2025-09-26 13:38:49,578 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: C:\Users\raush\Desktop\GeniData\Geni1\Neha Tiwari\Neha Tiwari_download_reel
+2025-09-26 13:38:49,579 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 3
+2025-09-26 13:38:49,580 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: C:\Users\raush\Desktop\GeniData\Geni1\Neha Tiwari\Neha Tiwari_download_reel\Video by hetal_sharmaa_PREDN-toMjkisC_POST.mp4
+2025-09-26 13:38:49,581 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: C:\Users\raush\Desktop\GeniData\Geni1\Neha Tiwari\Neha Tiwari_download_reel\Video by hetal_sharmaa_PREDOBP1BpkufS_POST.mp4
+2025-09-26 13:38:49,582 - DownloaderTaskCollector - WARNING - check_files_in_folder:249 - Found only 2 files, but 3 were required
+2025-09-26 13:38:49,583 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 3 reel(s) to C:\Users\raush\Desktop\GeniData\Geni1\Neha Tiwari\Neha Tiwari_download_reel
+2025-09-26 13:38:49,583 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('hetal_sharmaa', 'Instagram', 3, 'C:\\Users\\raush\\Desktop\\GeniData\\Geni1\\Neha Tiwari\\Neha Tiwari_download_reel', 'reel', 'Neha Tiwari')
+2025-09-26 13:38:49,584 - DownloaderTaskCollector - INFO - is_valid_download_config:318 - Valid download config for reel: 3 items from Instagram
+2025-09-26 13:38:49,584 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:514 - Added valid reel download task for ID Id_information.1
+2025-09-26 13:38:49,584 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.1 video configuration
+2025-09-26 13:38:49,584 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-09-26 13:38:49,584 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,586 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,586 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-09-26 13:38:49,586 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.1 image configuration
+2025-09-26 13:38:49,602 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-09-26 13:38:49,606 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,606 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,606 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping image download: upload or auto-download not enabled
+2025-09-26 13:38:49,606 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.1 story configuration
+2025-09-26 13:38:49,607 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-09-26 13:38:49,607 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,607 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,608 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-09-26 13:38:49,608 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:520 - Processing 3 pages for ID Id_information.1
+2025-09-26 13:38:49,609 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:523 - Processing page: Page.1
+2025-09-26 13:38:49,609 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:533 - Page Page.1 upload types - Reels: True, Video: False, Image: False, Story: False
+2025-09-26 13:38:49,609 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:539 - Page Page.1 auto download: True
+2025-09-26 13:38:49,609 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 reel configuration
+2025-09-26 13:38:49,609 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-09-26 13:38:49,609 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-09-26 13:38:49,610 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,611 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Instagram, Channel link: this.is.gini
+
+2025-09-26 13:38:49,612 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 4
+2025-09-26 13:38:49,612 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 4
+2025-09-26 13:38:49,613 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 4
+2025-09-26 13:38:49,613 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 4 videos in folder: C:\Users\raush\Desktop\GeniData\Geni1\Viral 8\Viral 8_download_reel
+2025-09-26 13:38:49,615 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: C:\Users\raush\Desktop\GeniData\Geni1\Viral 8\Viral 8_download_reel
+2025-09-26 13:38:49,615 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 4
+2025-09-26 13:38:49,616 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: C:\Users\raush\Desktop\GeniData\Geni1\Viral 8\Viral 8_download_reel\Video by this.is.gini_PREDM0SNK_p0YG_POST.mp4
+2025-09-26 13:38:49,616 - DownloaderTaskCollector - WARNING - check_files_in_folder:249 - Found only 1 files, but 4 were required
+2025-09-26 13:38:49,616 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 4 reel(s) to C:\Users\raush\Desktop\GeniData\Geni1\Viral 8\Viral 8_download_reel
+2025-09-26 13:38:49,617 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('this.is.gini\n', 'Instagram', 4, 'C:\\Users\\raush\\Desktop\\GeniData\\Geni1\\Viral 8\\Viral 8_download_reel', 'reel', 'Viral 8')
+2025-09-26 13:38:49,619 - DownloaderTaskCollector - INFO - is_valid_download_config:318 - Valid download config for reel: 4 items from Instagram
+2025-09-26 13:38:49,630 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:582 - Added valid reel download task for page Page.1
+2025-09-26 13:38:49,633 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 video configuration
+2025-09-26 13:38:49,633 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-09-26 13:38:49,634 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,634 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,634 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-09-26 13:38:49,636 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 image configuration
+2025-09-26 13:38:49,636 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-09-26 13:38:49,636 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,636 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,636 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping image download: upload or auto-download not enabled
+2025-09-26 13:38:49,637 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 story configuration
+2025-09-26 13:38:49,637 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-09-26 13:38:49,637 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,637 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,638 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-09-26 13:38:49,641 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:523 - Processing page: Page.2
+2025-09-26 13:38:49,642 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:533 - Page Page.2 upload types - Reels: True, Video: False, Image: False, Story: False
+2025-09-26 13:38:49,642 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:539 - Page Page.2 auto download: True
+2025-09-26 13:38:49,642 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 reel configuration
+2025-09-26 13:38:49,642 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-09-26 13:38:49,643 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-09-26 13:38:49,643 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,643 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Instagram, Channel link: prabhjyott
+2025-09-26 13:38:49,643 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 1
+2025-09-26 13:38:49,643 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 1
+2025-09-26 13:38:49,643 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 1
+2025-09-26 13:38:49,644 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 1 videos in folder: C:\Users\raush\Desktop\GeniData\Geni1\3killstreakuav\3killstreakuav_download_reel
+2025-09-26 13:38:49,644 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: C:\Users\raush\Desktop\GeniData\Geni1\3killstreakuav\3killstreakuav_download_reel
+2025-09-26 13:38:49,644 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 1
+2025-09-26 13:38:49,645 - DownloaderTaskCollector - WARNING - check_files_in_folder:246 - No matching files found
+2025-09-26 13:38:49,656 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 1 reel(s) to C:\Users\raush\Desktop\GeniData\Geni1\3killstreakuav\3killstreakuav_download_reel
+2025-09-26 13:38:49,657 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('prabhjyott', 'Instagram', 1, 'C:\\Users\\raush\\Desktop\\GeniData\\Geni1\\3killstreakuav\\3killstreakuav_download_reel', 'reel', '3killstreakuav')
+2025-09-26 13:38:49,658 - DownloaderTaskCollector - INFO - is_valid_download_config:318 - Valid download config for reel: 1 items from Instagram
+2025-09-26 13:38:49,659 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:582 - Added valid reel download task for page Page.2
+2025-09-26 13:38:49,659 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 video configuration
+2025-09-26 13:38:49,660 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-09-26 13:38:49,661 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,661 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,662 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-09-26 13:38:49,662 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 image configuration
+2025-09-26 13:38:49,662 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-09-26 13:38:49,663 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,663 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,663 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping image download: upload or auto-download not enabled
+2025-09-26 13:38:49,664 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 story configuration
+2025-09-26 13:38:49,664 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-09-26 13:38:49,664 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,664 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,665 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-09-26 13:38:49,665 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:523 - Processing page: Page.3
+2025-09-26 13:38:49,665 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:533 - Page Page.3 upload types - Reels: True, Video: False, Image: True, Story: False
+2025-09-26 13:38:49,665 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:539 - Page Page.3 auto download: True
+2025-09-26 13:38:49,666 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.3 reel configuration
+2025-09-26 13:38:49,666 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-09-26 13:38:49,666 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-09-26 13:38:49,666 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,666 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Youtube, Channel link: 
+2025-09-26 13:38:49,668 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 1
+2025-09-26 13:38:49,668 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 1
+2025-09-26 13:38:49,668 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 3
+2025-09-26 13:38:49,668 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 3 videos in folder: C:\Users\raush\Desktop\GeniData\Geni1\zadecl\zadecl_download_reel
+2025-09-26 13:38:49,668 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: C:\Users\raush\Desktop\GeniData\Geni1\zadecl\zadecl_download_reel
+2025-09-26 13:38:49,669 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 3
+2025-09-26 13:38:49,669 - DownloaderTaskCollector - WARNING - check_files_in_folder:246 - No matching files found
+2025-09-26 13:38:49,681 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 3 reel(s) to C:\Users\raush\Desktop\GeniData\Geni1\zadecl\zadecl_download_reel
+2025-09-26 13:38:49,683 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('', 'Youtube', 3, 'C:\\Users\\raush\\Desktop\\GeniData\\Geni1\\zadecl\\zadecl_download_reel', 'reel', 'zadecl')
+2025-09-26 13:38:49,683 - DownloaderTaskCollector - ERROR - is_valid_download_config:299 - Skipping task: Missing channel link for reel
+2025-09-26 13:38:49,684 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.3 video configuration
+2025-09-26 13:38:49,685 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-09-26 13:38:49,685 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,685 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,685 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-09-26 13:38:49,686 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.3 image configuration
+2025-09-26 13:38:49,687 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-09-26 13:38:49,687 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-09-26 13:38:49,688 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: False
+2025-09-26 13:38:49,688 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping image download: upload or auto-download not enabled
+2025-09-26 13:38:49,688 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.3 story configuration
+2025-09-26 13:38:49,689 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-09-26 13:38:49,689 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,689 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: False
+2025-09-26 13:38:49,690 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-09-26 13:38:49,690 - DownloaderTaskCollector - DEBUG - is_valid_instance_info:389 - Validating instance info: ('C:/Users/raush/Desktop/GeniData/Geni1/chrome', 'Profile 1', 'C:\\Users\\raush\\Desktop\\GeniData\\Geni1\\chrome\\reels_history.xlsx', 'Geni1')
+2025-09-26 13:38:49,691 - DownloaderTaskCollector - INFO - is_valid_instance_info:409 - Valid instance info: C:/Users/raush/Desktop/GeniData/Geni1/chrome, Profile 1
+2025-09-26 13:38:49,691 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:590 - Adding 3 tasks to queue for ID Id_information.1
+2025-09-26 13:38:49,692 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:431 - Processing ID: Id_information.2
+2025-09-26 13:38:49,692 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:454 - ID Id_information.2 auto download: True
+2025-09-26 13:38:49,692 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:470 - ID Id_information.2 upload types - Reels: False, Video: False, Image: False, Story: False
+2025-09-26 13:38:49,692 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.2 reel configuration
+2025-09-26 13:38:49,693 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-09-26 13:38:49,693 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,693 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,693 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping reel download: upload or auto-download not enabled
+2025-09-26 13:38:49,694 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.2 video configuration
+2025-09-26 13:38:49,694 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-09-26 13:38:49,694 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,694 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,694 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-09-26 13:38:49,694 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.2 image configuration
+2025-09-26 13:38:49,695 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-09-26 13:38:49,695 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,695 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,698 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping image download: upload or auto-download not enabled
+2025-09-26 13:38:49,711 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:502 - Processing ID Id_information.2 story configuration
+2025-09-26 13:38:49,711 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-09-26 13:38:49,712 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,713 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,713 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-09-26 13:38:49,713 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:520 - Processing 2 pages for ID Id_information.2
+2025-09-26 13:38:49,714 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:523 - Processing page: Page.1
+2025-09-26 13:38:49,714 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:533 - Page Page.1 upload types - Reels: True, Video: False, Image: True, Story: False
+2025-09-26 13:38:49,715 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:539 - Page Page.1 auto download: True
+2025-09-26 13:38:49,715 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 reel configuration
+2025-09-26 13:38:49,715 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-09-26 13:38:49,717 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-09-26 13:38:49,717 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,718 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Instagram, Channel link: iamsajidshahid
+2025-09-26 13:38:49,718 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 3
+2025-09-26 13:38:49,718 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 3
+2025-09-26 13:38:49,718 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 3
+2025-09-26 13:38:49,718 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 3 videos in folder: C:\Users\raush\Desktop\GeniData\Geni2\Anderhalveman\Anderhalveman_download_reel
+2025-09-26 13:38:49,719 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: C:\Users\raush\Desktop\GeniData\Geni2\Anderhalveman\Anderhalveman_download_reel
+2025-09-26 13:38:49,719 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 3
+2025-09-26 13:38:49,719 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: C:\Users\raush\Desktop\GeniData\Geni2\Anderhalveman\Anderhalveman_download_reel\Video by iamsajidshahid_PREDOddxAoERoD_POST.mp4
+2025-09-26 13:38:49,720 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: C:\Users\raush\Desktop\GeniData\Geni2\Anderhalveman\Anderhalveman_download_reel\Video by iamsajidshahid_PREDOgNQwRk5vB_POST.mp4
+2025-09-26 13:38:49,733 - DownloaderTaskCollector - DEBUG - check_files_in_folder:243 - Found matching file: C:\Users\raush\Desktop\GeniData\Geni2\Anderhalveman\Anderhalveman_download_reel\Video by iamsajidshahid_PREDOkty5BjBbj_POST.mp4
+2025-09-26 13:38:49,734 - DownloaderTaskCollector - INFO - check_files_in_folder:252 - Found 3 files, which meets or exceeds the requirement of 3
+2025-09-26 13:38:49,734 - DownloaderTaskCollector - INFO - process_content_type_config:383 - Sufficient reel content already available in C:\Users\raush\Desktop\GeniData\Geni2\Anderhalveman\Anderhalveman_download_reel
+2025-09-26 13:38:49,735 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 video configuration
+2025-09-26 13:38:49,735 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-09-26 13:38:49,736 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,736 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,737 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-09-26 13:38:49,737 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 image configuration
+2025-09-26 13:38:49,737 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-09-26 13:38:49,739 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-09-26 13:38:49,739 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,739 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: Pinterest, Channel link: hot girls 
+2025-09-26 13:38:49,740 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 1
+2025-09-26 13:38:49,740 - DownloaderTaskCollector - DEBUG - process_content_type_config:359 - Converted string content count to int: 1
+2025-09-26 13:38:49,741 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 2
+2025-09-26 13:38:49,741 - DownloaderTaskCollector - INFO - check_image_available_in_folder:266 - Checking for 2 images in folder: C:\Users\raush\Desktop\GeniData\Geni2\Anderhalveman\Anderhalveman_download_img
+2025-09-26 13:38:49,742 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: C:\Users\raush\Desktop\GeniData\Geni2\Anderhalveman\Anderhalveman_download_img
+2025-09-26 13:38:49,742 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.png', '*.jpeg', '*.jpg'], required count: 2
+2025-09-26 13:38:49,744 - DownloaderTaskCollector - WARNING - check_files_in_folder:246 - No matching files found
+2025-09-26 13:38:49,744 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 2 image(s) to C:\Users\raush\Desktop\GeniData\Geni2\Anderhalveman\Anderhalveman_download_img
+2025-09-26 13:38:49,758 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('hot girls ', 'Pinterest', 2, 'C:\\Users\\raush\\Desktop\\GeniData\\Geni2\\Anderhalveman\\Anderhalveman_download_img', 'image', 'Anderhalveman')
+2025-09-26 13:38:49,759 - DownloaderTaskCollector - INFO - is_valid_download_config:318 - Valid download config for image: 2 items from Pinterest
+2025-09-26 13:38:49,759 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:582 - Added valid image download task for page Page.1
+2025-09-26 13:38:49,760 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.1 story configuration
+2025-09-26 13:38:49,761 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-09-26 13:38:49,761 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,761 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,762 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-09-26 13:38:49,762 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:523 - Processing page: Page.2
+2025-09-26 13:38:49,762 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:533 - Page Page.2 upload types - Reels: True, Video: False, Image: True, Story: False
+2025-09-26 13:38:49,763 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:539 - Page Page.2 auto download: True
+2025-09-26 13:38:49,763 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 reel configuration
+2025-09-26 13:38:49,765 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing reel configuration
+2025-09-26 13:38:49,765 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-09-26 13:38:49,765 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,766 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: YouTube, Channel link: 
+2025-09-26 13:38:49,766 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 1
+2025-09-26 13:38:49,766 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 1
+2025-09-26 13:38:49,767 - DownloaderTaskCollector - INFO - check_video_available_in_folder:260 - Checking for 1 videos in folder: C:\Users\raush\Desktop\GeniData\Geni2\Ahmad Agha\Ahmad Agha_download_reel
+2025-09-26 13:38:49,767 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: C:\Users\raush\Desktop\GeniData\Geni2\Ahmad Agha\Ahmad Agha_download_reel
+2025-09-26 13:38:49,767 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.mp4', '*.avi', '*.mov', '*.mkv'], required count: 1
+2025-09-26 13:38:49,768 - DownloaderTaskCollector - WARNING - check_files_in_folder:246 - No matching files found
+2025-09-26 13:38:49,768 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 1 reel(s) to C:\Users\raush\Desktop\GeniData\Geni2\Ahmad Agha\Ahmad Agha_download_reel
+2025-09-26 13:38:49,769 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('', 'YouTube', 1, 'C:\\Users\\raush\\Desktop\\GeniData\\Geni2\\Ahmad Agha\\Ahmad Agha_download_reel', 'reel', 'Ahmad Agha')
+2025-09-26 13:38:49,770 - DownloaderTaskCollector - ERROR - is_valid_download_config:299 - Skipping task: Missing channel link for reel
+2025-09-26 13:38:49,783 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 video configuration
+2025-09-26 13:38:49,784 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing video configuration
+2025-09-26 13:38:49,785 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,785 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,786 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping video download: upload or auto-download not enabled
+2025-09-26 13:38:49,786 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 image configuration
+2025-09-26 13:38:49,786 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing image configuration
+2025-09-26 13:38:49,786 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: True, Auto download enabled: True
+2025-09-26 13:38:49,788 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,788 - DownloaderTaskCollector - DEBUG - process_content_type_config:352 - Download from: YouTube, Channel link: 
+2025-09-26 13:38:49,788 - DownloaderTaskCollector - DEBUG - process_content_type_config:353 - Default content count: 1
+2025-09-26 13:38:49,789 - DownloaderTaskCollector - DEBUG - process_content_type_config:375 - Calculated content needed: 1
+2025-09-26 13:38:49,789 - DownloaderTaskCollector - INFO - check_image_available_in_folder:266 - Checking for 1 images in folder: C:\Users\raush\Desktop\GeniData\Geni2\Ahmad Agha\Ahmad Agha_download_img
+2025-09-26 13:38:49,790 - DownloaderTaskCollector - INFO - check_files_in_folder:226 - Checking files in folder: C:\Users\raush\Desktop\GeniData\Geni2\Ahmad Agha\Ahmad Agha_download_img
+2025-09-26 13:38:49,790 - DownloaderTaskCollector - DEBUG - check_files_in_folder:227 - Looking for extensions: ['*.png', '*.jpeg', '*.jpg'], required count: 1
+2025-09-26 13:38:49,797 - DownloaderTaskCollector - WARNING - check_files_in_folder:246 - No matching files found
+2025-09-26 13:38:49,797 - DownloaderTaskCollector - INFO - process_content_type_config:380 - Need to download 1 image(s) to C:\Users\raush\Desktop\GeniData\Geni2\Ahmad Agha\Ahmad Agha_download_img
+2025-09-26 13:38:49,800 - DownloaderTaskCollector - DEBUG - is_valid_download_config:290 - Validating download config: ('', 'YouTube', 1, 'C:\\Users\\raush\\Desktop\\GeniData\\Geni2\\Ahmad Agha\\Ahmad Agha_download_img', 'image', 'Ahmad Agha')
+2025-09-26 13:38:49,800 - DownloaderTaskCollector - ERROR - is_valid_download_config:299 - Skipping task: Missing channel link for image
+2025-09-26 13:38:49,801 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:570 - Processing page Page.2 story configuration
+2025-09-26 13:38:49,801 - DownloaderTaskCollector - INFO - process_content_type_config:327 - Processing story configuration
+2025-09-26 13:38:49,802 - DownloaderTaskCollector - DEBUG - process_content_type_config:328 - Upload enabled: False, Auto download enabled: True
+2025-09-26 13:38:49,802 - DownloaderTaskCollector - DEBUG - process_content_type_config:341 - Local download enabled: True
+2025-09-26 13:38:49,802 - DownloaderTaskCollector - INFO - process_content_type_config:344 - Skipping story download: upload or auto-download not enabled
+2025-09-26 13:38:49,803 - DownloaderTaskCollector - DEBUG - is_valid_instance_info:389 - Validating instance info: ('C:/Users/raush/Desktop/GeniData/Geni2/chrome', 'Profile 1', 'C:\\Users\\raush\\Desktop\\GeniData\\Geni2\\chrome\\reels_history.xlsx', 'Geni2')
+2025-09-26 13:38:49,803 - DownloaderTaskCollector - INFO - is_valid_instance_info:409 - Valid instance info: C:/Users/raush/Desktop/GeniData/Geni2/chrome, Profile 1
+2025-09-26 13:38:49,811 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:590 - Adding 1 tasks to queue for ID Id_information.2
+2025-09-26 13:38:49,812 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:431 - Processing ID: Id_information.3
+2025-09-26 13:38:49,813 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:435 - Skipping ID Id_information.3: Upload not enabled
+2025-09-26 13:38:49,813 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:431 - Processing ID: Id_information.4
+2025-09-26 13:38:49,813 - DownloaderTaskCollector - DEBUG - collect_tasks_from_json_for_download:435 - Skipping ID Id_information.4: Upload not enabled
+2025-09-26 13:38:49,814 - DownloaderTaskCollector - INFO - collect_tasks_from_json_for_download:595 - Task collection summary: 4 IDs processed, 2 IDs with tasks, 4 total tasks

@@ -1,0 +1,75 @@
+2025-09-21 15:00:46,140 - TaskCollector - INFO - setup_logger:47 - Logging initialized. Log file: D:\geni_flow_ui_v1.0\facebook_tool_0.8\geni\geni_backend_src\logs\task_collector_20250921_150046.log
+2025-09-21 15:00:46,140 - TaskCollector - INFO - __init__:53 - Initializing TaskCollector
+2025-09-21 15:00:46,140 - TaskCollector - INFO - open_data_paths:74 - Reading data paths from settings
+2025-09-21 15:00:46,141 - TaskCollector - DEBUG - open_data_paths:84 - Using default page manager path
+2025-09-21 15:00:46,142 - TaskCollector - DEBUG - __init__:69 - LD Player Path: C:/LDPlayer/LDPlayer9
+2025-09-21 15:00:46,142 - TaskCollector - DEBUG - __init__:70 - Geni Data Path: User_Data\Page_manager.json
+2025-09-21 15:00:46,142 - TaskCollector - INFO - collect_tasks_from_json:1061 - Collecting tasks from JSON configuration
+2025-09-21 15:00:46,144 - TaskCollector - INFO - collect_tasks_from_json:1066 - Processing 4 ID and Pages entries
+2025-09-21 15:00:46,144 - TaskCollector - DEBUG - collect_tasks_from_json:1075 - Processing ID: Id_information.1
+2025-09-21 15:00:46,145 - TaskCollector - DEBUG - collect_tasks_from_json:1086 - ID Id_information.1 - Upload: True, ID Active: True
+2025-09-21 15:00:46,145 - TaskCollector - DEBUG - collect_tasks_from_json:1097 - ID Id_information.1 details - Name: Neha Tiwari, Package: com.facebook.katana, LDPlayer: Geni1
+2025-09-21 15:00:46,145 - TaskCollector - INFO - collect_tasks_from_json:1115 - Processing upload tasks for ID Id_information.1
+2025-09-21 15:00:46,145 - TaskCollector - DEBUG - collect_tasks_from_json:1124 - ID Id_information.1 upload types - Reels: True, Video: False, Image: False, Story: False
+2025-09-21 15:00:46,145 - TaskCollector - INFO - process_content_config:506 - Processing reels configuration for Neha Tiwari
+2025-09-21 15:00:46,146 - TaskCollector - DEBUG - process_content_config:552 - reels folder path: C:\Users\raush\Desktop\GeniData\Geni1\Neha Tiwari\Neha Tiwari_download_reel
+2025-09-21 15:00:46,146 - TaskCollector - INFO - check_media_available_in_folder:365 - Checking for 1 video(s) in folder: C:\Users\raush\Desktop\GeniData\Geni1\Neha Tiwari\Neha Tiwari_download_reel for profile: Neha Tiwari
+2025-09-21 15:00:46,147 - TaskCollector - INFO - check_media_available_in_folder:394 - Found sufficient video files (1) for Neha Tiwari
+2025-09-21 15:00:46,147 - TaskCollector - INFO - get_video_captions:109 - Getting video captions from source: From text file
+2025-09-21 15:00:46,147 - TaskCollector - DEBUG - get_video_captions:158 - Reading captions from text file: C:/Users/raush/Desktop/capt/caption.txt
+2025-09-21 15:00:46,148 - TaskCollector - DEBUG - get_video_captions:180 - Found 4 caption blocks in file
+2025-09-21 15:00:46,148 - TaskCollector - DEBUG - get_video_captions:183 - Using random selection mode
+2025-09-21 15:00:46,148 - TaskCollector - DEBUG - get_video_captions:187 - Shuffled caption blocks for random selection
+2025-09-21 15:00:46,148 - TaskCollector - DEBUG - get_video_captions:195 - Added random caption 1: no...
+2025-09-21 15:00:46,149 - TaskCollector - INFO - get_video_captions:232 - Returning 1 captions
+2025-09-21 15:00:46,149 - TaskCollector - INFO - process_content_config:628 - Added reels configuration for Neha Tiwari
+2025-09-21 15:00:46,149 - TaskCollector - DEBUG - collect_tasks_from_json:1173 - Processing 3 pages for ID Id_information.1
+2025-09-21 15:00:46,149 - TaskCollector - DEBUG - collect_tasks_from_json:1177 - Processing page: Viral 8
+2025-09-21 15:00:46,149 - TaskCollector - DEBUG - collect_tasks_from_json:1196 - Page Viral 8 upload types - Reels: True, Video: False, Image: False, Story: False
+2025-09-21 15:00:46,149 - TaskCollector - INFO - process_content_config:506 - Processing reels configuration for Viral 8
+2025-09-21 15:00:46,149 - TaskCollector - DEBUG - process_content_config:552 - reels folder path: C:\Users\raush\Desktop\GeniData\Geni1\Viral 8\Viral 8_download_reel
+2025-09-21 15:00:46,149 - TaskCollector - INFO - check_media_available_in_folder:365 - Checking for 1 video(s) in folder: C:\Users\raush\Desktop\GeniData\Geni1\Viral 8\Viral 8_download_reel for profile: Viral 8
+2025-09-21 15:00:46,150 - TaskCollector - WARNING - check_media_available_in_folder:400 - No videos available for Viral 8 in folder: C:\Users\raush\Desktop\GeniData\Geni1\Viral 8\Viral 8_download_reel
+2025-09-21 15:00:46,150 - TaskCollector - WARNING - process_content_config:630 - Insufficient reels media for Viral 8, skipping
+2025-09-21 15:00:46,150 - TaskCollector - DEBUG - collect_tasks_from_json:1177 - Processing page: 3killstreakuav
+2025-09-21 15:00:46,150 - TaskCollector - DEBUG - collect_tasks_from_json:1196 - Page 3killstreakuav upload types - Reels: False, Video: False, Image: False, Story: False
+2025-09-21 15:00:46,150 - TaskCollector - DEBUG - collect_tasks_from_json:1177 - Processing page: zadecl
+2025-09-21 15:00:46,150 - TaskCollector - DEBUG - collect_tasks_from_json:1196 - Page zadecl upload types - Reels: True, Video: False, Image: True, Story: False
+2025-09-21 15:00:46,151 - TaskCollector - INFO - process_content_config:506 - Processing reels configuration for zadecl
+2025-09-21 15:00:46,151 - TaskCollector - DEBUG - process_content_config:552 - reels folder path: C:\Users\raush\Desktop\GeniData\Geni1\zadecl\zadecl_download_reel
+2025-09-21 15:00:46,151 - TaskCollector - INFO - check_media_available_in_folder:365 - Checking for 3 video(s) in folder: C:\Users\raush\Desktop\GeniData\Geni1\zadecl\zadecl_download_reel for profile: zadecl
+2025-09-21 15:00:46,152 - TaskCollector - WARNING - check_media_available_in_folder:398 - Only 1 video(s) available for zadecl, but 3 required.
+2025-09-21 15:00:46,152 - TaskCollector - WARNING - process_content_config:630 - Insufficient reels media for zadecl, skipping
+2025-09-21 15:00:46,152 - TaskCollector - INFO - process_content_config:506 - Processing images configuration for zadecl
+2025-09-21 15:00:46,152 - TaskCollector - DEBUG - process_content_config:552 - images folder path: C:\Users\raush\Desktop\GeniData\Geni1\zadecl\zadecl_download_img
+2025-09-21 15:00:46,152 - TaskCollector - INFO - check_image_available_in_folder:1345 - Checking for 2 image(s) in folder: C:\Users\raush\Desktop\GeniData\Geni1\zadecl\zadecl_download_img for profile: zadecl
+2025-09-21 15:00:46,153 - TaskCollector - WARNING - check_image_available_in_folder:1373 - No images available for zadecl in folder: C:\Users\raush\Desktop\GeniData\Geni1\zadecl\zadecl_download_img
+2025-09-21 15:00:46,153 - TaskCollector - WARNING - process_content_config:630 - Insufficient images media for zadecl, skipping
+2025-09-21 15:00:46,153 - TaskCollector - INFO - collect_tasks_from_json:1268 - Adding combined tasks for 1 profiles
+2025-09-21 15:00:46,153 - TaskCollector - DEBUG - should_update_insight:422 - Checking if insights should be updated
+2025-09-21 15:00:46,154 - TaskCollector - DEBUG - should_update_insight:430 - Update delay: 3 days, Last update: 2025-09-21 14:11:23
+2025-09-21 15:00:46,157 - TaskCollector - INFO - should_update_insight:446 - Days since last update: 0, Should update: False
+2025-09-21 15:00:46,157 - TaskCollector - INFO - ld_inst_adb_serial_by_name:271 - Getting ADB serial for LDPlayer: Geni1
+2025-09-21 15:00:46,158 - TaskCollector - INFO - get_ld_list:239 - Getting LDPlayer list from: C:/LDPlayer/LDPlayer9
+2025-09-21 15:00:46,158 - TaskCollector - DEBUG - get_ld_list:248 - Executing command: C:/LDPlayer/LDPlayer9\ldconsole.exe list2
+2025-09-21 15:00:46,217 - TaskCollector - DEBUG - get_ld_list:257 - Found LDPlayer instance: 0, Geni1
+2025-09-21 15:00:46,217 - TaskCollector - DEBUG - get_ld_list:257 - Found LDPlayer instance: 1, Geni2
+2025-09-21 15:00:46,217 - TaskCollector - DEBUG - get_ld_list:257 - Found LDPlayer instance: 2, Geni3
+2025-09-21 15:00:46,217 - TaskCollector - DEBUG - get_ld_list:257 - Found LDPlayer instance: 3, LDPlayer-3
+2025-09-21 15:00:46,217 - TaskCollector - DEBUG - get_ld_list:257 - Found LDPlayer instance: 4, LDPlayer-4
+2025-09-21 15:00:46,218 - TaskCollector - DEBUG - get_ld_list:257 - Found LDPlayer instance: 5, LDPlayer-5
+2025-09-21 15:00:46,218 - TaskCollector - DEBUG - get_ld_list:257 - Found LDPlayer instance: 6, LDPlayer-6
+2025-09-21 15:00:46,218 - TaskCollector - INFO - get_ld_list:259 - Found 7 LDPlayer instances
+2025-09-21 15:00:46,218 - TaskCollector - DEBUG - ld_inst_adb_serial_by_name:290 - Found LDPlayer instance index: 0
+2025-09-21 15:00:46,218 - TaskCollector - INFO - ld_inst_adb_serial_by_name:299 - ADB serial for 'Geni1': emulator-5554
+2025-09-21 15:00:46,218 - TaskCollector - INFO - collect_tasks_from_json:1317 - Added task for ID Id_information.1 to main queue (Upload: True, ID Active: False)
+2025-09-21 15:00:46,219 - TaskCollector - DEBUG - collect_tasks_from_json:1075 - Processing ID: Id_information.2
+2025-09-21 15:00:46,219 - TaskCollector - DEBUG - collect_tasks_from_json:1086 - ID Id_information.2 - Upload: False, ID Active: True
+2025-09-21 15:00:46,219 - TaskCollector - DEBUG - collect_tasks_from_json:1097 - ID Id_information.2 details - Name: Jack Levi, Package: com.facebook.katana, LDPlayer: Geni2
+2025-09-21 15:00:46,219 - TaskCollector - DEBUG - collect_tasks_from_json:1075 - Processing ID: Id_information.3
+2025-09-21 15:00:46,219 - TaskCollector - DEBUG - collect_tasks_from_json:1083 - Skipping ID Id_information.3: Neither Upload nor ID Active is enabled
+2025-09-21 15:00:46,219 - TaskCollector - DEBUG - collect_tasks_from_json:1075 - Processing ID: Id_information.4
+2025-09-21 15:00:46,219 - TaskCollector - DEBUG - collect_tasks_from_json:1083 - Skipping ID Id_information.4: Neither Upload nor ID Active is enabled
+2025-09-21 15:00:46,220 - TaskCollector - INFO - collect_tasks_from_json:1319 - Processed 4 IDs, 1 with tasks
+2025-09-21 15:00:46,220 - TaskCollector - DEBUG - check_and_update_insight:461 - Checking and potentially updating insight timestamp
+2025-09-21 15:00:46,220 - TaskCollector - INFO - check_and_update_insight:498 - Update delay not met (0/3 days)
