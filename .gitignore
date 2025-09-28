@@ -5,3 +5,4 @@ __pycache__/
 temp_build/
 to_be_delet/
 User_Data/
+.venv/
