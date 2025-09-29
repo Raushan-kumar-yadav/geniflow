@@ -5,3 +5,5 @@ __pycache__/
 temp_build/
 to_be_delet/
 User_Data/
+__pycache__/
+geni\geni_backend_src\utlitis\__pycache__/
