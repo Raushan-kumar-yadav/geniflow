@@ -14,33 +14,6 @@ import logging
 import os
 
 
-class AnimatedHoverButton(QPushButton):
-    def __init__(self, text="", btn_padding=6, parent=None):
-        super().__init__(text, parent)
-        self._hoverLevel = 0.0
-        self._pressLevel = 0.0
-        self.btn_padding = btn_padding
-        self.setAttribute(Qt.WA_Hover, True)
-        self.setCursor(Qt.PointingHandCursor)
-        
-        self.setStyleSheet("""
-            QPushButton:focus {
-                outline: none;
-            }
-        """)
-
-        # Animation for hover
-        self._hoverAnim = QPropertyAnimation(self, b"hoverLevel", self)
-        self._hoverAnim.setDuration(250)
-        
-        # Animation for press/release
-        self._pressAnim = QPropertyAnimation(self, b"pressLevel", self)
-        self._pressAnim.setDuration(100)
-        
-        self.update_style()
-        self.setDefault(False)
-        self.setAutoDefault(False)
-        self.setMinimumSize(100, 40)
 class LogAnalyzer(QMainWindow):
     def __init__(self, log_dir, log_type="activity"):
         super().__init__()
