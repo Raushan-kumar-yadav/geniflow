@@ -1,16 +1,46 @@
+from ast import Delete
 import sys
 import re
 from datetime import datetime, time
+from turtle import title
 from PySide6.QtWidgets import (QApplication, QMainWindow, QVBoxLayout, QHBoxLayout,
                               QWidget, QTableWidget, QTableWidgetItem, 
-                              QHeaderView, QPushButton, QTextEdit, QLabel,
+                              QHeaderView, QPushButton, QTextEdit, QLabel,QMessageBox,
                               QLineEdit, QCheckBox, QTimeEdit, QGroupBox)
-from PySide6.QtCore import Qt, QTime
+from PySide6.QtCore import Qt, QTime, QPropertyAnimation, QEasingCurve
 from PySide6.QtGui import QColor
 from pathlib import Path
+import logging
+import os
 
 
+class AnimatedHoverButton(QPushButton):
+    def __init__(self, text="", btn_padding=6, parent=None):
+        super().__init__(text, parent)
+        self._hoverLevel = 0.0
+        self._pressLevel = 0.0
+        self.btn_padding = btn_padding
+        self.setAttribute(Qt.WA_Hover, True)
+        self.setCursor(Qt.PointingHandCursor)
+        
+        self.setStyleSheet("""
+            QPushButton:focus {
+                outline: none;
+            }
+        """)
 
+        # Animation for hover
+        self._hoverAnim = QPropertyAnimation(self, b"hoverLevel", self)
+        self._hoverAnim.setDuration(250)
+        
+        # Animation for press/release
+        self._pressAnim = QPropertyAnimation(self, b"pressLevel", self)
+        self._pressAnim.setDuration(100)
+        
+        self.update_style()
+        self.setDefault(False)
+        self.setAutoDefault(False)
+        self.setMinimumSize(100, 40)
 class LogAnalyzer(QMainWindow):
     def __init__(self, log_dir, log_type="activity"):
         super().__init__()
@@ -47,9 +77,21 @@ class LogAnalyzer(QMainWindow):
         main_layout = QVBoxLayout(central_widget)
         
         # Add title
+        title_layout = QHBoxLayout()
         title_label = QLabel("Log Activity Monitor")
         title_label.setStyleSheet("font-size: 18px; font-weight: bold; margin: 10px;")
-        main_layout.addWidget(title_label)
+
+        Delete_button = QPushButton("Delete All Logs")
+        Delete_button.setStyleSheet("font-size: 14px; font-weight: bold; margin: 10px; background-color: red; color: white; border-radius: 5px; padding: 5px;")
+        Delete_button.clicked.connect(self.delete_log_file)     
+        Delete_button.setFixedSize(150, 50)
+
+        has_logs = any(self.log_dir.iterdir())  # True if any files/directories exist
+        Delete_button.setVisible(has_logs)
+        
+        title_layout.addWidget(title_label)
+        title_layout.addWidget(Delete_button)
+        main_layout.addLayout(title_layout)
         
         # Create table
         self.table = QTableWidget()
@@ -212,6 +254,34 @@ class LogAnalyzer(QMainWindow):
             self.all_entries = []
             self.filtered_entries = []
             self.populate_table_with_entries([])
+    
+    def delete_log_file(self):
+        """Delete all log files in the log directory with user confirmation."""
+        reply = QMessageBox.question(
+            self,
+            "Confirm Deletion",
+            "Are you sure you want to delete all detail activity logs? This action cannot be undone.",
+            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.No
+        )
+        if reply != QMessageBox.Yes:
+            logging.info("Delete all logs cancelled by user")
+            return
+
+        try:
+            for file_name in os.listdir(self.log_dir):
+                file_path = os.path.join(self.log_dir, file_name)
+                if os.path.isfile(file_path):
+                    os.remove(file_path)
+                    logging.info(f"Deleted log file: {file_path}")
+            QMessageBox.information(self, "Success", "All detail activity logs have been deleted.", QMessageBox.Ok)
+            # Clear the table and reset entries after deletion
+            self.all_entries = []
+            self.filtered_entries = []
+            self.table.setRowCount(0)
+        except Exception as e:
+            logging.error(f"Failed to delete logs: {str(e)}")
+            QMessageBox.critical(self, "Error", f"Failed to delete logs: {str(e)}", QMessageBox.Ok)
 
 
 
