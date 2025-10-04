@@ -19,6 +19,38 @@ import subprocess
 import json
 import nodriver as uc  
 
+import sqlite3  # Added for cookie database access
+import shutil   #added
+
+
+#==================Added method for get_cookies()===============
+
+def cookie_to_dict(cookie):
+        """Convert a cookie object to a JSON-serializable dictionary."""
+        cookie_dict = {
+            'name': getattr(cookie, 'name', ''),
+            'value': getattr(cookie, 'value', ''),
+            'domain': getattr(cookie, 'domain', ''),
+            'path': getattr(cookie, 'path', '/'),
+            'expires': getattr(cookie, 'expires', -1),
+            'httpOnly': getattr(cookie, 'http_only', False) if hasattr(cookie, 'http_only') else getattr(cookie, 'httpOnly', False),
+            'secure': getattr(cookie, 'secure', False),
+        }
+        
+        # Handle sameSite which can be an enum
+        same_site = getattr(cookie, 'same_site', None) if hasattr(cookie, 'same_site') else getattr(cookie, 'sameSite', None)
+        if same_site is not None:
+            # Convert enum to string if needed
+            if hasattr(same_site, 'value'):
+                cookie_dict['sameSite'] = same_site.value
+            elif hasattr(same_site, 'name'):
+                cookie_dict['sameSite'] = same_site.name
+            else:
+                cookie_dict['sameSite'] = str(same_site)
+        else:
+            cookie_dict['sameSite'] = 'None'
+        
+        return cookie_dict
 
 def activity_callback(queue, ldname, app, profile, current, others, log_type=None):
     """Callback to update process activity with optional logging"""
@@ -234,7 +266,157 @@ class UnifiedSocialMediaDownloader:
         except Exception as e:
             print(f"Error starting browser: {e}")
             return None
+        
 
+    async def get_cookies(self):
+        """
+        Get cookies from Nodriver tab using multiple methods (browser API, CDP, JavaScript, database).
+        Returns a list of cookie dictionaries compatible with yt-dlp.
+        """
+        if self.browser is None or self.browser.main_tab is None:
+            print("Browser or main tab not available")
+            activity_callback(self.activity_queue, self.proc_identifier, "Browser", "", "Browser or main tab not available for cookies", "Error", "ds")
+            return []
+
+        # Method 1: Use browser.cookies.get_all()
+        try:
+            print("Method 1: Using browser.cookies.get_all()...")
+            cookies_obj = await self.browser.cookies.get_all()
+            
+            if cookies_obj:
+                cookies = []
+                for cookie in cookies_obj:
+                    if hasattr(cookie, 'name'):
+                        cookie_dict = cookie_to_dict(cookie)
+                        cookies.append(cookie_dict)
+                
+                print(f"✓ Retrieved {len(cookies)} cookies via browser.cookies.get_all()")
+                activity_callback(self.activity_queue, self.proc_identifier, "Browser", "", f"Retrieved {len(cookies)} cookies via browser.cookies.get_all()", "Success", "ds")
+                return cookies
+            
+        except Exception as e:
+            print(f"✗ Method 1 failed: {e}")
+            activity_callback(self.activity_queue, self.proc_identifier, "Browser", "", f"Method 1 (browser.cookies.get_all) failed: {e}", "Error", "ds")
+        
+        # Method 2: Use CDP directly via tab.send()
+        try:
+            print("Method 2: Using CDP Network.getAllCookies...")
+            result = await self.browser.main_tab.send(uc.cdp.network.get_all_cookies())
+            
+            if result and hasattr(result, 'cookies'):
+                cookies = []
+                for cookie in result.cookies:
+                    cookie_dict = cookie_to_dict(cookie)
+                    cookies.append(cookie_dict)
+                
+                print(f"✓ Retrieved {len(cookies)} cookies via CDP")
+                activity_callback(self.activity_queue, self.proc_identifier, "Browser", "", f"Retrieved {len(cookies)} cookies via CDP", "Success", "ds")
+                return cookies
+            else:
+                print("✗ CDP returned no cookies")
+                activity_callback(self.activity_queue, self.proc_identifier, "Browser", "", "CDP returned no cookies", "Error", "ds")
+        
+        except Exception as e:
+            print(f"✗ Method 2 failed: {e}")
+            activity_callback(self.activity_queue, self.proc_identifier, "Browser", "", f"Method 2 (CDP) failed: {e}", "Error", "ds")
+        
+        # Method 3: JavaScript evaluation
+        try:
+            print("Method 3: Using JavaScript document.cookie...")
+            cookies_js = await self.browser.main_tab.evaluate("""
+                () => {
+                    const cookies = [];
+                    const pairs = document.cookie.split('; ');
+                    for (const pair of pairs) {
+                        if (!pair) continue;
+                        const [name, ...valueParts] = pair.split('=');
+                        const value = valueParts.join('=');
+                        cookies.push({
+                            name: decodeURIComponent(name),
+                            value: decodeURIComponent(value),
+                            domain: window.location.hostname,
+                            path: '/',
+                            expires: -1,
+                            httpOnly: false,
+                            secure: location.protocol === 'https:',
+                            sameSite: 'None'
+                        });
+                    }
+                    return cookies;
+                }
+            """)
+            
+            if cookies_js and isinstance(cookies_js, list) and len(cookies_js) > 0:
+                print(f"✓ Retrieved {len(cookies_js)} cookies via JavaScript")
+                activity_callback(self.activity_queue, self.proc_identifier, "Browser", "", f"Retrieved {len(cookies_js)} cookies via JavaScript", "Success", "ds")
+                return cookies_js
+            else:
+                print("✗ JavaScript returned no cookies")
+                activity_callback(self.activity_queue, self.proc_identifier, "Browser", "", "JavaScript returned no cookies", "Error", "ds")
+        
+        except Exception as e:
+            print(f"✗ Method 3 failed: {e}")
+            activity_callback(self.activity_queue, self.proc_identifier, "Browser", "", f"Method 3 (JavaScript) failed: {e}", "Error", "ds")
+        
+        # Method 4: Read Chrome's cookie database directly
+        try:
+            print("Method 4: Reading Chrome cookie database...")
+            cookie_db_path = os.path.join(self.base_user_data_dir, "Default", "Network", "Cookies")
+            if not os.path.exists(cookie_db_path):
+                cookie_db_path = os.path.join(self.base_user_data_dir, "Default", "Cookies")
+            
+            if os.path.exists(cookie_db_path):
+                # Copy to avoid lock issues
+                temp_cookie_db = os.path.join(self.base_user_data_dir, "temp_cookies.db")
+                shutil.copy2(cookie_db_path, temp_cookie_db)
+                
+                conn = sqlite3.connect(temp_cookie_db)
+                cursor = conn.cursor()
+                
+                # Query cookies, filter by domain relevant to current platform
+                cursor.execute("""
+                    SELECT host_key, name, value, path, expires_utc, is_secure, is_httponly, samesite
+                    FROM cookies
+                    WHERE host_key LIKE ?
+                """, (f'%{self.web_link.split("://")[1].split("/")[0]}%',))
+                
+                cookies = []
+                for row in cursor.fetchall():
+                    host_key, name, value, path, expires_utc, is_secure, is_httponly, samesite = row
+                    
+                    # Convert Chrome timestamp to Unix timestamp
+                    if expires_utc > 0:
+                        expires = (expires_utc / 1000000) - 11644473600
+                    else:
+                        expires = -1
+                    
+                    cookie_dict = {
+                        'name': name,
+                        'value': value,
+                        'domain': host_key,
+                        'path': path,
+                        'expires': expires,
+                        'httpOnly': bool(is_httponly),
+                        'secure': bool(is_secure),
+                        'sameSite': ['None', 'Lax', 'Strict'][samesite] if samesite in [0, 1, 2] else 'None'
+                    }
+                    cookies.append(cookie_dict)
+                
+                conn.close()
+                os.remove(temp_cookie_db)
+                
+                print(f"✓ Retrieved {len(cookies)} cookies from Chrome database")
+                activity_callback(self.activity_queue, self.proc_identifier, "Browser", "", f"Retrieved {len(cookies)} cookies from Chrome database", "Success", "ds")
+                return cookies
+            
+        except Exception as e:
+            print(f"✗ Method 4 failed: {e}")
+            activity_callback(self.activity_queue, self.proc_identifier, "Browser", "", f"Method 4 (database) failed: {e}", "Error", "ds")
+        
+        print("✗ All cookie extraction methods failed")
+        activity_callback(self.activity_queue, self.proc_identifier, "Browser", "", "All cookie extraction methods failed", "Error", "ds")
+        return []    
+    '''
     async def get_cookies(self):
         """
         Get cookies from Nodriver browser session 
@@ -257,7 +439,7 @@ class UnifiedSocialMediaDownloader:
 
         except Exception as e:
             print(f"Error getting cookies: {e}")
-            return []
+            return []'''
 
 
     async def save_cookies_to_netscape(self, Chrome_base_path):
@@ -1473,13 +1655,22 @@ class UnifiedSocialMediaDownloader:
 if __name__ == "__main__":
     async def prepare_task():
         
-        """"""
+        """
         download_config_profile_list = [
             [(r"E:\facebook_ld\raushan\chrome", r"p",r"E:\facebook_ld\raushan\chrome\reels_history.xlsx")], # so this is list of structure on index 0 here is basic chrome setup data like chrome base path means where is chrome profile and inside that chrome folder we can create multiple profile so "p" menas its profile name and when we click on create chrome in geniflow bellow the restart ld button then its create that folde and also create a profile name called p or p1 that why we used p for profile name here and excel file is to save downloaded video image and more content so it not repeat 
 
             [('cars', 'pinterest', 5, r'E:\facebook_ld\raushan\Rekha Kumari\Rekha Kumari_download_img', 'image'), #inside these list there is a tupple in that frist is chennal name or id name and at index 1 is platform name and at index2 is number of content and at index3 is path where its have to save and last is content type its help code to deside which saving method shoul i run for saving like shoul i run save video or save image method if its find image on that place then it will run as per given data 
              ('MrBeast', 'Youtube', 4, r'E:\facebook_ld\raushan\Rekha Kumari\videos', 'video')] # here are repect we can as many tupple as we want it will loop throught every tupple and download one by one 
+        ]"""
+
+
+        download_config_profile_list = [
+            [(r"D:\coding\GENIFLOWWW\chrome_profile", r"p",r"D:\coding\GENIFLOWWW\chrome_profile\reels_history.xlsx")], # so this is list of structure on index 0 here is basic chrome setup data like chrome base path means where is chrome profile and inside that chrome folder we can create multiple profile so "p" menas its profile name and when we click on create chrome in geniflow bellow the restart ld button then its create that folde and also create a profile name called p or p1 that why we used p for profile name here and excel file is to save downloaded video image and more content so it not repeat 
+
+            [('sony', 'tiktok', 5, r'D:\coding\GENIFLOWWW\chrome_profile', 'video'), #inside these list there is a tupple in that frist is chennal name or id name and at index 1 is platform name and at index2 is number of content and at index3 is path where its have to save and last is content type its help code to deside which saving method shoul i run for saving like shoul i run save video or save image method if its find image on that place then it will run as per given data 
+             ('MrBeast', 'Yout ube', 1, r'D:\coding\GENIFLOWWW\chrome_profile', 'video')] # here are repect we can as many tupple as we want it will loop throught every tupple and download one by one 
         ]
+
 
         browser_config = download_config_profile_list[0][0] # Get the element from idex
         profile_config = download_config_profile_list[1]
