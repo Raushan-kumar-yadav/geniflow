@@ -53,7 +53,7 @@ class LogAnalyzer(QMainWindow):
         title_label = QLabel("Log Activity Monitor")
         title_label.setStyleSheet("font-size: 18px; font-weight: bold; margin: 10px;")
 
-        self.Delete_button = QPushButton("Delete All Logs")
+        self.Delete_button = QPushButton("Clear All Logs")
         self.Delete_button.setStyleSheet("font-size: 14px; font-weight: bold; margin: 10px; background-color: red; color: white; border-radius: 5px; padding: 5px;")
         self.Delete_button.clicked.connect(self.delete_log_file)     
         self.Delete_button.setFixedSize(150, 50)
