@@ -34,7 +34,7 @@ from pathlib import Path
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Append parent directory to sys.path so that the custom modules can be imported
-#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..',)))
 #from geni_backend_src.start_activity_main import LDTaskExecutor
 
 from geni_backend_src.start_activity_main import LDTaskExecutor
@@ -430,230 +430,264 @@ class ActivityControl(StyledFrame):
 
     def _create_widgets(self):
         layout = QVBoxLayout(self)
-        
-        # Header
+
+        header_frame = QFrame()
+        header_frame.setStyleSheet("""background-color: rgb(34, 81, 200);border-radius: 10px;""")
+        header_frame.setFixedHeight(35)
+        header_frame.setFixedWidth(180)
+        bg_layout = QVBoxLayout(header_frame)
+        layout.addWidget(header_frame, alignment=Qt.AlignCenter)
+
         header = QLabel("Activity Controls")
-        header.setStyleSheet("font-size: 12pt; font-weight: bold;background-color:none;")
-        layout.addWidget(header, alignment=Qt.AlignLeft)
-        
-        
-        # Play/Pause Control 
+        header.setStyleSheet("font-size: 12pt; font-weight: bold; background-color: none; color: white;")
+        bg_layout.addWidget(header, alignment=Qt.AlignCenter)
+
+        controls_layout = QHBoxLayout()
+        layout.addLayout(controls_layout)
+
         play_pause_frame = QGroupBox()
         play_pause_frame.setTitle("Play/Pause Controls")
         play_pause_frame.setObjectName("play_pause_frame")
-        play_pause_frame.setStyleSheet("""QGroupBox#play_pause_frame{border:2px solid rgba(128,128,128,0.8);
-                                    border-radius:8px;
-                                    padding-top:5px;
-                                    margin-top:10px;
-                                    padding-right:10px;
-                                    padding-left:10px;
-                                    padding-bottom:5px;
-                                    background-color: rgba(128,128,128,0.2);}
-                                            QGroupBox#play_pause_frame::title {
-                                                            subcontrol-origin: margin;
-                                                            subcontrol-position: top left;
-                                                            left: 30px;
-                                                            border-radius:5px;
-                                                            padding-left: 5px;
-                                                            padding-right: 5px;
-                                                            background-color: rgba(128,128,128,0.5);
-                                                        }""")
-        play_pause_layout = QHBoxLayout(play_pause_frame)
-        
-        # Play/Pause button section
+        play_pause_frame.setStyleSheet("""
+            QGroupBox#play_pause_frame {
+                border: 2px solid rgba(128,128,128,0.8);
+                border-radius: 8px;
+                padding-top: 5px;
+                margin-top: 10px;
+                padding-right: 10px;
+                padding-left: 10px;
+                padding-bottom: 5px;
+                background-color: rgba(128,128,128,0.2);
+            }
+            QGroupBox#play_pause_frame::title {
+                subcontrol-origin: margin;
+                subcontrol-position: top center;
+                font-weight: bold;
+                border-radius: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                background-color: rgba(128,128,128,0.8);
+            }
+        """)
+        play_pause_frame.setFixedWidth(360)
+        play_pause_frame.setAlignment(Qt.AlignCenter)
+
+        play_pause_layout = QGridLayout(play_pause_frame)
+        play_pause_layout.setAlignment(Qt.AlignCenter)
+        play_pause_layout.setHorizontalSpacing(20)
+        play_pause_layout.setVerticalSpacing(10)
+
         play_btn_widget = QWidget()
         play_btn_widget.setObjectName("play_btn_widget")
-        play_btn_widget.setStyleSheet("""QWidget#play_btn_widget{background-color:transparent;}""")
-        play_btn_layout = QHBoxLayout(play_btn_widget)
-        
-        # Current activity indicator label
+        play_btn_widget.setStyleSheet("QWidget#play_btn_widget { background-color: transparent; }")
+        play_btn_layout = QVBoxLayout(play_btn_widget)
+        play_btn_layout.setAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
+        play_btn_layout.setSpacing(2)
+
         self.activity_type_label = QLabel("Main Activity")
-        self.activity_type_label.setStyleSheet("background-color:none; font-weight:bold;")
+        self.activity_type_label.setStyleSheet("background-color: none; font-weight: bold; color: white; text-align: center; font-size: 12px;")
         self.activity_type_label.setFixedWidth(100)
+        self.activity_type_label.setAlignment(Qt.AlignHCenter)
         play_btn_layout.addWidget(self.activity_type_label)
-        
-        self.play_pause_button = AnimatedHoverButton(text="")
+
+        self.play_pause_button = AnimatedHoverButton("")
         self.play_pause_button.setIcon(QIcon(self.play_icon))
-        self.play_pause_button.setIconSize(QSize(80, 80))
+        self.play_pause_button.setToolTip("Start/stop Activity")
+        self.play_pause_button.setIconSize(QSize(90,90))
         self.play_pause_button.setFixedSize(100, 100)
         self.play_pause_button.clicked.connect(self.toggle_play_pause)
         play_btn_layout.addWidget(self.play_pause_button)
-        
-        play_pause_layout.addWidget(play_btn_widget)
-        
-        # Timer 
+
+        quit_Widget = QWidget()
+        quit_Widget.setObjectName("quit_Widget")
+        quit_Widget.setStyleSheet("QWidget#quit_Widget { background-color: transparent; }")
+        quit_layout = QVBoxLayout(quit_Widget)
+        quit_layout.setAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
+        quit_layout.setSpacing(2)
+
+        quit_btn_label = QLabel("Quit All")
+        quit_btn_label.setStyleSheet("background-color: transparent; font-weight: bold; color: white; text-align: center; font-size: 12px;")
+        quit_btn_label.setFixedWidth(100)
+        quit_btn_label.setAlignment(Qt.AlignHCenter)
+        quit_layout.addWidget(quit_btn_label)
+
+        quit_button = AnimatedHoverButton(self)
+        quit_button.setIcon(QIcon(r"geni\geni_ui_src\ui_assets\Icons\sign-out.png"))
+        quit_button.setToolTip("Quit All Processes and Stop the Tool")
+        quit_button.setIconSize(QSize(90,90))
+        quit_button.setFixedSize(100, 100)
+        quit_button.setToolTip("Quit All Processes and Stop the Tool")
+        quit_button.clicked.connect(self.handle_quit)
+        quit_layout.addWidget(quit_button)
+
+        ################################TIMERRRRRRRRRRRR###################
+        timer_frame = QGroupBox()
+        timer_frame.setTitle("Elapsed Time")
+        timer_frame.setObjectName("timer_frame")
+        timer_frame.setStyleSheet("""
+            QGroupBox#timer_frame {
+                border: 2px solid rgba(128,128,128,0.8);
+                border-radius: 8px;
+                padding-top: 5px;
+                margin-top: 10px;
+                padding-right: 10px;
+                padding-left: 10px;
+                padding-bottom: 5px;
+                background-color: rgba(128,128,128,0.2);
+            }
+            QGroupBox#timer_frame::title {
+                subcontrol-origin: margin;
+                subcontrol-position: top center;
+                border-radius: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                background-color: rgba(128,128,128,0.8);
+            }
+        """)
+        timer_frame.setFixedWidth(360)
         timer_widget = QWidget()
-        timer_widget.setStyleSheet("background-color:none")
+        timer_widget.setStyleSheet("background-color: none")
         timer_widget.setObjectName("timer_widget")
-        timer_layout = QHBoxLayout(timer_widget)
-        
-        timer_label = QLabel("Elapsed Time:")
-        timer_label.setFixedWidth(100)
-        timer_layout.addWidget(timer_label)
-        
-        # Load digital font if available
-        font_id = QFontDatabase.addApplicationFont(r"geni\geni_ui_src\ui_assets\Icons\fonts\Digital Dismay.otf") 
+        timer_layout = QVBoxLayout(timer_frame)
+        timer_layout.setAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
+
+        font_id = QFontDatabase.addApplicationFont("geni/geni_ui_src/ui_assets/Icons/fonts/Digital Dismay.otf") if Path("geni/geni_ui_src/ui_assets/Icons/fonts/Digital Dismay.otf").exists() else -1
         digital_font_family = QFontDatabase.applicationFontFamilies(font_id)[0] if font_id != -1 else "Arial"
-        
+
         self.timer_display = QLabel("00:00:00")
-        timer_font = QFont(digital_font_family, 50)
+        self.timer_display.setAttribute(Qt.WA_TranslucentBackground)
+        self.timer_display.setStyleSheet("background-color: transparent; font-weight: bold; color: white; text-align: center; font-size: 12px;")
+        timer_font = QFont(digital_font_family, 55)
         self.timer_display.setFont(timer_font)
         self.timer_display.setStyleSheet("color: red;")
         timer_layout.addWidget(self.timer_display)
-        
-        play_pause_layout.addWidget(timer_widget)
-        layout.addWidget(play_pause_frame)
-        
-        layout.setSpacing(15)
 
-        # Quit All section
-        quit_frame = QGroupBox()
-        quit_frame.setObjectName("quit_frame")
-        quit_frame.setTitle("Quit All")
-        quit_frame.setStyleSheet("""QGroupBox#quit_frame{border:2px solid rgba(128,128,128,0.8);
-                                    border-radius:8px;
-                                    padding-top:5px;
-                                    margin-top:10px;
-                                    padding-right:10px;
-                                    padding-left:10px;
-                                    padding-bottom:5px;
-                                    background-color: rgba(128,128,128,0.2);}
-                                            QGroupBox#quit_frame::title {
-                                                            subcontrol-origin: margin;
-                                                            subcontrol-position: top left;
-                                                            left: 30px;
-                                                            border-radius:5px;
-                                                            padding-left: 5px;
-                                                            padding-right: 5px;
-                                                            background-color: rgba(128,128,128,0.5);
-                                                        }""")
-        quit_layout = QHBoxLayout(quit_frame)
-        
-        quit_btn_layout = QHBoxLayout()
-        
-        quit_btn_label = QLabel("Quit All:")
-        quit_btn_label.setStyleSheet("background-color:none")
-        quit_btn_label.setFixedWidth(80)
-        quit_btn_layout.addWidget(quit_btn_label)
-        
-        quit_button = AnimatedHoverButton(text="Quit All")
-        quit_button.setFixedSize(100, 100)
-        quit_button.clicked.connect(self.handle_quit)
-        quit_btn_layout.addWidget(quit_button)
-        
-        quit_layout.addLayout(quit_btn_layout)
-        quit_layout.addStretch()  
-        
-        layout.addWidget(quit_frame)
+        play_pause_layout.addWidget(play_btn_widget, 0, 0)
+        play_pause_layout.addWidget(quit_Widget, 0, 1)
 
+        controls_layout.addWidget(play_pause_frame)
+        controls_layout.addWidget(timer_frame)
 
 
         View_logs_details = QGroupBox()
         View_logs_details.setObjectName("Log_Frame")
         View_logs_details.setTitle("Log Frame")
-        View_logs_details.setStyleSheet("""QGroupBox#Log_Frame{border:2px solid rgba(128,128,128,0.8);
-                                    border-radius:8px;
-                                    padding-top:5px;
-                                    margin-top:10px;
-                                    padding-right:10px;
-                                    padding-left:10px;
-                                    padding-bottom:5px;
-                                    background-color: rgba(128,128,128,0.2);}
-                                            QGroupBox#Log_Frame::title {
-                                                            subcontrol-origin: margin;
-                                                            subcontrol-position: top left;
-                                                            left: 30px;
-                                                            border-radius:5px;
-                                                            padding-left: 5px;
-                                                            padding-right: 5px;
-                                                            background-color: rgba(128,128,128,0.5);
-                                                        }""")
+        View_logs_details.setAlignment(Qt.AlignVCenter)
+        View_logs_details.setStyleSheet("""
+            QGroupBox#Log_Frame {
+                border: 2px solid rgba(128,128,128,0.8);
+                border-radius: 8px;
+                padding-top: 5px;
+                margin-top: 10px;
+                padding-right: 10px;
+                padding-left: 10px;
+                padding-bottom: 5px;
+                background-color: rgba(128,128,128,0.2);
+            }
+            QGroupBox#Log_Frame::title {
+                subcontrol-origin: margin;
+                subcontrol-position: top center;
+                border-radius: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                background-color: rgba(128,128,128,0.8);
+            }
+        """)
 
-        # Main horizontal layout for the group box
-        view_log_layout = QHBoxLayout(View_logs_details)
+        view_log_label = QLabel("Activity Log")
+        view_log_label.setStyleSheet("background-color: transparent; font-weight: bold; color: white; text-align: center; font-size: 12px;")
+        view_log_btn = AnimatedHoverButton(self)
+        view_log_btn.setFixedSize(100, 100)
+        view_log_btn.setIcon(QIcon(r"geni\geni_ui_src\ui_assets\Icons\log.png"))
+        view_log_btn.setIconSize(QSize(80,80))
+        view_log_btn.setToolTip("view Current Activity Log")
+        view_log_btn.clicked.connect(self.open_activities_log)
+        view_log_label.setAlignment(Qt.AlignHCenter)
 
-        # First set of controls (Activity Log)
-        log_controls_layout = QHBoxLayout()
+        detail_log_label = QLabel("Detail Activity Log")
+        detail_log_label.setAlignment(Qt.AlignHCenter)
+        detail_log_label.setStyleSheet("background-color: transparent; font-weight: bold; color: white; text-align: center; font-size: 12px;")
+        detail_log_btn = AnimatedHoverButton(self)
+        detail_log_btn.setIcon(QIcon(r"geni\geni_ui_src\ui_assets\Icons\detaillog.png"))
+        detail_log_btn.setIconSize(QSize(80,80))
+        detail_log_btn.setToolTip("view overall Detail Activity Log")
+        detail_log_btn.setFixedSize(100, 100)
+        detail_log_btn.clicked.connect(self.open_detail_activities_log)
 
-        view_activity_log_label = QLabel("View Activity Log:")
-        view_activity_log_btn = AnimatedHoverButton("Show")
-        view_activity_log_btn.setFixedSize(80, 70)
-        view_activity_log_btn.clicked.connect(self.open_activities_log)
+        log_layout = QVBoxLayout()
+        log_layout.setAlignment(Qt.AlignTop | Qt.AlignHCenter)
+        log_layout.addWidget(view_log_label)
+        log_layout.addWidget(view_log_btn)
 
-        log_controls_layout.addWidget(view_activity_log_label)
-        log_controls_layout.addWidget(view_activity_log_btn)
+        detail_log_layout = QVBoxLayout()
+        detail_log_layout.setAlignment(Qt.AlignTop | Qt.AlignHCenter)
+        detail_log_layout.addWidget(detail_log_label)
+        detail_log_layout.addWidget(detail_log_btn)
 
-        # Add first controls to main layout
-        view_log_layout.addLayout(log_controls_layout)
+        log_frame_layout = QHBoxLayout(View_logs_details)
+        log_frame_layout.addLayout(log_layout)
+        log_frame_layout.addSpacing(20)
+        log_frame_layout.addLayout(detail_log_layout)
+        log_frame_layout.setAlignment(Qt.AlignCenter)
+        log_frame_layout.setContentsMargins(0,10,0,10)
 
-        # Details log control layout 
-        detail_log_controls_layout = QHBoxLayout()
-
-        view_detail_activity_log_label = QLabel("View Detail Activity Log:")
-        view_detail_activity_log_btn = AnimatedHoverButton("Show") #This AnimatedHoverButton is not default button its a custom button class with hover effects and all 
-        view_detail_activity_log_btn.setFixedSize(80, 70)
-        view_detail_activity_log_btn.clicked.connect(self.open_detail_activities_log)
-
-        detail_log_controls_layout.addWidget(view_detail_activity_log_label)
-        detail_log_controls_layout.addWidget(view_detail_activity_log_btn)
-
-        # add lauyout to main layout so its can show in main layout
-        view_log_layout.addLayout(detail_log_controls_layout)
-
-        # Added stretch to push all elements uppward so its push all the ui to the top
-        view_log_layout.addStretch()
-
-        # Add the QGroupBox
-        layout.addWidget(View_logs_details)
-
-
-
-
-
+        View_logs_details.setFixedWidth(360)
+        layout.addWidget(View_logs_details, alignment=Qt.AlignHCenter)
 
 
-        view_detail_log = QGroupBox()
-        view_detail_log.setObjectName("view_detail_log")
-        view_detail_log.setTitle("Detail Log Frame")
-        view_detail_log.setStyleSheet("""QGroupBox#view_detail_log{border:2px solid rgba(128,128,128,0.8);
-                                    border-radius:8px;
-                                    padding-top:5px;
-                                    margin-top:10px;
-                                    padding-right:10px;
-                                    padding-left:10px;
-                                    padding-bottom:5px;
-                                    background-color: rgba(128,128,128,0.2);}
-                                            QGroupBox#view_detail_log::title {
-                                                            subcontrol-origin: margin;
-                                                            subcontrol-position: top left;
-                                                            left: 30px;
-                                                            border-radius:5px;
-                                                            padding-left: 5px;
-                                                            padding-right: 5px;
-                                                            background-color: rgba(128,128,128,0.5);
-                                                        }""")
 
-        # Main horizontal layout
-        view_detail_log_layout = QHBoxLayout(view_detail_log)
 
-        
-        detail_log_controls_layout = QHBoxLayout()
+#########################INSTAGRAMMMM####################################
 
-        view_detail_activity_log_label = QLabel("View Detail Activity Log:")
-        view_detail_activity_log_btn = AnimatedHoverButton("Show")
-        view_detail_activity_log_btn.setFixedSize(80, 70)
-        view_detail_activity_log_btn.clicked.connect(self.open_detail_activities_log)
+        instagram_activity_type_frame = QGroupBox()
+        instagram_activity_type_frame.setTitle("Instagram Activity (Pro Version)")
+        instagram_activity_type_frame.setObjectName("instagram_activity_type_frame")
+        instagram_activity_type_frame.setStyleSheet("""
+            QGroupBox#instagram_activity_type_frame {
+                border: 2px solid rgba(128,128,128,0.8);
+                border-radius: 8px;
+                padding-top: 5px;
+                margin-top: 10px;
+                padding-right: 10px;
+                padding-left: 10px;
+                padding-bottom: 5px;
+                background-color: rgba(128,128,128,0.2);
+            }
+            QGroupBox#instagram_activity_type_frame::title {
+                subcontrol-origin: margin;
+                subcontrol-position: top center;
+                border-radius: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                background-color: rgba(128,128,128,0.8);
+            }
+        """)
+        instagram_activity_type_frame.setFixedWidth(780)
+        instagram_activity_type_frame.setFixedHeight(300)
+        Comingsoon_label = QLabel("Only Available in Pro Version")
+        instagram_activity_layout = QHBoxLayout(instagram_activity_type_frame)
+        instagram_activity_layout.setAlignment(Qt.AlignCenter)
+        # self.main_activity_button = QPushButton("Main Activity")
+        # self.main_activity_button.setToolTip("Set Activity Type to Main Activity")
+        # self.main_activity_button.setFixedWidth(150)
+        # self.main
+        # # self.main_activity_button.clicked.connect(lambda: self.set_activity_type("main"))
+        # activity_type_layout.addWidget(self.main_activity_button)
+        # self.fetch_activity_button = QPushButton("Fetch Activity")
+        # self.fetch_activity_button.setToolTip("Set Activity Type to Fetch Activity")
+        # self.fetch_activity_button.setFixedWidth(150)
+        # self.fetch_activity_button.clicked.connect(lambda: self.set_activity_type("fetch"))
+        instagram_activity_layout.addWidget(Comingsoon_label)
+        layout.addWidget(instagram_activity_type_frame, alignment=Qt.AlignHCenter)
 
-        
-        detail_log_controls_layout.addWidget(view_detail_activity_log_label)
-        detail_log_controls_layout.addWidget(view_detail_activity_log_btn)
-
-       
-        view_detail_log_layout.addLayout(detail_log_controls_layout)
-
-        view_detail_log_layout.addStretch()
-
-        #layout.addWidget(view_detail_log)
         layout.addStretch()  
 
     def open_activities_log(self):
@@ -1168,64 +1202,96 @@ class ActivityControl(StyledFrame):
             logging.error("Error while stopping %s: %s", name, e)
 
 class AnimatedHoverButton(QPushButton):
-    """QPushButton subclass with smooth color transition on hover."""
-    def __init__(self, text, btn_padding=3, parent=None):
+    def __init__(self, text="", btn_padding=6, parent=None):
         super().__init__(text, parent)
         self._hoverLevel = 0.0
+        self._pressLevel = 0.0
         self.btn_padding = btn_padding
         self.setAttribute(Qt.WA_Hover, True)
         self.setCursor(Qt.PointingHandCursor)
-        # Animation setup
-        self._anim = QPropertyAnimation(self, b"hoverLevel", self)
-        self._anim.setDuration(200)  # 200 ms transition
-        # Initial style
-        self.update_style()
         
+        self.setStyleSheet("""
+            QPushButton:focus {
+                outline: none;
+            }
+        """)
+
+        # Animation for hover
+        self._hoverAnim = QPropertyAnimation(self, b"hoverLevel", self)
+        self._hoverAnim.setDuration(250)
+        
+        # Animation for press/release
+        self._pressAnim = QPropertyAnimation(self, b"pressLevel", self)
+        self._pressAnim.setDuration(100)
+        
+        self.update_style()
         self.setDefault(False)
         self.setAutoDefault(False)
+        self.setMinimumSize(100, 40)
+
+    @Property(float)
+    def hoverLevel(self):
+        return self._hoverLevel
+
+    @hoverLevel.setter
+    def hoverLevel(self, value):
+        self._hoverLevel = value
+        self.update_style()
+
+    @Property(float)
+    def pressLevel(self):
+        return self._pressLevel
+
+    @pressLevel.setter
+    def pressLevel(self, value):
+        self._pressLevel = value
+        self.update_style()
+
+    def enterEvent(self, event):
+        self._hoverAnim.setStartValue(self._hoverLevel)
+        self._hoverAnim.setEndValue(1.0)
+        self._hoverAnim.start()
+        super().enterEvent(event)
+
+    def leaveEvent(self, event):
+        self._hoverAnim.setStartValue(self._hoverLevel)
+        self._hoverAnim.setEndValue(0.0)
+        self._hoverAnim.start()
+        super().leaveEvent(event)
+
+    def mousePressEvent(self, event):
+        self._pressAnim.setStartValue(self._pressLevel)
+        self._pressAnim.setEndValue(1.0)
+        self._pressAnim.start()
+        super().mousePressEvent(event)
+
+    def mouseReleaseEvent(self, event):
+        self._pressAnim.setStartValue(self._pressLevel)
+        self._pressAnim.setEndValue(0.0)
+        self._pressAnim.start()
+        super().mouseReleaseEvent(event)
 
     def update_style(self):
-
-        alpha = 0.5 + 0.3 * self._hoverLevel
-        color = f"rgba(27,86,253,{alpha:.2f})"
-        pressed_style = "rgba(27,86,253,1.0)"
+        hover_alpha = 0.7 + 0.2 * self._hoverLevel
+        press_alpha = 0.9 + 0.1 * self._pressLevel
+        bg_alpha = press_alpha if self._pressLevel > 0 else hover_alpha
+        color = f"rgba(30, 100, 255, {bg_alpha:.2f})"
+        base_font_size = 14
+        font_size = base_font_size + 1 * self._hoverLevel
+        font_size = base_font_size - 1 if self._pressLevel > 0 else font_size
         padding = f"padding: {self.btn_padding}px"
         self.setStyleSheet(f"""
             QPushButton {{
                 background-color: {color};
                 border: none;
-                border-radius: 8px;
+                border-radius: 10px;
                 {padding};
-            }}
-            QPushButton:pressed {{
-                background-color: {pressed_style};
+                font-weight: 600;
+                color: white;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                font-size: {font_size}px;
             }}
         """)
-
-    def enterEvent(self, event):
-        # animate to hover state
-        self._anim.stop()
-        self._anim.setStartValue(self._hoverLevel)
-        self._anim.setEndValue(1.0)
-        self._anim.start()
-        super().enterEvent(event)
-
-    def leaveEvent(self, event):
-        # animate back to normal
-        self._anim.stop()
-        self._anim.setStartValue(self._hoverLevel)
-        self._anim.setEndValue(0.0)
-        self._anim.start()
-        super().leaveEvent(event)
-
-    def getHoverLevel(self):
-        return self._hoverLevel
-
-    def setHoverLevel(self, value):
-        self._hoverLevel = value
-        self.update_style()
-
-    hoverLevel = Property(float, getHoverLevel, setHoverLevel)
 class SocialButton(QPushButton):
     def __init__(self, text, url, icon_text="", parent=None):
         super().__init__(text, parent)
