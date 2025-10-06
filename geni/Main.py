@@ -41,8 +41,8 @@ os.environ['QT_ENABLE_HIGHDPI_SCALING'] = '0'
 from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QTabWidget, QLabel, 
                               QPushButton, QComboBox, QFrame, QVBoxLayout, QHBoxLayout, 
                               QGridLayout, QScrollArea, QCheckBox,QSplashScreen)
-from PySide6.QtCore import Qt, QSize, Signal, QTimer, QPropertyAnimation, Property
-from PySide6.QtGui import QIcon, QFont,QPixmap
+from PySide6.QtCore import Qt, QSize, Signal, QTimer, QPropertyAnimation, Property,QEasingCurve
+from PySide6.QtGui import QIcon, QFont,QPixmap,QColor
 
 
 def setup_application():
@@ -105,9 +105,9 @@ from geni_ui_src.tab_id_active import make_id_active_frame
 from geni_ui_src.login_src.login_window import SerialCodeApp
 from geni_ui_src.about_window import AboutDialog
 
-"""Dummy import for nuitka """
+# Dummy import for nuitka 
 
-""" from ldController.Ldcontroller_adb.AdbCheckinUpload import *
+from ldController.Ldcontroller_adb.AdbCheckinUpload import *
 from ldController.Ldcontroller_adb.AdbImageUpload import *
 from ldController.Ldcontroller_adb.TimePicker_try import *
 from ldController.Ldcontroller_adb.AdbImageUpload_ASW import *
@@ -136,7 +136,7 @@ from geni_backend_src.start_download_activity import *
 from geni_backend_src.task_collector import *
 from geni_backend_src.utlitis.geni_config_collector import *
 
-from geni.Downloaders.all_platform_shorts_downloader.UnifiedSocialMediaDownloader import * """
+from geni.Downloaders.all_platform_shorts_downloader.UnifiedSocialMediaDownloader import * 
 
 
 
@@ -276,10 +276,15 @@ class MainWindow(QMainWindow):
 
         # Add tabs to tabview
         self.tabview.addTab(tab_activities, "Activities")
+        self.tabview.setTabToolTip(0, "To control Current Activity, Start New Activity, View Logs.")
         self.tabview.addTab(tab_devices, "Devices")
+        self.tabview.setTabToolTip(1, "To view connected devices/Emulators, Id Fetching, Emulator settings & more!.")
         self.tabview.addTab(tab_auto_upload, "Auto Upload")
+        self.tabview.setTabToolTip(2, "To manage Auto Upload on Ids/Pages & Settings Related to Uploading.")
         self.tabview.addTab(tab_id_active, "Id Active")
+        self.tabview.setTabToolTip(3, "To manage ID Activity on Ids & Settings Related to ID Active.")
         self.tabview.addTab(tab_page_manager, "Page Manager")
+        self.tabview.setTabToolTip(4, "To manage Pages/Profiles, Add/Edit/Delete/view insights of Pages/Ids & more!.")
         
         # Set up Activities tab
         activities_layout = QHBoxLayout(tab_activities)
@@ -720,7 +725,7 @@ class MainWindow(QMainWindow):
         layout.addWidget(label)
         
         window.exec()
-
+   
     def on_theme_mode_changed(self, new_value):
         self.theme_mode = new_value
         self.save_changes()
@@ -1263,44 +1268,144 @@ class AnimatedHoverButton(QPushButton):
 
     hoverLevel = Property(float, getHoverLevel, setHoverLevel)
 
+
 class SplashScreen(QSplashScreen):
     def __init__(self):
-        # Load the splash screen image
+        # Resolve the splash image path relative to the script's location (more robust)
+        script_dir = os.path.dirname(os.path.abspath(sys.argv[0]))
         splash_path = r"geni\geni_ui_src\ui_assets\Icons\splash_screen_small.png"
-        pixmap = QPixmap(splash_path)
         
-        # Scale the pixmap if needed (optional)
-        # pixmap = pixmap.scaled(800, 600, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        # Load and validate the pixmap
+        pixmap = QPixmap(splash_path)
+        if pixmap.isNull():
+            # Fallback to a blank or default pixmap if image fails to load
+            print(f"Warning: Could not load splash image from {splash_path}. Using blank pixmap.")
+            pixmap = QPixmap(800, 600)  # Or load a bundled fallback image
+        
+        # Optional: Scale if needed (uncomment and adjust as required)
+        # pixmap = pixmap.scaled(800, 600, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation)
         
         super().__init__(pixmap)
         
         # Set splash screen properties
-        self.setWindowFlags(Qt.WindowStaysOnTopHint | Qt.FramelessWindowHint)
-        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.setWindowFlags(Qt.WindowType.WindowStaysOnTopHint | Qt.WindowType.FramelessWindowHint)
+        self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         
-        # Show a loading message
-        self.showMessage("Loading GeniFlow...", Qt.AlignBottom | Qt.AlignCenter, Qt.white)
+        # Initial opacity (start at 0 for fade-in)
+        self.setWindowOpacity(0.0)
+        
+        # Initial loading message
+        self.showMessage("Loading GeniFlow...", Qt.AlignmentFlag.AlignBottom | Qt.AlignmentFlag.AlignHCenter, QColor(Qt.GlobalColor.white))
 
+        # Timer to periodically raise the window (for reliable "stays on top")
+        self._raise_timer = QTimer()
+        self._raise_timer.timeout.connect(self.raise_)
+        self._raise_timer.setInterval(50)  # Every 50ms during display
+
+    def show_with_fade_in(self, duration=1000):
+        """
+        Show the splash with a fade-in animation, ensuring it's not minimized.
         
+        Args:
+            duration (int): Animation duration in milliseconds (default: 1000ms).
+        """
+        self.show()
+        self._ensure_visible()  # Prevent minimized state
+        self._raise_timer.start()  # Start raising timer
+        self._fade_in(duration)
+
+    def _ensure_visible(self):
+        """Ensure the window is visible, active, and not minimized."""
+        if self.windowState() & Qt.WindowState.WindowMinimized:
+            self.setWindowState(Qt.WindowState.WindowNoState)  # Restore from minimized
+        self.raise_()
+        self.activateWindow()
+
+    def _fade_in(self, duration=1000):
+        """Internal method to animate fade-in from 0 to 1 opacity."""
+        self._opacity_animation = QPropertyAnimation(self, b"windowOpacity")
+        self._opacity_animation.setDuration(duration)
+        self._opacity_animation.setStartValue(0.0)
+        self._opacity_animation.setEndValue(1.0)
+        self._opacity_animation.setEasingCurve(QEasingCurve.Type.InOutQuad)
+        self._opacity_animation.start()
+
+    def fade_out_and_finish(self, main_window, duration=500):
+        """
+        Fade out the splash and finish it, transferring to the main window.
+        
+        Args:
+            main_window: The main window to finish with.
+            duration (int): Animation duration in milliseconds (default: 500ms).
+        """
+        self._raise_timer.stop()  # Stop raising timer
+        self._fade_out(duration, lambda: self.finish(main_window))
+
+    def _fade_out(self, duration=300, callback=None):
+        """Internal method to animate fade-out from 1 to 0 opacity, then call callback."""
+        self._opacity_animation = QPropertyAnimation(self, b"windowOpacity")
+        self._opacity_animation.setDuration(duration)
+        self._opacity_animation.setStartValue(1.0)
+        self._opacity_animation.setEndValue(0.0)
+        self._opacity_animation.setEasingCurve(QEasingCurve.Type.InOutQuad)
+        
+        def on_finished():
+            if callback:
+                callback()
+        
+        self._opacity_animation.finished.connect(on_finished)
+        self._opacity_animation.start()
+
+    def update_message(self, message: str):
+        """Dynamically update the loading message (e.g., for progress steps)."""
+        self.showMessage(message, Qt.AlignmentFlag.AlignBottom | Qt.AlignmentFlag.AlignHCenter, QColor(Qt.GlobalColor.white))
+        self.repaint()  # Ensure immediate refresh
+
+def start_loading_sequence(splash):
+    """Chain non-blocking loading steps with QTimers."""
+    def step1():
+        splash.update_message("Initializing core modules...")
+        QTimer.singleShot(1000, step2)  # 1s delay
+
+    def step2():
+        splash.update_message("Loading UI components...")
+        QTimer.singleShot(500, step3)  # 1s delay
+
+    def step3():
+        splash.update_message("Connecting to database...")
+        QTimer.singleShot(1000, step4)  # 1s delay
+
+    def step4():
+        splash.update_message("Finalizing setup...")
+        QTimer.singleShot(500, create_window)  # 1s delay
+
+    def create_window():
+        global window  # Or handle differently if preferred
+        window = MainWindow()
+        window.show()
+        splash.fade_out_and_finish(window, duration=800)  # Fade out to main window
+
+    # Kick off the sequence
+    step1()
+
 if __name__ == "__main__":
-    # Call the merged setup function
-    
-    setup_application()
-    
-    #update_single_package("yt-dlp")
-
+    # Call setup after app init if it needs Qt (move if not)
     app = QApplication(sys.argv)
     
-    # Add these additional attributes to prevent console flashing
-    app.setAttribute(Qt.AA_DontShowIconsInMenus, True)
+    # Add attributes to prevent console flashing
+    app.setAttribute(Qt.ApplicationAttribute.AA_DontShowIconsInMenus, True)
     
+    # If setup_application() needs Qt, call it here; otherwise, before app
+    setup_application()
+    
+    # Uncomment if needed (ensure it's non-blocking)
+    update_single_package("yt-dlp")
+
     splash = SplashScreen()
-    splash.show()
+    splash.show_with_fade_in(duration=100)  # Slightly longer for smoother feel
+    
+    # Start the async loading sequence
+    start_loading_sequence(splash)
 
-    app.processEvents()
-
-    window = MainWindow()
-    window.show() 
-
-    splash.finish(window)
     sys.exit(app.exec())
+        
