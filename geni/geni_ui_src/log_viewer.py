@@ -2,7 +2,6 @@ from ast import Delete
 import sys
 import re
 from datetime import datetime, time
-from turtle import title
 from PySide6.QtWidgets import (QApplication, QMainWindow, QVBoxLayout, QHBoxLayout,
                               QWidget, QTableWidget, QTableWidgetItem, 
                               QHeaderView, QPushButton, QTextEdit, QLabel,QMessageBox,
@@ -54,16 +53,15 @@ class LogAnalyzer(QMainWindow):
         title_label = QLabel("Log Activity Monitor")
         title_label.setStyleSheet("font-size: 18px; font-weight: bold; margin: 10px;")
 
-        Delete_button = QPushButton("Delete All Logs")
-        Delete_button.setStyleSheet("font-size: 14px; font-weight: bold; margin: 10px; background-color: red; color: white; border-radius: 5px; padding: 5px;")
-        Delete_button.clicked.connect(self.delete_log_file)     
-        Delete_button.setFixedSize(150, 50)
+        self.Delete_button = QPushButton("Delete All Logs")
+        self.Delete_button.setStyleSheet("font-size: 14px; font-weight: bold; margin: 10px; background-color: red; color: white; border-radius: 5px; padding: 5px;")
+        self.Delete_button.clicked.connect(self.delete_log_file)     
+        self.Delete_button.setFixedSize(150, 50)
 
-        has_logs = any(self.log_dir.iterdir())  # True if any files/directories exist
-        Delete_button.setVisible(has_logs)
+    
         
         title_layout.addWidget(title_label)
-        title_layout.addWidget(Delete_button)
+        title_layout.addWidget(self.Delete_button)
         main_layout.addLayout(title_layout)
         
         # Create table
@@ -82,7 +80,20 @@ class LogAnalyzer(QMainWindow):
         
         # Load sample data
         self.load_data()
-        
+        self.update_delete_button_visibility()
+
+    def update_delete_button_visibility(self):
+        """Update the visibility of the Delete button based on self.log_file contents."""
+        has_log_data = False
+        if self.log_file.exists():
+            try:
+                with open(self.log_file, 'r', encoding='utf-8') as f:
+                    has_log_data = bool(f.read().strip())  # True if file has non-empty content
+            except Exception:
+                has_log_data = False  # Hide button if file can't be read
+        if hasattr(self, 'Delete_button'):  # Ensure button exists
+            self.Delete_button.setVisible(has_log_data)
+            
     def parse_log_line(self, line):
         """Parse a single log line and extract components"""
         # Pattern to match: [timestamp] ldname | app | profile | activity | others
@@ -229,32 +240,37 @@ class LogAnalyzer(QMainWindow):
             self.populate_table_with_entries([])
     
     def delete_log_file(self):
-        """Delete all log files in the log directory with user confirmation."""
+        """Clear all data in the specific log file with user confirmation."""
         reply = QMessageBox.question(
             self,
-            "Confirm Deletion",
-            "Are you sure you want to delete all detail activity logs? This action cannot be undone.",
+            "Confirm Clearing",
+            f"Are you sure you want to clear the log file '{self.log_file.name}'? This action cannot be undone.",
             QMessageBox.Yes | QMessageBox.No,
             QMessageBox.No
         )
         if reply != QMessageBox.Yes:
-            logging.info("Delete all logs cancelled by user")
+            logging.info("Clear log file cancelled by user")
             return
 
         try:
-            for file_name in os.listdir(self.log_dir):
-                file_path = os.path.join(self.log_dir, file_name)
-                if os.path.isfile(file_path):
-                    os.remove(file_path)
-                    logging.info(f"Deleted log file: {file_path}")
-            QMessageBox.information(self, "Success", "All detail activity logs have been deleted.", QMessageBox.Ok)
-            # Clear the table and reset entries after deletion
-            self.all_entries = []
-            self.filtered_entries = []
-            self.table.setRowCount(0)
+            if self.log_file.exists():
+                with open(self.log_file, 'w') as f:
+                    f.truncate(0)  # Clear the file contents
+                logging.info(f"Cleared data in log file: {self.log_file}")
+                QMessageBox.information(self, "Success", f"The log file '{self.log_file.name}' has been cleared.", QMessageBox.Ok)
+                # Clear the table and reset entries after clearing
+                self.all_entries = []
+                self.filtered_entries = []
+                self.table.setRowCount(0)
+                self.update_delete_button_visibility()
+            else:
+                QMessageBox.warning(self, "No Clearing", f"No log file found at '{self.log_file}' to clear.", QMessageBox.Ok)
+        except PermissionError as e:
+            logging.error(f"Failed to clear {self.log_file}: {str(e)}")
+            QMessageBox.critical(self, "Error", f"Failed to clear {self.log_file.name}: {str(e)}", QMessageBox.Ok)
         except Exception as e:
-            logging.error(f"Failed to delete logs: {str(e)}")
-            QMessageBox.critical(self, "Error", f"Failed to delete logs: {str(e)}", QMessageBox.Ok)
+            logging.error(f"Failed to clear logs: {str(e)}")
+            QMessageBox.critical(self, "Error", f"Failed to clear logs: {str(e)}", QMessageBox.Ok)
 
 
 
