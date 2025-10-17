@@ -8782,3 +8782,23 @@
 [13:54:20] Geni2 | Geni | Jack Levi | Starting VPN | None
 [13:54:41] Geni1 | Geni | Neha Tiwari | Starting task | Starting worker process
 [13:54:46] Geni2 | Geni | Jack Levi | Closing LD |  Error VPN not connected
+[11:30:02] Geni1 | Geni |  | Getting Download Config | None
+[11:30:02] Geni1 | Geni |  | Opening Browser | None
+[11:30:02] Geni1 | Browser |  | Setting Browser Config | None
+[11:30:02] Geni1 | Browser | Neha Tiwari | Getting URL | None
+[11:30:07] Geni1 | Browser |  | Opening Browser  | None
+[11:30:07] Geni1 | Browser | Neha Tiwari | Opening URL | None
+[11:30:07] Geni1 | Browser | Neha Tiwari | Getting New Content Link | None
+[11:31:27] Geni1 | Browser | Neha Tiwari | No New Link Found | Error
+[11:31:30] Geni1 | Geni |  | Cloasing Browser | None
+[11:31:36] Geni1 | Geni |  | completed Download task successfully | None
+[14:29:45] Geni1 | Geni |  | Getting Download Config | None
+[14:29:45] Geni1 | Geni |  | Opening Browser | None
+[14:29:45] Geni1 | Browser |  | Setting Browser Config | None
+[14:29:45] Geni1 | Browser | Neha Tiwari | Getting URL | None
+[14:29:46] Geni1 | Browser |  | Opening Browser  | None
+[14:29:46] Geni1 | Browser | Neha Tiwari | Opening URL | None
+[14:29:46] Geni1 | Browser | Neha Tiwari | Getting New Content Link | None
+[14:30:04] Geni1 | Browser | Neha Tiwari | Process to Saving Video | None
+[14:30:04] Geni1 | Browser | Neha Tiwari | Downloading All Videos.... | None
+[14:30:22] Geni1 | Geni |  | Cloasing Browser | None

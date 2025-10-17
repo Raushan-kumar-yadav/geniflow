@@ -265,7 +265,7 @@ class UnifiedSocialMediaDownloader:
         Save browser cookies in proper Netscape format for yt-dlp.
         """
         cookies = await self.get_cookies()
-        cookies_path = os.path.join(Chrome_base_path, "cookies.txt")
+        cookies_path = os.path.join(Chrome_base_path, "cookies1.txt")
 
         try:
             with open(cookies_path, "w", encoding="utf-8") as f:

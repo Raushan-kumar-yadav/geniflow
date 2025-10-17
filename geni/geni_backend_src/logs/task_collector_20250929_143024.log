@@ -1,0 +1,35 @@
+2025-09-29 14:30:24,713 - TaskCollector - INFO - setup_logger:47 - Logging initialized. Log file: D:\geni_flow_ui_v1.0\facebook_tool_0.8\geni\geni_backend_src\logs\task_collector_20250929_143024.log
+2025-09-29 14:30:24,713 - TaskCollector - INFO - __init__:53 - Initializing TaskCollector
+2025-09-29 14:30:24,715 - TaskCollector - INFO - open_data_paths:74 - Reading data paths from settings
+2025-09-29 14:30:24,717 - TaskCollector - DEBUG - open_data_paths:84 - Using default page manager path
+2025-09-29 14:30:24,718 - TaskCollector - DEBUG - __init__:69 - LD Player Path: C:/LDPlayer/LDPlayer9
+2025-09-29 14:30:24,719 - TaskCollector - DEBUG - __init__:70 - Geni Data Path: User_Data\Page_manager.json
+2025-09-29 14:30:24,720 - TaskCollector - INFO - collect_tasks_from_json:1061 - Collecting tasks from JSON configuration
+2025-09-29 14:30:24,722 - TaskCollector - INFO - collect_tasks_from_json:1066 - Processing 4 ID and Pages entries
+2025-09-29 14:30:24,722 - TaskCollector - DEBUG - collect_tasks_from_json:1075 - Processing ID: Id_information.1
+2025-09-29 14:30:24,722 - TaskCollector - DEBUG - collect_tasks_from_json:1086 - ID Id_information.1 - Upload: True, ID Active: True
+2025-09-29 14:30:24,723 - TaskCollector - DEBUG - collect_tasks_from_json:1097 - ID Id_information.1 details - Name: Neha Tiwari, Package: com.facebook.katana, LDPlayer: Geni1
+2025-09-29 14:30:24,723 - TaskCollector - INFO - collect_tasks_from_json:1115 - Processing upload tasks for ID Id_information.1
+2025-09-29 14:30:24,723 - TaskCollector - DEBUG - collect_tasks_from_json:1124 - ID Id_information.1 upload types - Reels: True, Video: False, Image: False, Story: False
+2025-09-29 14:30:24,723 - TaskCollector - INFO - process_content_config:506 - Processing reels configuration for Neha Tiwari
+2025-09-29 14:30:24,725 - TaskCollector - DEBUG - process_content_config:552 - reels folder path: C:\Users\raush\Desktop\GeniData\Geni1\Neha Tiwari\Neha Tiwari_download_reel
+2025-09-29 14:30:24,725 - TaskCollector - INFO - check_media_available_in_folder:365 - Checking for 1 video(s) in folder: C:\Users\raush\Desktop\GeniData\Geni1\Neha Tiwari\Neha Tiwari_download_reel for profile: Neha Tiwari
+2025-09-29 14:30:24,726 - TaskCollector - WARNING - check_media_available_in_folder:400 - No videos available for Neha Tiwari in folder: C:\Users\raush\Desktop\GeniData\Geni1\Neha Tiwari\Neha Tiwari_download_reel
+2025-09-29 14:30:24,726 - TaskCollector - WARNING - process_content_config:630 - Insufficient reels media for Neha Tiwari, skipping
+2025-09-29 14:30:24,726 - TaskCollector - DEBUG - collect_tasks_from_json:1173 - Processing 3 pages for ID Id_information.1
+2025-09-29 14:30:24,727 - TaskCollector - DEBUG - collect_tasks_from_json:1177 - Processing page: Viral 8
+2025-09-29 14:30:24,727 - TaskCollector - DEBUG - collect_tasks_from_json:1196 - Page Viral 8 upload types - Reels: False, Video: False, Image: False, Story: False
+2025-09-29 14:30:24,740 - TaskCollector - DEBUG - collect_tasks_from_json:1177 - Processing page: 3killstreakuav
+2025-09-29 14:30:24,741 - TaskCollector - DEBUG - collect_tasks_from_json:1196 - Page 3killstreakuav upload types - Reels: False, Video: False, Image: False, Story: False
+2025-09-29 14:30:24,741 - TaskCollector - DEBUG - collect_tasks_from_json:1177 - Processing page: zadecl
+2025-09-29 14:30:24,741 - TaskCollector - DEBUG - collect_tasks_from_json:1196 - Page zadecl upload types - Reels: False, Video: False, Image: False, Story: False
+2025-09-29 14:30:24,742 - TaskCollector - DEBUG - collect_tasks_from_json:1075 - Processing ID: Id_information.2
+2025-09-29 14:30:24,743 - TaskCollector - DEBUG - collect_tasks_from_json:1086 - ID Id_information.2 - Upload: False, ID Active: True
+2025-09-29 14:30:24,744 - TaskCollector - DEBUG - collect_tasks_from_json:1097 - ID Id_information.2 details - Name: Jack Levi, Package: com.facebook.katana, LDPlayer: Geni2
+2025-09-29 14:30:24,744 - TaskCollector - DEBUG - collect_tasks_from_json:1075 - Processing ID: Id_information.3
+2025-09-29 14:30:24,744 - TaskCollector - DEBUG - collect_tasks_from_json:1083 - Skipping ID Id_information.3: Neither Upload nor ID Active is enabled
+2025-09-29 14:30:24,744 - TaskCollector - DEBUG - collect_tasks_from_json:1075 - Processing ID: Id_information.4
+2025-09-29 14:30:24,745 - TaskCollector - DEBUG - collect_tasks_from_json:1083 - Skipping ID Id_information.4: Neither Upload nor ID Active is enabled
+2025-09-29 14:30:24,745 - TaskCollector - INFO - collect_tasks_from_json:1319 - Processed 4 IDs, 0 with tasks
+2025-09-29 14:30:24,746 - TaskCollector - DEBUG - check_and_update_insight:461 - Checking and potentially updating insight timestamp
+2025-09-29 14:30:24,764 - TaskCollector - INFO - check_and_update_insight:492 - Update delay of 3 days met, updating timestamp
