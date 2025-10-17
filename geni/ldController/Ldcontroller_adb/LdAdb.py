@@ -26,7 +26,7 @@ from typing import Optional, Dict, Any
 from pathlib import Path
 import base64
 #ldController.Ldcontroller_adb.
-from ldController.Ldcontroller_adb.geni_config_collector import DeviceSettingsFlatten
+# from ldController.Ldcontroller_adb.geni_config_collector import DeviceSettingsFlatten
 
     
 class LdAdbController():
@@ -327,9 +327,9 @@ class LdAdbController():
         for coord in text_coordinates:
             text_name = coord.get('text')
             Text_list.append(text_name)
-            print("this is text decected",text_name)
+            print("this is text detected",text_name)
 
-        print("this is deceted text ",Text_list)
+        print("this is detected text ",Text_list)
         for coord in text_coordinates:
             print("running")
             text_name = coord.get('text')
@@ -2475,6 +2475,23 @@ class LdAdbController():
         for r in range(scroll_down_num):
             check_for_call_and_pause(id_or_page)
             self.ScrollByCoordinate(x_start=400,y_start=200,x_end=400,y_end=860,Duration=400,message="Swiped Down...")
+    
+
+    def send_keyevent(self, keycode):
+        """
+        Sends an Android key event via adb.
+        Example: keycode=67 → KEYCODE_DEL (backspace)
+        """
+        os.system(f"adb -s {self.device_serial} shell input keyevent {keycode}")
+
+    def clear_text_field(self, max_length=100):
+        """
+        Clears any text in the currently focused input field.
+        max_length: maximum number of characters to delete (safe upper limit)
+        """
+        # Each KEYCODE_DEL deletes one character
+        for _ in range(max_length):
+            self.send_keyevent(67)  # KEYCODE_DEL
 
     def clear_notifications(self):
 
@@ -3255,6 +3272,151 @@ class LdAdbController():
             return False
     
 
+    '''instagram profile switching and checking current profile'''
+
+    def check_selected_IG_profile(self,cheack_for_call_and_pause_callback,id_or_page):
+
+        #click on profile menu button 
+
+        cheack_for_call_and_pause_callback(id_or_page)
+
+        profile_x_coord=520 #changed cordinates 
+        profile_y_coord=945 #changed cordinates
+
+        # home_btn_xpath = "//node[contains(@content-desc,'Home, tab')]"
+        profile_btn_xpath = "//node[contains(@content-desc,'Profile')]"
+
+        is_menu_btn_clicked = self.click_element_if_visibale(xpath_expr=profile_btn_xpath)
+        if not is_menu_btn_clicked:
+            cheack_for_call_and_pause_callback(id_or_page)
+            self.clickByCoordinate(x=profile_x_coord,y=profile_y_coord)
+
+        cheack_for_call_and_pause_callback(id_or_page)
+
+
+        #dump ui to get current profile name 
+        
+        max_account_switching_delay = self.device_config_dic.flatten_json()["Account Switching Delay"]
+        min_account_switching_delay = int(max_account_switching_delay)*0.9
+
+
+        self.random_time(from_time=min_account_switching_delay,to_time=max_account_switching_delay)
+
+        cheack_for_call_and_pause_callback(id_or_page)
+
+        dumped_xml_path = self.dump_ui()
+
+        # Parse the XML file
+        tree = etree.parse(dumped_xml_path)
+       
+        all_selected = tree.xpath("//*[@" "selected" "]")
+        print(f"Found {len(all_selected)} elements with a 'selected' attribute.")
+       
+        selected_nodes = tree.xpath("//*[translate(@selected, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')='true'][@text!='']")
+        if selected_nodes:
+            
+            element_name = selected_nodes[0].get("text")
+            print("Selected Profile: ", element_name.strip())
+            return element_name.strip()
+        else:
+            print("Unable to check selected Profile.")
+            return None
+        
+    def switch_IG_profle_to(self,profile_name,cheack_for_call_and_pause_callback,id_or_page="id"):
+
+        clean_profile_name = profile_name.strip()
+
+        go_to_profile_tab_btn_xpath = "//node[@content-desc='Go to profile']"
+        home_btn_xpath = "//node[contains(@content-desc,'Home, tab')]"
+        menu_btn_xpath = "//node[contains(@content-desc,'Profile')]" #menu == profile
+        profile_x_coord=520
+        profile_y_coord=945
+        go_to_profile_from_menu_x_coord = 220
+        go_to_profile_from_menu_y_coord = 240
+        profile_down_arrow_x = 470
+        profile_down_arrow_y = 241
+
+
+
+        try:
+
+            # Go to profile tab 
+            cheack_for_call_and_pause_callback(id_or_page)
+            click_on_profile_tab = self.click_element_if_visibale(xpath_expr=go_to_profile_tab_btn_xpath)
+            if not click_on_profile_tab:
+                cheack_for_call_and_pause_callback(id_or_page)
+                is_menu_btn_clicked = self.click_element_if_visibale(xpath_expr=menu_btn_xpath)
+                if not is_menu_btn_clicked:
+                    cheack_for_call_and_pause_callback(id_or_page)
+                    self.clickByCoordinate(x=profile_x_coord,y=profile_y_coord)
+                cheack_for_call_and_pause_callback(id_or_page)
+                self.clickByCoordinate(x=go_to_profile_from_menu_x_coord,y=go_to_profile_from_menu_y_coord)
+
+
+
+            # Check if current selected profile found in facebook or not if not then go to menu tab and switch
+            profile_xpath_btn = f"//node[contains(@content-desc,'{clean_profile_name}')]"
+            cheack_for_call_and_pause_callback(id_or_page)
+            self.scroll_down_num(check_for_call_and_pause=cheack_for_call_and_pause_callback,id_or_page=id_or_page,scroll_down_num=2,delay=0)
+            is_profile_name_visible = self.check_element_visiable(element_to_be_visiable=profile_xpath_btn)
+            if is_profile_name_visible:
+                cheack_for_call_and_pause_callback(id_or_page)
+                self.BackButton()
+                return True
+            
+
+
+            else:
+
+
+                cheack_for_call_and_pause_callback(id_or_page)
+                self.BackButton()
+                cheack_for_call_and_pause_callback(id_or_page)
+                is_menu_btn_clicked = self.click_element_if_visibale(xpath_expr=menu_btn_xpath)
+                if not is_menu_btn_clicked:
+                    cheack_for_call_and_pause_callback(id_or_page)
+                    self.clickByCoordinate(x=profile_x_coord,y=profile_y_coord)
+
+
+
+
+                cheack_for_call_and_pause_callback(id_or_page)
+                long_pressed_on_elment = self.long_press_on_element_if_visible(xpath_expr=menu_btn_xpath)
+                if not long_pressed_on_elment:
+                    cheack_for_call_and_pause_callback(id_or_page)
+                    self.clickByCoordinate(x=profile_down_arrow_x,y=profile_down_arrow_y)
+
+
+
+
+                # Click on profile button in profile switching window
+                is_switched = self.scroll_and_click_on_element(scroll_x_coord=random.uniform(300,400),scroll_y_coordinate=random.uniform(600,700),  element_xpath=f"//node[contains(@text,'{clean_profile_name}')]",max_no_attempt=6,delay=1)
+                cheack_for_call_and_pause_callback(id_or_page)
+
+
+
+
+                if is_switched:
+                    return True
+                
+
+                if not is_switched:
+                    cheack_for_call_and_pause_callback(id_or_page)
+                    is_see_all_clicked = self.scroll_and_click_on_element(scroll_x_coord=random.uniform(300,400),scroll_y_coordinate=random.uniform (600,700),element_xpath="//node[contains(@content-desc,'See all')]",max_no_attempt=5,delay=1)
+                    cheack_for_call_and_pause_callback(id_or_page)
+                    is_final_switched = self.scroll_and_click_on_element(scroll_x_coord=random.uniform(300,400),scroll_y_coordinate=random.uniform  (600,700),element_xpath=f"//node[contains(@text,'{clean_profile_name}')]",max_no_attempt=6,delay=1)
+
+                    if not is_final_switched:
+                        print("Faild to Switch profile ")
+
+
+
+        except Exception as e :
+            print(f"Error at switching profile: {e}")
+            return False
+    
+
+
 
     def RandomScrollAndClickElement(self,element_xpath,max_no_attempt,check_for_call_and_pause_callback,id_or_page,delay = 0.3,offset=100,random_scroll=True):
         """
@@ -3811,7 +3973,7 @@ def is_paused():
 # Example usage with your existing code:
 if __name__ == "__main__":
     # Your existing code
-    q = LdAdbController(local_output_file_path=r"D:\xml", 
+    q = LdAdbController(local_output_file_path=r"D:\uidump", 
                        device_serial="emulator-5554")
     
     # XPath definitions
@@ -3826,8 +3988,9 @@ if __name__ == "__main__":
 
     #q.save_you_login_info()               
     q.dump_ui()
-    
-    q.click_element_if_visibale(xpath_expr=button_xpath)
+    # q.back_btn_untill_home(id_or_page=id)
+    # q.clear_text_field(max_length=100)
+    # q.click_element_if_visibale(xpath_expr=button_xpath)
 
 
     #q.back_btn_untill_discard_changes_btn(pause_and_cheack_call_back=None,id_or_page="id",delay=3)
