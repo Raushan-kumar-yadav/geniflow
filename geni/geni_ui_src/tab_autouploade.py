@@ -20,6 +20,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '.
 from geni.ldController.Ldcontroller_adb.LdAdb import LdAdbController
 from geni.Downloaders.all_platform_shorts_downloader.UnifiedSocialMediaDownloader import UnifiedSocialMediaDownloader
 from geni_ui_src.configure_window import ConfigureWindow
+from geni_ui_src.configureGroupWindow import ConfigureGrpWindow
 
 
 class MakeProfileFrame(QFrame):
@@ -1330,7 +1331,7 @@ class ProfileConfig(QFrame):
         configure_download_btn_frame = QFrame()
         configure_download_btn_frame_layout = QHBoxLayout()
 
-        config_download_label = QLabel("Configure Download/Bonus Edits/Video Edits: ")
+        config_download_label = QLabel("More Config")
         configure_download_btn = AnimatedHoverButton("Configure")
         configure_download_btn.setFixedSize(80, 80)
         configure_download_btn.clicked.connect(self.open_configure_window)
@@ -1340,9 +1341,27 @@ class ProfileConfig(QFrame):
         #configure_download_btn_frame_layout.setSpacing(10)
         configure_download_btn_frame_layout.addWidget(configure_download_btn)
 
+
+        # Configure grp config here
+
+        group_config_layout = QHBoxLayout()
+        
+        group_config_label = QLabel("Group Config")
+        group_config_btn = AnimatedHoverButton("Configure")
+        group_config_btn.setFixedSize(80,80)
+        group_config_btn.clicked.connect(self.onGroupConfigClicked)
+        
         configure_download_btn_frame.setLayout(configure_download_btn_frame_layout)
         config_download_layout.addWidget(configure_download_btn_frame, 0, 0)
         config_download_layout.setHorizontalSpacing(30)
+        
+        group_config_layout.addWidget(group_config_label)
+        group_config_layout.addWidget(group_config_btn)
+        
+        configure_download_btn_frame_layout.addLayout(group_config_layout)
+
+
+
 
         #enable/disable shortcut frame
         download_enable_frame = QFrame()
@@ -1646,6 +1665,27 @@ class ProfileConfig(QFrame):
 
 
 
+    def onGroupConfigClicked(self):
+        
+
+        try:
+            # Create the configure window with this as parent
+            configure_window = ConfigureGrpWindow(
+                json_file_path=self.json_file_path,
+                id_frame_idx=self.id_frame_idx,
+                profile_name=self.current_profile, 
+                parent=self 
+            )
+
+            configure_window.setMinimumHeight(840)
+            configure_window.exec()
+
+        except Exception as e:
+            QMessageBox.critical(self, "Configure Window", f"Error opening ConfigureWindow: {e}")
+
+
+
+        
     def save_changes(self):
         if self.savecallback:
             self.savecallback()
