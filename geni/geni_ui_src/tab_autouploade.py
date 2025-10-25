@@ -1053,23 +1053,29 @@ class ProfileConfig(QFrame):
         folders_config_group_box = QGroupBox()
         folders_config_group_box.setObjectName("folders_config_group_box")
         folders_config_group_box.setTitle("Download Folders Configure")
-        folders_config_group_box.setStyleSheet("""QGroupBox#folders_config_group_box{border:2px solid rgba(128,128,128,0.8);
-                                    border-radius:8px;
-                                    padding-top:5px;
-                                    margin-top:10px;
-                                    padding-right:10px;
-                                    padding-left:10px;
-                                    padding-bottom:5px;
-                                    background-color: rgba(128,128,128,0.2);}
-                                            QGroupBox#folders_config_group_box::title {
-                                                            subcontrol-origin: margin;
-                                                            subcontrol-position: top left;
-                                                            left: 30px;
-                                                            border-radius:5px;
-                                                            padding-left: 5px;
-                                                            padding-right: 5px;
-                                                            background-color: rgba(128,128,128,0.5);
-                                                        }""")
+        folders_config_group_box.setStyleSheet("""
+            QGroupBox#folders_config_group_box {
+                border: 2px solid rgba(128,128,128,0.8);
+                border-radius: 8px;
+                padding-top: 5px;
+                margin-top: 10px;
+                padding-right: 10px;
+                padding-left: 10px;
+                padding-bottom: 5px;
+                background-color: rgba(128,128,128,0.2);
+            }
+            QGroupBox#folders_config_group_box::title {
+                subcontrol-origin: margin;
+                subcontrol-position: top left;
+                left: 30px;
+                border-radius: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                background-color: rgba(128,128,128,0.8);
+            }
+        """)
         download_folder_main_layout = QGridLayout(folders_config_group_box)
         
 
@@ -1305,122 +1311,156 @@ class ProfileConfig(QFrame):
 
         
         
-        configure_download_edit_group_box = QGroupBox()
-        configure_download_edit_group_box.setObjectName("configure_download_edit_group_box")
-        configure_download_edit_group_box.setTitle("Configure Download/Edits/Downloads")
-        configure_download_edit_group_box.setStyleSheet("""QGroupBox#configure_download_edit_group_box{border:2px solid rgba(128,128,128,0.8);
-                                    border-radius:8px;
-                                    padding-top:5px;
-                                    margin-top:10px;
-                                    padding-right:10px;
-                                    padding-left:10px;
-                                    padding-bottom:5px;
-                                    background-color: rgba(128,128,128,0.2);}
-                                            QGroupBox#configure_download_edit_group_box::title {
-                                                            subcontrol-origin: margin;
-                                                            subcontrol-position: top left;
-                                                            left: 30px;
-                                                            border-radius:5px;
-                                                            padding-left: 5px;
-                                                            padding-right: 5px;
-                                                            background-color: rgba(128,128,128,0.5);
-                                                        }""")
-        config_download_layout = QGridLayout(configure_download_edit_group_box)
-        
-        #configure download edit and download frame
-        configure_download_btn_frame = QFrame()
-        configure_download_btn_frame_layout = QHBoxLayout()
+                # ========== MAIN CONTAINER LAYOUT ==========
 
+        # ========== GROUP CONFIG AND DOWNLOAD CONFIG SECTION (REPLACE THIS ENTIRE SECTION) ==========
+
+        # Group Config Group Box
+        group_config_group_box = QGroupBox()
+        group_config_group_box.setObjectName("group_config_group_box")
+        group_config_group_box.setTitle("Group Sharing Configuration")
+        
+        group_config_group_box.setStyleSheet("""
+            QGroupBox#group_config_group_box {
+                border: 2px solid rgba(128,128,128,0.8);
+                border-radius: 8px;
+                padding-top: 5px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                padding-right: 10px;
+                padding-left: 10px;
+                padding-bottom: 5px;
+                padding-top: 2px;
+
+                background-color: rgba(128,128,128,0.2);
+            }
+            QGroupBox#group_config_group_box::title {
+                subcontrol-origin: margin;
+                subcontrol-position: top center;
+                border-radius: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
+                      
+                background-color: rgba(128,128,128,0.8);
+            }
+        """)
+
+
+        group_config_vlayout = QVBoxLayout(group_config_group_box)
+        group_config_vlayout.setAlignment(Qt.AlignCenter)
+        group_config_vlayout.setSpacing(5)  # ✅ Proper spacing
+        group_config_vlayout.setContentsMargins(5,10,5,10)  # ✅ Proper margins
+
+        group_config_label = QLabel("Group Config")
+        group_config_label.setAlignment(Qt.AlignCenter)
+        group_config_label.setStyleSheet("font-size: 12px; font-weight: bold; color: #eeeeee;")
+
+        group_config_btn = AnimatedHoverButton("")
+        group_config_btn.setIcon(QIcon(r"geni\geni_ui_src\ui_assets\Icons\GroupConfig.png"))
+        group_config_btn.setIconSize(QSize(65, 65))
+        group_config_btn.setFixedSize(85, 85)
+        group_config_btn.clicked.connect(self.onGroupConfigClicked)
+
+        group_config_vlayout.addWidget(group_config_label)
+        group_config_vlayout.addWidget(group_config_btn, alignment=Qt.AlignCenter)
+
+            # Download Config Group Box 
+        download_config_group_box = QGroupBox()
+        download_config_group_box.setObjectName("download_config_group_box")
+        download_config_group_box.setTitle("Auto Download / Edits Configuration")
+        download_config_group_box.setStyleSheet("""
+            QGroupBox#download_config_group_box {
+                border: 2px solid rgba(128,128,128,0.8);
+                border-radius: 8px;
+                padding: 5px;                     /* uniform padding */
+                margin-top: 5px;
+                margin-bottom: 5px;
+                background-color: rgba(128,128,128,0.2);
+            }
+            QGroupBox#download_config_group_box::title {
+                subcontrol-origin: margin;
+                subcontrol-position: top center;
+                font-weight: bold;
+                border-radius: 5px;
+                padding: 0px 5px;
+                background-color: rgba(128,128,128,0.7);
+            }
+        """)
+
+        # ---- main layout: 2 columns (left = More Config, right = checkboxes) ----
+        download_config_layout = QGridLayout(download_config_group_box)
+        download_config_layout.setHorizontalSpacing(12)   # space between columns
+        download_config_layout.setVerticalSpacing(5)
+        download_config_layout.setContentsMargins(12, 5, 12, 5)
+
+        # ----------------- LEFT SIDE : More Config button + label -----------------
         config_download_label = QLabel("More Config")
-        configure_download_btn = AnimatedHoverButton("Configure")
+        config_download_label.setAlignment(Qt.AlignCenter)
+        config_download_label.setStyleSheet(
+            "font-size: 12px; font-weight: bold;padding-bottom:2px;padding-top:5px;"
+        )
+
+        configure_download_btn = AnimatedHoverButton("")
+        configure_download_btn.setIcon(QIcon(r"geni\geni_ui_src\ui_assets\Icons\downloadConfig.png"))
+        configure_download_btn.setIconSize(QSize(60, 60))
         configure_download_btn.setFixedSize(80, 80)
         configure_download_btn.clicked.connect(self.open_configure_window)
-        
-        
-        configure_download_btn_frame_layout.addWidget(config_download_label)
-        #configure_download_btn_frame_layout.setSpacing(10)
-        configure_download_btn_frame_layout.addWidget(configure_download_btn)
 
+        # add them vertically, centered
+        download_config_layout.addWidget(config_download_label, 0, 0, 1, 1, alignment=Qt.AlignCenter)
+        download_config_layout.addWidget(configure_download_btn, 1, 0, 2, 1, alignment=Qt.AlignCenter)
 
-        # Configure grp config here
+        # ----------------- RIGHT SIDE : Check-boxes (2-column grid) -----------------
+        checkbox_style = """
+            QCheckBox {
+                border: none;
+                font-size: 12px;
+                spacing: 2px;
+                color: #eeeeee;
+                padding: 5px 5px;
+            }
+            QCheckBox::indicator { width: 18px; height: 18px; }
+        """
 
-        group_config_layout = QHBoxLayout()
-        
-        group_config_label = QLabel("Group Config")
-        group_config_btn = AnimatedHoverButton("Configure")
-        group_config_btn.setFixedSize(80,80)
-        group_config_btn.clicked.connect(self.onGroupConfigClicked)
-        
-        configure_download_btn_frame.setLayout(configure_download_btn_frame_layout)
-        config_download_layout.addWidget(configure_download_btn_frame, 0, 0)
-        config_download_layout.setHorizontalSpacing(30)
-        
-        group_config_layout.addWidget(group_config_label)
-        group_config_layout.addWidget(group_config_btn)
-        
-        configure_download_btn_frame_layout.addLayout(group_config_layout)
+        self.auto_download_checkbox          = QCheckBox("Auto Download")
+        self.auto_reels_edit_checkbox        = QCheckBox("Auto Reels Edits")
+        self.auto_image_edit_checkbox        = QCheckBox("Auto Image Edits")
+        self.auto_bonus_edit_checkbox        = QCheckBox("Auto Bonus Edits")
+        self.auto_story_video_edit_checkbox  = QCheckBox("Auto Story Video Edits")
 
+        for cb in (self.auto_download_checkbox, self.auto_reels_edit_checkbox,
+                self.auto_image_edit_checkbox, self.auto_bonus_edit_checkbox,
+                self.auto_story_video_edit_checkbox):
+            cb.setStyleSheet(checkbox_style)
+            cb.clicked.connect(self.savecallback)
 
+        # ---- 2-column layout for the 5 check-boxes ----
+        download_config_layout.addWidget(self.auto_download_checkbox,         0, 1)
+        download_config_layout.addWidget(self.auto_bonus_edit_checkbox,       0, 2)
+        download_config_layout.addWidget(self.auto_reels_edit_checkbox,       1, 1)
+        download_config_layout.addWidget(self.auto_story_video_edit_checkbox,1, 2)
+        download_config_layout.addWidget(self.auto_image_edit_checkbox,       2, 1)
 
+        # (the 5th checkbox is placed in row 2, column 1 – the grid will stretch nicely)
 
-        #enable/disable shortcut frame
-        download_enable_frame = QFrame()
-        download_enable_frame.setFixedHeight(80)
-        download_enable_frame.setObjectName("download_enable_frame")
-        download_enable_frame.setStyleSheet("""QFrame#download_enable_frame{border:1px solid rgba(128,128,128,0.5);
-                                    border-radius:8px;
-                                    background-color: rgba(128,128,128,0.2);}""")
-        download_enable_layout = QGridLayout(download_enable_frame)
-        
-        self.auto_download_checkbox = QCheckBox("Auto Download")
-        self.auto_download_checkbox.setStyleSheet("""border:none;""")
-        self.auto_download_checkbox.setChecked(self.auto_download)
-        self.auto_download_checkbox.clicked.connect(self.save_changes)
-        
-        self.auto_reels_edit_checkbox = QCheckBox("Auto Reels Edits")
-        self.auto_reels_edit_checkbox.setStyleSheet("""border:none;""")
-        self.auto_reels_edit_checkbox.setChecked(self.auto_reels_edit)
-        self.auto_reels_edit_checkbox.clicked.connect(self.savecallback)
-        #self.auto_reels_edit_checkbox.stateChanged.connect(self.switch_and_next_update)
-        
-        self.auto_image_edit_checkbox = QCheckBox("Auto Image Edits")
-        self.auto_image_edit_checkbox.setStyleSheet("""border:none;""")
-        self.auto_image_edit_checkbox.setChecked(self.auto_image_edit)
-        self.auto_image_edit_checkbox.clicked.connect(self.savecallback)
-        #self.auto_image_edit_checkbox.stateChanged.connect(self.switch_and_next_update)
-        
-        self.auto_bonus_edit_checkbox = QCheckBox("Auto Bonus Edits")
-        self.auto_bonus_edit_checkbox.setStyleSheet("""border:none;""")
-        self.auto_bonus_edit_checkbox.setChecked(self.auto_bonus_edit)
-        self.auto_bonus_edit_checkbox.clicked.connect(self.savecallback)
-        #self.auto_bonus_edit_checkbox.stateChanged.connect(self.switch_and_next_update)
+        # ------------------------------------------------------------------
+        #  Add the group-box to the horizontal container (unchanged)
+        # ------------------------------------------------------------------
+        config_horizontal_layout = QHBoxLayout()
+        config_horizontal_layout.setSpacing(15)
+        config_horizontal_layout.addWidget(group_config_group_box)      # left: Group Config
+        config_horizontal_layout.addWidget(download_config_group_box)   # right: Auto Download/Edits
 
-        self.auto_story_video_edit_checkbox = QCheckBox("Auto story Video Edits")
-        self.auto_story_video_edit_checkbox.setStyleSheet("""border:none;""")
-        self.auto_story_video_edit_checkbox.setChecked(self.auto_bonus_edit)
-        self.auto_story_video_edit_checkbox.clicked.connect(self.savecallback)
+        self.main_layout.addWidget(QLabel())   # tiny spacer (optional)
+        self.main_layout.addLayout(config_horizontal_layout)
 
-        
-        download_enable_layout.addWidget(self.auto_download_checkbox, 0, 0)
-        download_enable_layout.addWidget(self.auto_reels_edit_checkbox, 0, 1)
-        download_enable_layout.addWidget(self.auto_image_edit_checkbox, 1, 0)
-        download_enable_layout.addWidget(self.auto_bonus_edit_checkbox, 1, 1)
-        download_enable_layout.addWidget(self.auto_story_video_edit_checkbox,2,0)
-
-
-        config_download_layout.addWidget(download_enable_frame, 0, 2)
-        self.main_layout.addWidget(configure_download_edit_group_box)
-        
-
-
-        #upload type enable and disable box
         upload_type_groupbox = QGroupBox()
         upload_type_groupbox.setObjectName("upload_type_groupbox")
         upload_type_groupbox.setTitle("Configure Upload Types")
         upload_type_groupbox.setStyleSheet("""QGroupBox#upload_type_groupbox{border:2px solid rgba(128,128,128,0.8);
                                     border-radius:8px;
                                     padding-top:5px;
-                                    margin-top:10px;
+                                    margin-top:5px;
                                     padding-right:10px;
                                     padding-left:10px;
                                     padding-bottom:5px;
