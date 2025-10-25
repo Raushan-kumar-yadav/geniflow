@@ -1,6 +1,7 @@
 import ctypes
 import multiprocessing
 import multiprocessing.managers
+import sched
 import sys
 import os
 import time
@@ -17,18 +18,19 @@ from multiprocessing import JoinableQueue, Manager
 
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QFrame, QVBoxLayout, QHBoxLayout, QDialog,
-    QPushButton, QLabel, QScrollArea, QGridLayout, QMessageBox,QListView,QTableView,QHeaderView,QAbstractItemView,QAbstractItemView,QGroupBox)
-from PySide6.QtCore import Qt, QTimer, Signal, QSize, Slot,QStringListModel,QPropertyAnimation,Property
+    QPushButton, QLabel, QScrollArea, QGridLayout, QMessageBox, QListView, QTableView, QHeaderView, QAbstractItemView, QAbstractItemView, QGroupBox, QDialogButtonBox)
+from PySide6.QtCore import Qt, QTimer, Signal, QSize, Slot, QStringListModel, QPropertyAnimation, Property, QThread
 from PySide6.QtGui import QPixmap, QFont, QFontDatabase, QIcon,QStandardItemModel,QStandardItem
-from PySide6.QtCore import Qt, QUrl
+from PySide6.QtCore import Qt, QUrl,QDateTime, Slot
 from PySide6.QtGui import QFont, QPixmap, QPainter, QIcon, QDesktopServices
 
-from PySide6.QtWidgets import (QApplication, QTableView, QVBoxLayout,
+from PySide6.QtWidgets import (QApplication, QTableView, QVBoxLayout,QDialogButtonBox,QDateTimeEdit,QFormLayout,QCheckBox, QSpinBox,
                                QLabel, QAbstractItemView, QWidget)
 from PySide6.QtCore    import Qt, QTimer
 from PySide6.QtGui     import QStandardItemModel, QStandardItem, QColor
 
 from pathlib import Path
+import json
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -609,6 +611,11 @@ class ActivityControl(StyledFrame):
         view_log_btn.setToolTip("view Current Activity Log")
         view_log_btn.clicked.connect(self.open_activities_log)
         view_log_label.setAlignment(Qt.AlignHCenter)
+        
+        log_layout = QVBoxLayout()
+        log_layout.setAlignment(Qt.AlignTop | Qt.AlignHCenter)
+        log_layout.addWidget(view_log_label)
+        log_layout.addWidget(view_log_btn)
 
         detail_log_label = QLabel("Detail Activity Log")
         detail_log_label.setAlignment(Qt.AlignHCenter)
@@ -620,10 +627,6 @@ class ActivityControl(StyledFrame):
         detail_log_btn.setFixedSize(100, 100)
         detail_log_btn.clicked.connect(self.open_detail_activities_log)
 
-        log_layout = QVBoxLayout()
-        log_layout.setAlignment(Qt.AlignTop | Qt.AlignHCenter)
-        log_layout.addWidget(view_log_label)
-        log_layout.addWidget(view_log_btn)
 
         detail_log_layout = QVBoxLayout()
         detail_log_layout.setAlignment(Qt.AlignTop | Qt.AlignHCenter)
@@ -640,6 +643,61 @@ class ActivityControl(StyledFrame):
         View_logs_details.setFixedWidth(360)
         layout.addWidget(View_logs_details, alignment=Qt.AlignHCenter)
 
+        # Schedule_box = QGroupBox()
+        # Schedule_box.setObjectName("Schedule")
+        # Schedule_box.setTitle("Schedule GeniFlow")
+        # Schedule_box.setAlignment(Qt.AlignVCenter)
+        # Schedule_box.setStyleSheet("""
+        #     QGroupBox#Schedule {
+        #         border: 2px solid rgba(128,128,128,0.8);
+        #         border-radius: 8px;
+        #         padding-top: 5px;
+        #         margin-top: 10px;
+        #         padding-right: 10px;
+        #         padding-left: 10px;
+        #         padding-bottom: 5px;
+        #         background-color: rgba(128,128,128,0.2);
+        #     }
+        #     QGroupBox#Schedule::title {
+        #         subcontrol-origin: margin;
+        #         subcontrol-position: top center;
+        #         border-radius: 5px;
+        #         padding-left: 5px;
+        #         padding-right: 5px;
+        #         padding-top: 1px;
+        #         padding-bottom: 1px;
+        #         background-color: rgba(128,128,128,0.8);
+        #     }
+        # """)
+        # # … styling omitted for brevity …
+
+        # Schedule_label = QLabel("Schedule")
+        # Schedule_label.setAlignment(Qt.AlignHCenter)
+        # Schedule_label.setStyleSheet("background-color: transparent; font-weight: bold; color: white; text-align: center; font-size: 12px;")
+
+        # Schedule_btn = AnimatedHoverButton(self)
+        # Schedule_btn.setFixedSize(100, 100)
+        # Schedule_btn.setIcon(QIcon(r"geni\geni_ui_src\ui_assets\Icons\log.png"))
+        # Schedule_btn.setIconSize(QSize(80, 80))
+        # Schedule_btn.setToolTip("Schedule the GeniFlow")
+        # Schedule_btn.clicked.connect(self.schedule_btn)  # Connect to the instance method
+
+        # schedule_layout = QVBoxLayout()
+        # schedule_layout.setAlignment( Qt.AlignHCenter)
+        # schedule_layout.addWidget(Schedule_label)
+        # schedule_layout.addWidget(Schedule_btn)
+
+        # Schedule_box.setLayout(schedule_layout)
+        # Schedule_box.setFixedWidth(200)   # adjust as you like
+
+        # # ───────────────────── Put them side-by-side ─────────────────────
+        # two_boxes_layout = QHBoxLayout()          # horizontal container
+        # two_boxes_layout.setAlignment(Qt.AlignHCenter)
+        # two_boxes_layout.addWidget(View_logs_details)
+        # two_boxes_layout.addSpacing(20)           # gap between the two
+        # two_boxes_layout.addWidget(Schedule_box)
+
+        # layout.addLayout(two_boxes_layout) 
 
 
 
